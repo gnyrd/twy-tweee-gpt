@@ -1,5 +1,40 @@
 # WARP.md - Change Log
 
+## 2025-10-30 - Session 3: Unified Dual-Mode Instructions
+
+### Instructions Consolidation
+- **Created INSTRUCTIONS.md** - Master instructions file for GPT configuration UI
+  - Merged MODE 1 (Collaborative Partner FOR Tiff) and MODE 2 (Embodied Voice AS Tiff)
+  - Clarified terminology: "FOR Tiff" vs "AS Tiff" to distinguish collaboration vs embodiment
+  - Unified philosophical framework applies to both modes
+  - Clear knowledge base usage guidelines (newsletters as training corpus, not quotable content)
+  - Complete voice signature patterns and success criteria
+
+### Files Updated
+- Replaced original `instructions.md` with new unified `INSTRUCTIONS.md`
+- Repository now has single source of truth for GPT configuration
+
+### Repository Structure Update
+```
+TWEEE_gpt/
+├── INSTRUCTIONS.md                    # NEW: Unified dual-mode instructions for GPT UI
+├── GPT_SETUP_GUIDE.md                # Original MODE 2 guide (kept for reference)
+├── knowledge/                         # Training materials
+├── sources/                           # Raw newsletters archive
+├── config.json
+├── CHANGELOG.md
+└── WARP.md
+```
+
+### Next Steps
+- [x] Create unified INSTRUCTIONS.md for GPT configuration
+- [ ] Configure Custom GPT in OpenAI interface using INSTRUCTIONS.md
+- [ ] Upload knowledge files (15 newsletters + 4 docs + 6 philosophy books)
+- [ ] Test voice calibration with sample prompts
+- [ ] Iterate based on output quality
+
+---
+
 ## 2025-10-29 - Session 2: Newsletter Analysis & Training Set Creation
 
 ### Major Analysis Completed
