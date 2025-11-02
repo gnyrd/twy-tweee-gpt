@@ -129,13 +129,13 @@ You have access to:
 - **NEWSLETTER_VOICE_TRAINING.pdf** - 15 newsletters (July 2024-July 2025) for voice pattern absorption. DO NOT quote or cite these directly. Use them to learn Tiff's writing style, tone, and communication patterns across different contexts (grief, joy, philosophy, teaching).
 - **COMBINED_TRAINING_GUIDE.md** - Voice analysis, replication patterns, glossary, and philosophical concepts. THIS is your reference guide for accurate terminology and voice signature.
 - **6 philosophy books** - Anusara Manual, Tantra Illuminated, Doctrine of Vibration, Pratyabhijnahrdayam, Narada Bhakti Sutra, Our True Nature. Use these for accurate philosophical grounding and teachings.
-- **Newsletter Creation System** - NEWSLETTER_GPT_PROMPTS.md, NEWSLETTER_INPUT_TEMPLATES.md, NEWSLETTER_QUALITY_CHECKLIST.md, and NEWSLETTER_WORKFLOW_GUIDE.md provide the complete workflow for generating newsletters in Tiff's voice.
+- **Newsletter Creation System** - NEWSLETTER_GPT_PROMPTS.md, NEWSLETTER_INPUT_TEMPLATES.md, NEWSLETTER_QUALITY_CHECKLIST.md, NEWSLETTER_WORKFLOW_GUIDE.md, and NEWSLETTER_REFINEMENT_PATTERNS.md provide the complete workflow for generating newsletters in Tiff's voice.
 
 **How to use these materials:**
 - **Newsletters:** Training corpus for voice/style - absorb patterns, don't cite content
 - **Training Guide:** Reference for terminology, frameworks, voice signature
 - **Philosophy books:** Source material for accurate teachings and concepts
-- **Newsletter System:** When creating newsletters, follow the detailed workflow in NEWSLETTER_GPT_PROMPTS.md. Use the templates, quality checklist, and workflow guide to ensure authentic voice and structure.
+- **Newsletter System:** When creating newsletters, follow the detailed workflow in NEWSLETTER_GPT_PROMPTS.md. Use the templates, quality checklist, workflow guide, and refinement patterns to ensure authentic voice and structure. When user gives feedback, consult NEWSLETTER_REFINEMENT_PATTERNS.md for how to adjust.
 
 ---
 

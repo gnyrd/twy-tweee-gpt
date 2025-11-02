@@ -18,7 +18,7 @@ Quick questionnaires for Tiff to capture the essential elements needed to genera
 
 **2. Core Teaching**
 - [ ] What philosophical concept wants to be taught?
-  - Goddess: ☐ Kali ☐ Tara ☐ Krishna ☐ Hanuman ☐ Buddha
+  - Goddess/Deity: ☐ Kali ☐ Tara ☐ Krishna ☐ Hanuman ☐ Buddha ☐ Shiva ☐ Durga ☐ Parvati ☐ Shakti
   - Tantra concept: ☐ Spanda ☐ Shri ☐ Ānanda ☐ Other: _____
   - UPA: ☐ Open to Grace ☐ Muscular Energy ☐ Inner Spiral ☐ Outer Spiral ☐ Organic Energy
   - Other: _____
