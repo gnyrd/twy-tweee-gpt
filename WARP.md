@@ -128,13 +128,29 @@ TWEEE_gpt/
 
 ### System Status: ✅ VALIDATED & WORKING
 
+### Voice Calibration Applied
+- **Added brevity instruction:** "Aim 30% shorter" in NEWSLETTER_GPT_PROMPTS.md
+- **Expanded goddess options:** Added Durga, Parvati, Shakti to NEWSLETTER_INPUT_TEMPLATES.md
+- **Natural feedback prompt:** Changed to "How's the length?" in draft delivery
+- **Created NEWSLETTER_REFINEMENT_PATTERNS.md:** 145-line guide for common iteration patterns
+- **Updated INSTRUCTIONS.md:** Now references all 5 newsletter system files
+
+### Files in Newsletter System (5 total):
+1. NEWSLETTER_INPUT_TEMPLATES.md - Quick capture forms
+2. NEWSLETTER_GPT_PROMPTS.md - AI generation with brevity instruction
+3. NEWSLETTER_QUALITY_CHECKLIST.md - 10-point voice verification
+4. NEWSLETTER_WORKFLOW_GUIDE.md - Complete workflow documentation
+5. NEWSLETTER_REFINEMENT_PATTERNS.md - Common iteration patterns (NEW)
+
 ### Next Steps
 - [x] Test workflow with real newsletter case
 - [x] Validate GPT can iterate based on feedback
 - [x] Integrate into TWEEE custom GPT
-- [ ] Fine-tune voice calibration for more condensed output
-- [ ] Add goddess/deity selection to input templates
-- [ ] Document common refinement patterns
+- [x] Fine-tune voice calibration for more condensed output
+- [x] Add goddess/deity selection to input templates
+- [x] Document common refinement patterns
+- [ ] Test all 5 newsletter types
+- [ ] Document additional refinement patterns as they emerge
 - [ ] Consider building dedicated newsletter generation interface
 
 ---
