@@ -1,0 +1,230 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Mailchimp Campaign API",
+    "version": "1.0.0",
+    "description": "Send TWEEE newsletters to Mailchimp"
+  },
+  "servers": [
+    {
+      "url": "https://us21.api.mailchimp.com/3.0",
+      "description": "Mailchimp API server"
+    }
+  ],
+  "paths": {
+    "/lists": {
+      "get": {
+        "operationId": "getAudiences",
+        "summary": "Get list of all audiences",
+        "description": "Retrieves all Mailchimp audiences with their IDs and names",
+        "parameters": [
+          {
+            "name": "count",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 100
+            },
+            "description": "Number of audiences to return"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of audiences",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "lists": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "stats": {
+                            "type": "object",
+                            "properties": {
+                              "member_count": {
+                                "type": "integer"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaigns": {
+      "post": {
+        "operationId": "createCampaign",
+        "summary": "Create a new email campaign",
+        "description": "Creates a draft campaign in Mailchimp",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["type", "recipients", "settings"],
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": ["regular"],
+                    "default": "regular"
+                  },
+                  "recipients": {
+                    "type": "object",
+                    "required": ["list_id"],
+                    "properties": {
+                      "list_id": {
+                        "type": "string",
+                        "description": "Mailchimp audience ID"
+                      }
+                    }
+                  },
+                  "settings": {
+                    "type": "object",
+                    "required": ["subject_line", "from_name", "reply_to"],
+                    "properties": {
+                      "subject_line": {
+                        "type": "string",
+                        "description": "Email subject line"
+                      },
+                      "preview_text": {
+                        "type": "string",
+                        "description": "Preview text shown in inbox (50-100 chars recommended)"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "Internal campaign name (not visible to subscribers)"
+                      },
+                      "from_name": {
+                        "type": "string",
+                        "default": "Tiff",
+                        "description": "Sender name"
+                      },
+                      "reply_to": {
+                        "type": "string",
+                        "description": "Reply-to email address"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Campaign created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "web_id": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/campaigns/{campaign_id}/content": {
+      "put": {
+        "operationId": "setCampaignContent",
+        "summary": "Set the HTML content of a campaign",
+        "description": "Uploads newsletter HTML to the campaign",
+        "parameters": [
+          {
+            "name": "campaign_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Campaign ID from createCampaign response"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["html"],
+                "properties": {
+                  "html": {
+                    "type": "string",
+                    "description": "Full HTML content of the newsletter"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Content updated successfully"
+          }
+        }
+      }
+    },
+    "/campaigns/{campaign_id}/actions/send": {
+      "post": {
+        "operationId": "sendCampaign",
+        "summary": "Send the campaign immediately",
+        "description": "Sends the campaign to all recipients. Cannot be undone!",
+        "parameters": [
+          {
+            "name": "campaign_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Campaign ID to send"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Campaign sent successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic",
+        "description": "Use 'anystring' as username and your Mailchimp API key as password"
+      }
+    }
+  },
+  "security": [
+    {
+      "basicAuth": []
+    }
+  ]
+}

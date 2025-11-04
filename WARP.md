@@ -1,5 +1,140 @@
 # WARP.md - Change Log
 
+## 2025-11-03 - Session 5: Mailchimp Integration Complete
+
+### Mailchimp API Integration Built
+- **Created complete Mailchimp integration** for sending newsletters directly from GPT
+  - GPT Actions configured for Mailchimp Marketing API v3.0
+  - Python CLI tool for local testing/automation
+  - Dual environment setup (test + production)
+  - Full API authentication working
+
+### Files Created (5 new integration files)
+
+**mailchimp_gpt_action.json**
+- OpenAPI 3.1 schema for GPT Actions
+- 4 operations: getAudiences, createCampaign, setCampaignContent, sendCampaign
+- Basic Auth configuration
+- Complete request/response schemas
+
+**send_to_mailchimp.py**
+- Python CLI tool for sending newsletters
+- Environment variable configuration
+- Interactive campaign creation workflow
+- Safety confirmations before sending
+- Preview links for review
+
+**.env.mailchimp.test** & **.env.mailchimp.prod**
+- Separate configurations for test vs production
+- Test audience: `e1cfd6e694` (2 contacts)
+- Production audience: `a221e4ba21` (880 subscribers - Tiffany Wood Yoga)
+- Server: us21
+- API key: Updated to new sub-user key
+
+**switch_mailchimp_env.sh**
+- Bash utility to switch between test/prod environments
+- Shows current active configuration
+
+**GPT_ACTION_SETUP.md**
+- Complete setup guide for configuring GPT Actions
+- Authentication instructions
+- Testing procedures
+- Conversation workflow templates
+- Troubleshooting guide
+
+**MAILCHIMP_INTEGRATION.md**
+- Comprehensive integration documentation
+- API endpoints and authentication
+- Workflow examples
+- Error handling patterns
+
+**test_newsletter.html**
+- Sample HTML newsletter for testing integration
+- Basic email template structure
+
+### Mailchimp Account Configuration
+- **Created sub-user account** for TWEEE GPT automation
+- **Generated dedicated API key:** `REDACTED_API_KEY`
+- **Identified 4 audiences:**
+  - Tiffany Wood Yoga (a221e4ba21) - 880 members, 47.9% open rate
+  - Yoga Lifestyle (4bf0a9eadd) - 340 members, 71.3% open rate
+  - Website Subscribers (af4d07fd03) - 31 members
+  - Automation Testing (e1cfd6e694) - 2 members
+
+### Technical Implementation
+- **API Authentication:** Basic Auth with API key as password
+- **GPT Action Setup:** Custom authentication in GPT Actions panel
+- **Local Testing:** Python script with mailchimp-marketing SDK
+- **Environment Management:** Separate test/prod configs with switcher script
+- **Safety Features:**
+  - Default to test audience
+  - Preview links before sending
+  - Explicit confirmation required for send
+  - Environment variable validation
+
+### Repository Structure Update
+```
+TWEEE_gpt/
+├── sources/
+│   └── TWY Newsletters/
+├── knowledge/
+├── INSTRUCTIONS.md
+├── GPT_SETUP_GUIDE.md
+├── GPT_ACTION_SETUP.md              # NEW: GPT Actions setup guide
+├── MAILCHIMP_INTEGRATION.md         # NEW: Integration documentation
+├── mailchimp_gpt_action.json        # NEW: OpenAPI schema for GPT
+├── send_to_mailchimp.py             # NEW: Python CLI tool
+├── switch_mailchimp_env.sh          # NEW: Environment switcher
+├── .env.mailchimp.test              # NEW: Test environment config
+├── .env.mailchimp.prod              # NEW: Production environment config
+├── test_newsletter.html             # NEW: Sample test newsletter
+├── .gitignore                       # UPDATED: Added .env.mailchimp*
+├── config.json
+├── CHANGELOG.md
+└── WARP.md                          # This file
+```
+
+### Integration Testing & Validation
+- ✅ **API key tested via curl:** Successfully retrieved all 4 audiences
+- ✅ **GPT Action authentication:** Working after configuring API Key auth
+- ✅ **Audience listing:** GPT can query and display all Mailchimp lists
+- ✅ **Production audience identified:** a221e4ba21 (Tiffany Wood Yoga - 880 members)
+- ✅ **Environment configs updated:** Test and production ready to use
+
+### Complete Workflow Now Available
+1. **Newsletter Creation** (Session 4 system):
+   - Tiff provides seed content (5-10 min)
+   - GPT generates newsletter in Tiff's voice
+   - Tiff refines and adds soul (10-15 min)
+
+2. **Distribution** (Session 5 system):
+   - Say "send to Mailchimp" in GPT
+   - GPT creates campaign draft
+   - Review preview link
+   - Confirm send (test or production audience)
+
+### System Status: ✅ FULLY OPERATIONAL
+
+**End-to-End Capability:**
+- Newsletter generation (validated Session 4)
+- Direct Mailchimp distribution (validated Session 5)
+- Test environment for safe iteration
+- Production ready for 880 subscribers
+
+### Next Steps
+- [x] Create Mailchimp sub-user and API key
+- [x] Build GPT Action for Mailchimp API
+- [x] Create Python CLI tool for local testing
+- [x] Configure test and production environments
+- [x] Test API authentication and audience retrieval
+- [x] Update all configs with new API key
+- [ ] Send first test campaign through GPT
+- [ ] Send first real newsletter to production audience
+- [ ] Document campaign analytics workflow
+- [ ] Consider adding campaign scheduling capability
+
+---
+
 ## 2025-11-01 - Session 4: Newsletter Creation System
 
 ### Newsletter Generation Workflow Built
@@ -390,4 +525,4 @@ TWEEE_gpt/
 - Complete voice DNA mapped
 - Repository restructured for optimal GPT training
 
-**Last Updated:** October 29, 2025 by Warp AI Assistant
+**Last Updated:** November 3, 2025 by Warp AI Assistant

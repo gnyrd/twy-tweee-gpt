@@ -12,7 +12,13 @@ Thumbs.db
 # Environment files
 .env
 .env.local
+.env.mailchimp*
 
 # Temporary files
 *.tmp
 *.bak
+
+# Python
+venv/
+__pycache__/
+*.pyc
