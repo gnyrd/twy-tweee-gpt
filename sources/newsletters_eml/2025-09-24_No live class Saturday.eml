@@ -1,0 +1,1022 @@
+Delivered-To: jpgan6@gmail.com
+Received: by 2002:a05:612c:118a:b0:4f0:ea43:ff60 with SMTP id ei10csp1960065vqb;
+        Wed, 24 Sep 2025 18:53:46 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFoMZU56P9xWoHC3H+fg1/4Hl9+ZmE2hLqGza6wLBTjR2gAtjjztxRIXPrIxcrLg0F2b2Zt
+X-Received: by 2002:a05:6902:6c19:b0:eb0:13df:9f9d with SMTP id 3f1490d57ef6-eb37fc77c9emr1666433276.31.1758765225965;
+        Wed, 24 Sep 2025 18:53:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1758765225; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Ly2nHM6H0eZddrOBBxIxOhovxQG2Z2FbeUpWzjgd72gnfVI0YuIdqj8jcAY4EBrycd
+         JG/2ES/40niILsTlmcCw8S/udqkni1yo1BK3ID4P9Xf4XWeCQAkLuPvX95J3MPADP7NP
+         gcIAWcf/+Fe5z26bY4V86516Rhl+ejDEKKdPjksVOQ7nW3DZwNGRYXk8xoBH6GTmfsVc
+         aXMD/e1/fJcuPcHAzR5C7awqmqWkaHxNcjViJ5O7130SQsej0hdYVJKb/D33UH7g6M1C
+         saAbTLEKmLIgXaqu+FplWkzJYm3aHxRbcJ0QClBp62hvpZe+emojSascsCHeFTEmax2t
+         hkJg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature;
+        bh=4cVKYTnMge4gCfEBE1mwrBzLT7C31sCcUoNbVoYb5O8=;
+        fh=q97OCnN4Bx84GdBSMkO2B1A0fXRrfgIkW9zpd5Q8z6w=;
+        b=kIO4eRmCHh8ajzHA66WLgcSwKmAlfwlKEtO8d9dg2lC19/ZngB5A/itngcOYxIdBXs
+         h+8PaoPGn4XuSvERaIoF4vbfR8n1xBZ+BoUAMckO0aDJQ0IVkzAYUb+XltUjggnBHZ3E
+         ucSQ03a1EsYbTYDU1ww03dx3JCMI3rNDs+VSRajo/X1EqtM2JYzROUdx5dimhvH6icoX
+         /7zOObqLzhmSGXbYYj58FGN53DcDQhmxuw8ZFw+pBAocGmj6iIXkpAWd5YllCfkICFTw
+         vzOcZqnc0MCNb1e+5+LYJbLVpoUcGhTVrJcla0bW9ysp0XSWA02AO9H3y1HiXPSrlTEq
+         Pn8g==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k2 header.b=UlwopXbp;
+       dkim=pass header.i=@tiffanywoodyoga.com header.s=k3 header.b="I/N05a1u";
+       spf=pass (google.com: domain of bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net designates 198.2.141.240 as permitted sender) smtp.mailfrom=bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tiffanywoodyoga.com
+Return-Path: <bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net>
+Received: from mail240.atl241.mcsv.net (mail240.atl241.mcsv.net. [198.2.141.240])
+        by mx.google.com with ESMTPS id 3f1490d57ef6-eb3838432cdsi305529276.108.2025.09.24.18.53.45
+        for <jpgan6@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 24 Sep 2025 18:53:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net designates 198.2.141.240 as permitted sender) client-ip=198.2.141.240;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k2 header.b=UlwopXbp;
+       dkim=pass header.i=@tiffanywoodyoga.com header.s=k3 header.b="I/N05a1u";
+       spf=pass (google.com: domain of bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net designates 198.2.141.240 as permitted sender) smtp.mailfrom=bounce-mc.us21_182210782.12752600-50a1b5c172@mail240.atl241.mcsv.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tiffanywoodyoga.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.mcsv.net;
+	s=k2; t=1758765225; x=1758851625;
+	bh=4cVKYTnMge4gCfEBE1mwrBzLT7C31sCcUoNbVoYb5O8=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=UlwopXbpyg1FsarDiowDUct2prtQRuuAvHf8S03+FTbdcDPh+jWvnEf22pTNlBQCy
+	 kaXT151s8e1Uxf3wNUaz7fSh1JnnzLag1jkWGKFDJrZ//QiS3qGM8Mt2wEcgk/4UPT
+	 WvbVUm0qaXnjt8u4eLrQK7ji+3hcL4v5HCLiIHGU4qq0t6EenGJsXG1wWfuuqN/xk7
+	 j+uEXYsMyKIXPfYb/vL1ovWrY3awuDElw138zCDiGwV6887V9qAnqCAkuGWJbVH9fr
+	 yYgYto3KoPuWiqyb/u2WPOD6h8Di0S/eWZXz7DhkmP6DCdzCVc7D4r7qQV5OYsfA0j
+	 1UH0tyZ1AUfpA==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=tiffanywoodyoga.com;
+	s=k3; t=1758765225; x=1759035225; i=tiffany@tiffanywoodyoga.com;
+	bh=4cVKYTnMge4gCfEBE1mwrBzLT7C31sCcUoNbVoYb5O8=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=I/N05a1ubaY0f81N2k0ylhqm2LljGSlM3Xo5yjdmWbv/3uMf6vHqETRXyR+Ys6Sw8
+	 4MVnrR7+kfb9hVF3DW8C6k8Vkvpl1/tR6WAYh20Vo2g8BEBPgF+j34mqcwuLSzt+sk
+	 EssR2D/JZMyT1M86c1kIdDSLbXA5QCDGmk/4vKh6IB0omVrW/XzP4aUYE98ZkYwDPL
+	 wMmV0ubtD6eQV1B7Kai7LzfJoXYxthSZy6XQyIKPVzQAIUijra6V7o8/D5innuncly
+	 kW2lcqvrMdU/I3pLgIqTkDEAav4j/NdgheHaOGve+pp2bhgxBr7XLssjhC68s7K0K6
+	 jCwXQgNaI2zKg==
+Received: from localhost (localhost [127.0.0.1])
+	by mail240.atl241.mcsv.net (Mailchimp) with ESMTP id 4cXGw95Lkyz6CWPby
+	for <jpgan6@gmail.com>; Thu, 25 Sep 2025 01:53:45 +0000 (GMT)
+Subject: =?utf-8?Q?No=20live=20class=20Saturday?=
+From: Tiffany <tiffany@tiffanywoodyoga.com>
+Reply-To: =?utf-8?Q?Tiffany?= <tiffany@tiffanywoodyoga.com>
+To: <jpgan6@gmail.com>
+Date: Thu, 25 Sep 2025 01:53:45 +0000
+Message-ID: <a6369901d6f0c448fbcc61e6e.50a1b5c172.20250925015341.34c8064e9f.74520a5d@mail240.atl241.mcsv.net>
+X-Mailer: Mailchimp Mailer - **CID34c8064e9f50a1b5c172**
+X-Campaign: mailchimpa6369901d6f0c448fbcc61e6e.34c8064e9f
+X-campaignid: mailchimpa6369901d6f0c448fbcc61e6e.34c8064e9f
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=a6369901d6f0c448fbcc61e6e&id=34c8064e9f&e=50a1b5c172
+X-MC-User: a6369901d6f0c448fbcc61e6e
+Feedback-ID: 182210782:182210782.12752600:us21:mc
+List-ID: a6369901d6f0c448fbcc61e6emc list <a6369901d6f0c448fbcc61e6e.541.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://tiffanywoodyoga.us21.list-manage.com/unsubscribe?u=a6369901d6f0c448fbcc61e6e&id=a221e4ba21&t=h&e=50a1b5c172&c=34c8064e9f>, <mailto:unsubscribe-mc.us21_a6369901d6f0c448fbcc61e6e.34c8064e9f-50a1b5c172@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1981520446"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1981520446
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View this email in your browser (https://mailchi.mp/bd5152c9b2f0/good-medi=
+cine-12752600?e=3D50a1b5c172)
+https://tiffanywoodyoga.com/
+
+Hi JP=2C
+
+I wanted to let you know that this Saturday=E2=80=99s 9am class (September=
+ 27) is canceled while I attend a healing retreat this weekend.
+
+I=E2=80=99m taking this time to rest and refill =E2=80=94 and I hope you'l=
+l do the same in your own way.
+
+Even though we won=E2=80=99t gather live this week=2C your practice can st=
+ill hold you. Below are two offerings to support you =E2=80=94 body=2C bre=
+ath=2C and heart =E2=80=94 if and when you=E2=80=99re called:
+
+
+** =F0=9F=92=97 A Heartful Practice
+------------------------------------------------------------
+
+
+**
+------------------------------------------------------------
+
+Choose a class from the Heartful Series=2C a collection of 8 recorded prac=
+tices that each hold a different flavor of emotional support =E2=80=94 fro=
+m courage and joy to stillness and trust.
+
+=F0=9F=8C=80 Acceptance =E2=80=93 for stability and breath
+
+=F0=9F=A6=8B Basics on Backbends =E2=80=93 for heart and spine support
+
+=F0=9F=94=A5 Big Leap =E2=80=93 for boldness and strength
+
+=F0=9F=8C=B8 Friendliness =E2=80=93 for receiving and offering with ease
+
+=F0=9F=92=9E Happy Heart =E2=80=93 for supported expansion
+
+=F0=9F=8C=88 Feel Good =E2=80=93 for softness and prep for Full Wheel
+
+=F0=9F=8C=8A Trust =E2=80=93 for heart-deep surrender
+
+=F0=9F=8C=99 Quiet Center =E2=80=93 for slowness and peace
+Click here to access the Heartful Series (https://studio.tiffanywoodyoga.c=
+om/product/60859 )
+
+
+** =F0=9F=A7=98=E2=80=8D=E2=99=80=EF=B8=8F New: Meditation with Tiffany
+------------------------------------------------------------
+
+
+**
+------------------------------------------------------------
+
+This is a new space I=E2=80=99ve been quietly building=2C and you=E2=80=99=
+re the first to step inside it. Meditation with Tiffany is a growing colle=
+ction of guided meditations to help you center=2C clear=2C and reconnect w=
+ith your inner teacher.
+Click here to listen (https://studio.tiffanywoodyoga.com/product/76366)
+
+This is a perfect week to let your practice meet you exactly where you are=
+=2E
+
+You might revisit a class you=E2=80=99ve =E2=80=9Chearted=E2=80=9D in your=
+ library =E2=80=94 like Hip Harmony or Happy Tummy =E2=80=94 or try someth=
+ing new from the heart.
+
+Thank you for holding this space with me. I=E2=80=99ll see you back on the=
+ mat soon.
+
+With love=2C
+
+Tiffany
+
+https://www.facebook.com/TiffanyWoodYoga
+https://www.instagram.com/tiffanywoodyoga/
+https://www.tiktok.com/@tiffanywoodyoga
+https://www.youtube.com/user/TiffanyWoodYoga
+https://tiffanywoodyoga.com
+
+Copyright (C) 2025 Tiffany Wood Yoga. All rights reserved.
+You are receiving this email because you opted in via our website.
+Our mailing address is:
+Tiffany Wood Yoga
+PO Box 4315
+Park City=2C UT 84060
+USA
+Want to change how you receive these emails?
+You can update your preferences (https://tiffanywoodyoga.us21.list-manage.=
+com/profile?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&e=3D50a1b5c172&c=
+=3D34c8064e9f) or unsubscribe (https://tiffanywoodyoga.us21.list-manage.co=
+m/unsubscribe?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&t=3Db&e=3D50a1b5c172&c=3D34c8064e9f)
+--_----------=_MCPart_1981520446
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head>
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1" />
+<title>No live class Saturday</title>
+<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com" />
+<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com" crossorigin=3D=
+"" />
+<!--[if !mso]><!--><link rel=3D"stylesheet" type=3D"text/css" id=3D"newGo=
+ogleFontsStatic" href=3D"https://fonts.googleapis.com/css?family=3DRoboto:=
+400=2C400i=2C700=2C700i=2C900=2C900i" /><!--<![endif]--><style>img{-ms-in=
+terpolation-mode:bicubic;}
+table=2C td{mso-table-lspace:0pt;mso-table-rspace:0pt;}
+=2EmceStandardButton=2C .mceStandardButton td=2C .mceStandardButton td a{mso=
+-hide:all!important;}
+p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-adjust:100=
+%;-webkit-text-size-adjust:100%;}
+=2EmcnPreviewText{display:none!important;}
+=2EbodyCell{margin:0 auto;padding:0;width:100%;}
+=2EExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .ExternalClass=
+ div=2C .ExternalClass span=2C .ExternalClass font{line-height:100%;}
+=2EReadMsgBody=2C .ExternalClass{width:100%;}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!im=
+portant;font-size:inherit!important;font-family:inherit!important;font-wei=
+ght:inherit!important;line-height:inherit!important;}
+body{height:100%;margin:0;padding:0;width:100%;background:#ffffff;}
+p{margin:0;padding:0;}
+table{border-collapse:collapse;}
+td=2C p=2C a{word-break:break-word;}
+h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block;margin:0;padding:0;}
+img=2C a img{border:0;height:auto;outline:none;text-decoration:none;}
+a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit;cursor:default;text-d=
+ecoration:none;}
+=2EmceColumn .mceButtonLink=2C
+                  .mceColumn-1 .mceButtonLink=2C
+                  .mceColumn-2 .mceButtonLink=2C
+                  .mceColumn-3 .mceButtonLink=2C
+                  .mceColumn-4 .mceButtonLink{min-width:30px;}
+div[contenteditable=3D"true"]{outline:0;}
+=2EmceImageBorder{display:inline-block;}
+=2EmceImageBorder img{border:0!important;}
+body=2C #bodyTable{background-color:rgb(167=2C 127=2C 115);}
+#bodyTable{background-image:url("https://mcusercontent.com/a6369901d6f0c44=
+8fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png");background-po=
+sition:center center;background-size:cover;background-repeat:no-repeat;}
+=2EmceText=2C .mcnTextContent=2C .mceLabel{font-family:Roboto=2C "Helvetica=
+ Neue"=2C Helvetica=2C Arial=2C sans-serif;}
+=2EmceText=2C .mcnTextContent=2C .mceLabel{color:rgb(0=2C 0=2C 0);}
+=2EmceText h3=2C .mceText p=2C .mceText label=2C .mceText input{margin-botto=
+m:0;}
+=2EmceSpacing-24 .mceInput + .mceErrorMessage{margin-top:-12px;}
+=2EmceSpacing-12 .mceInput + .mceErrorMessage{margin-top:-6px;}
+=2EmceInput{background-color:transparent;border:2px solid rgb(208=2C 208=2C=
+ 208);width:60%;color:rgb(77=2C 77=2C 77);display:block;}
+=2EmceInput[type=3D"radio"]=2C .mceInput[type=3D"checkbox"]{float:left;mar=
+gin-right:12px;display:inline;width:auto!important;}
+=2EmceLabel > .mceInput{margin-bottom:0;margin-top:2px;}
+=2EmceLabel{display:block;}
+=2EmceText p=2C .mcnTextContent p{color:rgb(0=2C 0=2C 0);font-family:Roboto=
+=2C "Helvetica Neue"=2C Helvetica=2C Arial=2C sans-serif;font-size:18px;fo=
+nt-weight:normal;line-height:1.5;mso-line-height-alt:150%;text-align:left;=
+letter-spacing:0;direction:ltr;margin:0;}
+=2EmceText h3=2C .mcnTextContent h3{color:rgb(0=2C 0=2C 0);font-family:Georg=
+ia=2C Times=2C "Times New Roman"=2C serif;font-size:20px;font-weight:bold;=
+line-height:1.5;mso-line-height-alt:150%;text-align:left;letter-spacing:0;=
+direction:ltr;}
+=2EmceText a=2C .mcnTextContent a{color:rgb(0=2C 0=2C 0);font-style:normal;f=
+ont-weight:normal;text-decoration:underline;direction:ltr;}
+p.mcePastedContent=2C h1.mcePastedContent=2C h2.mcePastedContent=2C h3.mce=
+PastedContent=2C h4.mcePastedContent{text-align:left;}
+#d20 p=2C #d20 h1=2C #d20 h2=2C #d20 h3=2C #d20 h4=2C #d20 ul=2C #d1 p=2C=
+ #d1 h1=2C #d1 h2=2C #d1 h3=2C #d1 h4=2C #d1 ul{text-align:center;}
+@media only screen and (max-width: 480px) {
+body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text-size-adjust=
+:none!important;}
+body{width:100%!important;min-width:100%!important;}
+body.mobile-native{-webkit-user-select:none;user-select:none;transition:tr=
+ansform 0.2s ease-in;transform-origin:top center;}
+colgroup{display:none;}
+=2EmceLogo img=2C .mceImage img=2C .mceSocialFollowIcon img{height:auto!impo=
+rtant;}
+=2EmceWidthContainer{max-width:660px!important;}
+=2EmceColumn=2C .mceColumn-2{display:block!important;width:100%!important;}
+=2EmceColumn-forceSpan{display:table-cell!important;width:auto!important;}
+=2EmceColumn-forceSpan .mceButton a{min-width:0!important;}
+=2EmceReverseStack{display:table;width:100%;}
+=2EmceColumn-1{display:table-footer-group;width:100%!important;}
+=2EmceColumn-3{display:table-header-group;width:100%!important;}
+=2EmceColumn-4{display:table-caption;width:100%!important;}
+=2EmceKeepColumns .mceButtonLink{min-width:0;}
+=2EmceBlockContainer=2C .mceSpacing-24{padding-right:16px!important;padding-=
+left:16px!important;}
+=2EmceBlockContainerE2E{padding-right:0;padding-left:0;}
+=2EmceImage=2C .mceLogo{width:100%!important;height:auto!important;}
+=2EmceText img{max-width:100%!important;}
+=2EmceFooterSection .mceText=2C .mceFooterSection .mceText p{font-size:16px!=
+important;line-height:140%!important;}
+=2EmceText p{margin:0;font-size:16px!important;line-height:1.5!important;mso=
+-line-height-alt:150%;}
+=2EmceText h3{font-size:20px!important;line-height:1.5!important;mso-line-he=
+ight-alt:150%;}
+=2EbodyCell{padding-left:16px!important;padding-right:16px!important;}
+=2EmceButtonContainer{width:fit-content!important;max-width:fit-content!impo=
+rtant;}
+=2EmceButtonLink{padding:18px 28px!important;font-size:16px!important;}
+=2EmceDividerContainer{width:100%!important;}
+#b1 .mceTextBlockContainer{padding:8px!important;}
+#gutterContainerId-1=2C #gutterContainerId-20=2C #gutterContainerId-38=2C=
+ #gutterContainerId-40=2C #gutterContainerId-42=2C #gutterContainerId-44{p=
+adding:0!important;}
+#b2=2C #b38 .mceTextBlockContainer=2C #b40 .mceTextBlockContainer=2C #b42=
+ .mceTextBlockContainer=2C #b44 .mceTextBlockContainer=2C #b45=2C #b46{pad=
+ding:12px 24px!important;}
+#b2 table=2C #b19 table{margin-left:auto!important;margin-right:auto!impor=
+tant;float:none!important;}
+#b19{padding:12px 0!important;}
+#b20 .mceTextBlockContainer{padding:12px 16px!important;}
+#b27 .mceDividerBlock=2C #b39 .mceDividerBlock=2C #b41 .mceDividerBlock=2C=
+ #b43 .mceDividerBlock{border-top-width:1px!important;}
+#b27=2C #b39=2C #b41=2C #b43{padding:20px 24px!important;}
+#b45 table=2C #b46 table{float:none!important;margin:0 auto!important;}
+#b45 .mceButtonLink=2C #b46 .mceButtonLink{padding-top:16px!important;padd=
+ing-bottom:16px!important;font-size:18px!important;}
+}
+@media only screen and (max-width: 640px) {
+=2EmceClusterLayout td{padding:4px!important;}
+}
+@media screen and (max-height: 480px)=2C (max-width: 480px) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D480");}
+@media screen and (min--webkit-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D480&dpr=3D=
+2");}
+}
+}
+@media screen and (max-height: 860px)=2C (max-width: 860px) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D860");}
+@media screen and (min--webkit-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D860&dpr=3D=
+2");}
+}
+}
+@media screen and (max-height: 1200px)=2C (max-width: 1200px) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D1200");}
+@media screen and (min--webkit-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D1200&dpr=
+=3D2");}
+}
+}
+@media screen and (max-height: 1800px)=2C (max-width: 1800px) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D1800");}
+@media screen and (min--webkit-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+body{background-image:url("https://dim.mcusercontent.com/cs/a6369901d6f0c4=
+48fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png?w=3D1800&dpr=
+=3D2");}
+}
+}</style></head>
+<body>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">but your heart=
+ is still invited to practice =F0=9F=92=9B</span><!--<![endif]-->
+<!--
+-->
+<div style=3D"display: none; max-height: 0px; overflow: hidden;">=CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=
+=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F=
+ =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=
+=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=
+=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C=
+ =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=
+=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0=
+ =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=
+=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=
+=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=
+  =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87 =
+ =CD=8F =E2=80=8C =C2=A0 =E2=80=87  =CD=8F =E2=80=8C =C2=A0 =E2=80=87=C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD=
+ =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=
+=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD =C2=AD</div><div styl=
+e=3D"display:none;"><img src=3D"https://tiffanywoodyoga.us21.list-manage.c=
+om/track/open.php?u=3Da6369901d6f0c448fbcc61e6e&id=3D34c8064e9f&e=3D50a1b5c172" height=3D"1" width=3D"1" style=3D"display:none;" alt=3D""></div>
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(167=2C 127=2C=
+ 115);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"4" class=3D"mceWrapper"><tr><td style=3D=
+"background-color:transparent" valign=3D"top" align=3D"center" class=3D"mc=
+eSectionHeader"><!--[if (gte mso 9)|(IE)]><table align=3D"center" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=3D"width:66=
+0px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"presentation"><t=
+body><tr><td style=3D"background-color:#ffffff" valign=3D"top" class=3D"mc=
+eWrapperInner"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"3"><tb=
+ody><tr class=3D"mceRow"><td style=3D"background-position:center;backgroun=
+d-repeat:no-repeat;background-size:cover" valign=3D"top"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" valign=3D"top" c=
+lass=3D"mceColumn" id=3D"mceColumnId--7" data-block-id=3D"-7" colspan=3D"1=
+2" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:=
+0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top" class=3D=
+"mceGutterContainer" id=3D"gutterContainerId-1"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:sepa=
+rate" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-=
+bottom:0;padding-right:0;padding-left:0;border:0;border-radius:0" valign=
+=3D"top" id=3D"b1"><table width=3D"100%" style=3D"border:0;background-colo=
+r:#d86c44;border-radius:0;border-collapse:separate"><tbody><tr><td style=
+=3D"padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px"=
+ class=3D"mceTextBlockContainer"><div data-block-id=3D"1" class=3D"mceText=
+" id=3D"d1" style=3D"width:100%"><p class=3D"last-child"><a href=3D"https:=
+//mailchi.mp/bd5152c9b2f0/good-medicine-12752600?e=3D50a1b5c172"><span style=
+=3D"color:#ffffff;"><span style=3D"font-size: 14px">View this email in you=
+r browser</span></span></a></p></div></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr><tr><td style=3D"background-color:#d86c44;padding=
+-top:12px;padding-bottom:12px;padding-right:24px;padding-left:24px;border:=
+0;border-radius:0" valign=3D"top" class=3D"mceImageBlockContainer" align=
+=3D"center" id=3D"b2"><div><!--[if !mso]><!--></div><a href=3D"https://ti=
+ffanywoodyoga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e=
+6e&id=3Df86d56174f&e=3D50a1b5c172" style=3D"display:block" target=3D"_bla=
+nk" data-block-id=3D"2"><table align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:separate;=
+margin:0;vertical-align:top;max-width:150px;width:100%;height:auto" role=
+=3D"presentation" data-testid=3D"image-2"><tbody><tr><td style=3D"border:0=
+;border-radius:0;margin:0" valign=3D"top"><img alt=3D"" src=3D"https://mcu=
+sercontent.com/a6369901d6f0c448fbcc61e6e/images/0df4352b-e5bd-bf98-080c-9b=
+4add786b06.png" width=3D"150" height=3D"auto" style=3D"display:block;max-w=
+idth:100%;height:auto;border-radius:0" class=3D"imageDropZone mceLogo" /><=
+/td></tr></tbody></table></a><div><!--<![endif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://tiffanywoodyoga.com/"><span class=3D"mceImageBorder" st=
+yle=3D"border:0;border-width:2px;vertical-align:top;margin:0"><img role=3D=
+"presentation" class=3D"imageDropZone mceLogo" src=3D"https://mcuserconten=
+t.com/a6369901d6f0c448fbcc61e6e/images/0df4352b-e5bd-bf98-080c-9b4add786b0=
+6.png" alt=3D"" width=3D"150" height=3D"auto" style=3D"display:block;max-w=
+idth:150px;width:150px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr><=
+/table><![endif]--></td></tr></tbody><tbody data-block-id=3D"18" class=3D=
+"mceWrapper"><tr><td style=3D"background-color:transparent" valign=3D"top"=
+ align=3D"center" class=3D"mceSectionBody"><!--[if (gte mso 9)|(IE)]><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"660" style=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px=
+" role=3D"presentation"><tbody><tr><td style=3D"background-color:#ffffff"=
+ valign=3D"top" class=3D"mceWrapperInner"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion" data-block-id=3D"17"><tbody><tr class=3D"mceRow"><td style=3D"backgr=
+ound-position:center;background-repeat:no-repeat;background-size:cover" va=
+lign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padd=
+ing-bottom:0" valign=3D"top" class=3D"mceColumn" id=3D"mceColumnId--8" dat=
+a-block-id=3D"-8" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody>=
+<tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-le=
+ft:0" valign=3D"top" class=3D"mceGutterContainer" id=3D"gutterContainerId-=
+38"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"border-collapse:separate" role=3D"presentation"><tbody><tr><td s=
+tyle=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;bord=
+er:0;border-radius:0" valign=3D"top" id=3D"b38"><table width=3D"100%" styl=
+e=3D"border:0;background-color:#fff7ec;border-radius:0;border-collapse:sep=
+arate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;paddin=
+g-top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-=
+block-id=3D"38" class=3D"mceText" id=3D"d38" style=3D"width:100%"><p class=
+=3D"mcePastedContent"><br /></p><p class=3D"mcePastedContent">Hi JP=2C</p><p class=3D"mcePastedContent"><br /></p><p class=3D"mcePaste=
+dContent">I wanted to let you know that=C2=A0<strong>this Saturday=E2=80=
+=99s 9am class (September 27)</strong>=C2=A0is=C2=A0<strong>canceled</stro=
+ng>=C2=A0while I attend a healing retreat this weekend.</p><p class=3D"mce=
+PastedContent"><br /></p><p class=3D"mcePastedContent">I=E2=80=99m taking=
+ this time to rest and refill =E2=80=94 and I hope you'll do the same in y=
+our own way.</p><p class=3D"mcePastedContent"><br /></p><p class=3D"mcePas=
+tedContent last-child">Even though we won=E2=80=99t gather live this week=
+=2C your practice can still hold you. Below are two offerings to support y=
+ou =E2=80=94 body=2C breath=2C and heart =E2=80=94 if and when you=E2=80=
+=99re called:</p></div></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr><tr><td style=3D"background-color:#fff7ec;padding-top:20px;padd=
+ing-bottom:20px;padding-right:24px;padding-left:24px;border:0;border-radiu=
+s:0" valign=3D"top" class=3D"mceDividerBlockContainer" id=3D"b27"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" style=3D"background-color:#fff7ec;width:100%" role=3D"presentation"=
+ class=3D"mceDividerContainer" data-block-id=3D"27"><tbody><tr><td style=
+=3D"min-width:100%;border-top-width:1px;border-top-style:solid;border-top-=
+color:#000000;line-height:0;font-size:0" valign=3D"top" class=3D"mceDivide=
+rBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td style=3D"padding=
+-top:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top" cla=
+ss=3D"mceGutterContainer" id=3D"gutterContainerId-42"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collap=
+se:separate" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0;border:0;border-radius:0" v=
+align=3D"top" id=3D"b42"><table width=3D"100%" style=3D"border:0;backgroun=
+d-color:#fff7ec;border-radius:0;border-collapse:separate"><tbody><tr><td s=
+tyle=3D"padding-left:24px;padding-right:24px;padding-top:12px;padding-bott=
+om:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"42" class=
+=3D"mceText" id=3D"d42" style=3D"width:100%"><h3 class=3D"ql-heading mcePa=
+stedContent">=F0=9F=92=97 <strong>A Heartful Practice</strong></h3><h3 cla=
+ss=3D"ql-heading mcePastedContent"></h3><p class=3D"mcePastedContent">Choo=
+se a class from the <strong>Heartful Series</strong>=2C a collection of 8=
+ recorded practices that each hold a different flavor of emotional support=
+ =E2=80=94 from courage and joy to stillness and trust.</p><p class=3D"mce=
+PastedContent"><br /></p><p class=3D"mcePastedContent">=F0=9F=8C=80 <stron=
+g>Acceptance</strong> =E2=80=93 for stability and breath</p><p class=3D"mc=
+ePastedContent">=F0=9F=A6=8B <strong>Basics on Backbends</strong> =E2=80=
+=93 for heart and spine support</p><p class=3D"mcePastedContent">=F0=9F=94=
+=A5 <strong>Big Leap</strong> =E2=80=93 for boldness and strength</p><p cl=
+ass=3D"mcePastedContent">=F0=9F=8C=B8 <strong>Friendliness</strong> =E2=80=
+=93 for receiving and offering with ease</p><p class=3D"mcePastedContent">=
+=F0=9F=92=9E <strong>Happy Heart</strong> =E2=80=93 for supported expansio=
+n</p><p class=3D"mcePastedContent">=F0=9F=8C=88 <strong>Feel Good</strong>=
+ =E2=80=93 for softness and prep for Full Wheel</p><p class=3D"mcePastedCo=
+ntent">=F0=9F=8C=8A <strong>Trust</strong> =E2=80=93 for heart-deep surren=
+der</p><p class=3D"mcePastedContent last-child">=F0=9F=8C=99 <strong>Quiet=
+ Center</strong> =E2=80=93 for slowness and peace</p></div></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr><tr><td style=3D"background=
+-color:#fff7ec;padding-top:12px;padding-bottom:12px;padding-right:24px;pad=
+ding-left:24px;border:0;border-radius:0" valign=3D"top" class=3D"mceButton=
+BlockContainer" align=3D"center" id=3D"b45"><div><!--[if !mso]><!--></div=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" data-block-id=3D"45" class=3D"mceButtonContainer"><=
+tbody><tr class=3D"mceStandardButton"><td style=3D"background-color:#d86c4=
+4;border-radius:50px;text-align:center" valign=3D"top" class=3D"mceButton"=
+><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/track/click?u=3Da=
+6369901d6f0c448fbcc61e6e&id=3Da4df0cf249&e=3D50a1b5c172" target=3D"_blank=
+" class=3D"mceButtonLink" style=3D"background-color:#d86c44;border-radius:=
+50px;border:1px solid #d86c44;color:#fff7ec;display:block;font-family:'Rob=
+oto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif;font-size:18p=
+x;font-weight:bold;font-style:normal;padding:16px 28px;text-decoration:non=
+e;text-align:center;direction:ltr;letter-spacing:0px" rel=3D"noreferrer">C=
+lick here to access the Heartful Series</a></td></tr></tbody></table><div>=
+<!--<![endif]--></div><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"45" class=3D"=
+mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://studio.tiffanywoodyoga.com/product/60859 "
+style=3D"v-text-anchor:middle; width:377.25px; height:55px;"
+arcsize=3D"13%"
+strokecolor=3D"#d86c44"
+strokeweight=3D"1px"
+fillcolor=3D"#d86c44">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #fff7ec;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Click here to access the Heartful Series
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:20px;padding-bottom:20px;padding-right:24px;padding-left:24px;b=
+order:0;border-radius:0" valign=3D"top" class=3D"mceDividerBlockContainer"=
+ id=3D"b41"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"background-color:#fff7ec;width:100%" ro=
+le=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"41"><tb=
+ody><tr><td style=3D"min-width:100%;border-top-width:1px;border-top-style:=
+solid;border-top-color:#000000;line-height:0;font-size:0" valign=3D"top" c=
+lass=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td=
+ style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" v=
+align=3D"top" class=3D"mceGutterContainer" id=3D"gutterContainerId-40"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"border-collapse:separate" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border:0=
+;border-radius:0" valign=3D"top" id=3D"b40"><table width=3D"100%" style=3D=
+"border:0;background-color:#fff7ec;border-radius:0;border-collapse:separat=
+e"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-to=
+p:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-bloc=
+k-id=3D"40" class=3D"mceText" id=3D"d40" style=3D"width:100%"><h3 class=3D=
+"ql-heading mcePastedContent">=F0=9F=A7=98=E2=80=8D=E2=99=80=EF=B8=8F <str=
+ong>New: Meditation with Tiffany</strong></h3><h3 class=3D"ql-heading mceP=
+astedContent"></h3><p class=3D"mcePastedContent last-child">This is a new=
+ space I=E2=80=99ve been quietly building=2C and you=E2=80=99re the first=
+ to step inside it. <em>Meditation with Tiffany</em> is a growing collecti=
+on of guided meditations to help you center=2C clear=2C and reconnect with=
+ your inner teacher.</p></div></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr><tr><td style=3D"background-color:#fff7ec;padding-top:12=
+px;padding-bottom:12px;padding-right:24px;padding-left:24px;border:0;borde=
+r-radius:0" valign=3D"top" class=3D"mceButtonBlockContainer" align=3D"cent=
+er" id=3D"b46"><div><!--[if !mso]><!--></div><table align=3D"center" bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" data-bl=
+ock-id=3D"46" class=3D"mceButtonContainer"><tbody><tr class=3D"mceStandard=
+Button"><td style=3D"background-color:#d86c44;border-radius:50px;text-alig=
+n:center" valign=3D"top" class=3D"mceButton"><a href=3D"https://tiffanywoo=
+dyoga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3D=
+9f9ece7bfa&e=3D50a1b5c172" target=3D"_blank" class=3D"mceButtonLink" styl=
+e=3D"background-color:#d86c44;border-radius:50px;border:1px solid #d86c44;=
+color:#fff7ec;display:block;font-family:'Roboto'=2C 'Helvetica Neue'=2C He=
+lvetica=2C Arial=2C sans-serif;font-size:18px;font-weight:bold;font-style:=
+normal;padding:16px 28px;text-decoration:none;text-align:center;direction:=
+ltr;letter-spacing:0px" rel=3D"noreferrer">Click here to listen</a></td></=
+tr></tbody></table><div><!--<![endif]--></div><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" data-b=
+lock-id=3D"46" class=3D"mceButtonContainer"><tbody><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://studio.tiffanywoodyoga.com/product/76366"
+style=3D"v-text-anchor:middle; width:208.39000000000001px; height:55px;"
+arcsize=3D"24%"
+strokecolor=3D"#d86c44"
+strokeweight=3D"1px"
+fillcolor=3D"#d86c44">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #fff7ec;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: bold;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Click here to listen
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:20px;padding-bottom:20px;padding-right:24px;padding-left:24px;b=
+order:0;border-radius:0" valign=3D"top" class=3D"mceDividerBlockContainer"=
+ id=3D"b43"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" style=3D"background-color:#fff7ec;width:100%" ro=
+le=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"43"><tb=
+ody><tr><td style=3D"min-width:100%;border-top-width:1px;border-top-style:=
+solid;border-top-color:#000000;line-height:0;font-size:0" valign=3D"top" c=
+lass=3D"mceDividerBlock">=C2=A0</td></tr></tbody></table></td></tr><tr><td=
+ style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" v=
+align=3D"top" class=3D"mceGutterContainer" id=3D"gutterContainerId-44"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"border-collapse:separate" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border:0=
+;border-radius:0" valign=3D"top" id=3D"b44"><table width=3D"100%" style=3D=
+"border:0;background-color:#fff7ec;border-radius:0;border-collapse:separat=
+e"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-to=
+p:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-bloc=
+k-id=3D"44" class=3D"mceText" id=3D"d44" style=3D"width:100%"><p class=3D"=
+mcePastedContent">This is a perfect week to let your practice meet you exa=
+ctly where you are.</p><p class=3D"mcePastedContent">You might revisit a c=
+lass you=E2=80=99ve =E2=80=9Chearted=E2=80=9D in your library =E2=80=94 li=
+ke <strong>Hip Harmony</strong> or <strong>Happy Tummy</strong> =E2=80=94=
+ or try something new from the heart.</p><p class=3D"mcePastedContent">Tha=
+nk you for holding this space with me. I=E2=80=99ll see you back on the ma=
+t soon.</p><p class=3D"mcePastedContent"><br /></p><p class=3D"mcePastedCo=
+ntent">With love=2C</p><p class=3D"mcePastedContent last-child">Tiffany</p=
+></div></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><=
+td style=3D"background-color:#fff7ec;padding-top:20px;padding-bottom:20px;=
+padding-right:24px;padding-left:24px;border:0;border-radius:0" valign=3D"t=
+op" class=3D"mceDividerBlockContainer" id=3D"b39"><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"=
+background-color:#fff7ec;width:100%" role=3D"presentation" class=3D"mceDiv=
+iderContainer" data-block-id=3D"39"><tbody><tr><td style=3D"min-width:100%=
+;border-top-width:1px;border-top-style:solid;border-top-color:#000000;line=
+-height:0;font-size:0" valign=3D"top" class=3D"mceDividerBlock">=C2=A0</td=
+></tr></tbody></table></td></tr><tr><td style=3D"background-color:#d86c44;=
+padding-top:25px;padding-bottom:12px;padding-right:0;padding-left:0;border=
+:0;border-radius:0" valign=3D"top" class=3D"mceLayoutContainer" id=3D"b16"=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation" data-block-id=3D"16"><tbody><tr clas=
+s=3D"mceRow"><td style=3D"background-color:#d86c44;background-position:cen=
+ter;background-repeat:no-repeat;background-size:cover;padding-top:0px;padd=
+ing-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"24" width=3D"100%" role=3D"presentation"><tbody><tr><td valign=
+=3D"top" class=3D"mceColumn" id=3D"mceColumnId--6" data-block-id=3D"-6" co=
+lspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"bor=
+der:0;border-radius:0" valign=3D"top" class=3D"mceSocialFollowBlockContain=
+er" id=3D"b-5"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" class=3D"mceSocialFollowBlock" data-bl=
+ock-id=3D"-5"><tbody><tr><td valign=3D"middle" align=3D"center"><!--[if m=
+so]><table align=3D"left" border=3D"0" cellspacing=3D "0" cellpadding=3D"0=
+"><tr><![endif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![e=
+ndif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"display:inline;float:left" role=3D"presentation"><tbody><t=
+r><td style=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;paddin=
+g-right:12px" valign=3D"top" class=3D"mceSocialFollowIcon" align=3D"center=
+" width=3D"32"><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/tra=
+ck/click?u=3Da6369901d6f0c448fbcc61e6e&id=3D77cb08e8ec&e=3D50a1b5c172" ta=
+rget=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" wid=
+th=3D"32" height=3D"32" alt=3D"Facebook icon" src=3D"https://cdn-images.ma=
+ilchimp.com/icons/social-block-v3/block-icons-v3/facebook-outline-light-40=
+=2Epng" /></a></td></tr></tbody></table><!--[if mso]></td><![endif]--><!--=
+[if mso]><td align=3D"center" valign=3D"top"><![endif]--><table align=3D=
+"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"display:i=
+nline;float:left" role=3D"presentation"><tbody><tr><td style=3D"padding-to=
+p:3px;padding-bottom:3px;padding-left:12px;padding-right:12px" valign=3D"t=
+op" class=3D"mceSocialFollowIcon" align=3D"center" width=3D"32"><a href=3D=
+"https://tiffanywoodyoga.us21.list-manage.com/track/click?u=3Da6369901d6f0=
+c448fbcc61e6e&id=3Dbb4373eeb3&e=3D50a1b5c172" target=3D"_blank" rel=3D"no=
+referrer"><img class=3D"mceSocialFollowImage" width=3D"32" height=3D"32" a=
+lt=3D"Instagram icon" src=3D"https://cdn-images.mailchimp.com/icons/social=
+-block-v3/block-icons-v3/instagram-outline-light-40.png" /></a></td></tr><=
+/tbody></table><!--[if mso]></td><![endif]--><!--[if mso]><td align=3D"=
+center" valign=3D"top"><![endif]--><table align=3D"left" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" style=3D"display:inline;float:left" role=
+=3D"presentation"><tbody><tr><td style=3D"padding-top:3px;padding-bottom:3=
+px;padding-left:12px;padding-right:12px" valign=3D"top" class=3D"mceSocial=
+FollowIcon" align=3D"center" width=3D"32"><a href=3D"https://tiffanywoodyo=
+ga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3D962=
+a5a8714&e=3D50a1b5c172" target=3D"_blank" rel=3D"noreferrer"><img class=
+=3D"mceSocialFollowImage" width=3D"32" height=3D"32" alt=3D"TikTok icon" s=
+rc=3D"https://cdn-images.mailchimp.com/icons/social-block-v3/block-icons-v=
+3/tiktok-outline-light-40.png" /></a></td></tr></tbody></table><!--[if ms=
+o]></td><![endif]--><!--[if mso]><td align=3D"center" valign=3D"top"><![=
+endif]--><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"display:inline;float:left" role=3D"presentation"><tbody><t=
+r><td style=3D"padding-top:3px;padding-bottom:3px;padding-left:12px;paddin=
+g-right:12px" valign=3D"top" class=3D"mceSocialFollowIcon" align=3D"center=
+" width=3D"32"><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/tra=
+ck/click?u=3Da6369901d6f0c448fbcc61e6e&id=3Df42c3dcab2&e=3D50a1b5c172" ta=
+rget=3D"_blank" rel=3D"noreferrer"><img class=3D"mceSocialFollowImage" wid=
+th=3D"32" height=3D"32" alt=3D"YouTube icon" src=3D"https://cdn-images.mai=
+lchimp.com/icons/social-block-v3/block-icons-v3/youtube-outline-light-40.p=
+ng" /></a></td></tr></tbody></table><!--[if mso]></td><![endif]--><!--[=
+if mso]></tr></table><![endif]--></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif=
+]--></td></tr></tbody><tbody data-block-id=3D"24" class=3D"mceWrapper"><tr=
+><td style=3D"background-color:transparent" valign=3D"top" align=3D"center=
+" class=3D"mceSectionFooter"><!--[if (gte mso 9)|(IE)]><table align=3D"ce=
+nter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"660" style=
+=3D"width:660px;"><tr><td><![endif]--><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" style=3D"max-width:660px" role=3D"pres=
+entation"><tbody><tr><td style=3D"background-color:#ffffff" valign=3D"top"=
+ class=3D"mceWrapperInner"><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-=
+id=3D"23"><tbody><tr class=3D"mceRow"><td style=3D"background-position:cen=
+ter;background-repeat:no-repeat;background-size:cover" valign=3D"top"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D=
+"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" val=
+ign=3D"top" class=3D"mceColumn" id=3D"mceColumnId--9" data-block-id=3D"-9"=
+ colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"=
+background-color:#d86c44;padding-top:8px;padding-bottom:8px;padding-right:=
+8px;padding-left:8px;border:0;border-radius:0" valign=3D"top" id=3D"b22"><=
+table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation" data-block-id=3D"22" id=3D"section_db20=
+b6c59e4bde6300700748189764bb" class=3D"mceFooterSection"><tbody><tr class=
+=3D"mceRow"><td style=3D"background-color:#d86c44;background-position:cent=
+er;background-repeat:no-repeat;background-size:cover;padding-top:0px;paddi=
+ng-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"12" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"=
+padding-top:0;padding-bottom:0" valign=3D"top" class=3D"mceColumn" id=3D"m=
+ceColumnId--3" data-block-id=3D"-3" colspan=3D"12" width=3D"100%"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pre=
+sentation"><tbody><tr><td style=3D"background-color:transparent;padding-to=
+p:12px;padding-bottom:12px;padding-right:0;padding-left:0;border:0;border-=
+radius:0" valign=3D"top" class=3D"mceImageBlockContainer" align=3D"center"=
+ id=3D"b19"><div><!--[if !mso]><!--></div><a href=3D"https://tiffanywoody=
+oga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3D96=
+f0b25fa0&e=3D50a1b5c172" style=3D"display:block" target=3D"_blank" data-b=
+lock-id=3D"19"><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"border-collapse:separate;margin:0;ve=
+rtical-align:top;max-width:206px;width:100%;height:auto" role=3D"presentat=
+ion" data-testid=3D"image-19"><tbody><tr><td style=3D"border:0;border-radi=
+us:0;margin:0" valign=3D"top"><img alt=3D"Logo" src=3D"https://mcuserconte=
+nt.com/a6369901d6f0c448fbcc61e6e/images/76a359ae-30f5-6329-365b-3d5740d510=
+20.png" width=3D"206" height=3D"auto" style=3D"display:block;max-width:100=
+%;height:auto;border-radius:0" class=3D"mceLogo" /></td></tr></tbody></tab=
+le></a><div><!--<![endif]--></div><div>
+<!--[if mso]>
+<a href=3D"https://tiffanywoodyoga.com"><span class=3D"mceImageBorder" sty=
+le=3D"border:0;border-width:2px;vertical-align:top;margin:0"><img role=3D"=
+presentation" class=3D"mceLogo" src=3D"https://mcusercontent.com/a6369901d=
+6f0c448fbcc61e6e/images/76a359ae-30f5-6329-365b-3d5740d51020.png" alt=3D"L=
+ogo" width=3D"206" height=3D"auto" style=3D"display:block;max-width:206px;=
+width:206px;height:auto"/></span></a>
+<![endif]-->
+</div></td></tr><tr><td style=3D"padding-top:0;padding-bottom:0;padding-ri=
+ght:0;padding-left:0" valign=3D"top" class=3D"mceGutterContainer" id=3D"gu=
+tterContainerId-20"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" style=3D"border-collapse:separate" role=3D"presentation">=
+<tbody><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;pad=
+ding-left:0;border:0;border-radius:0" valign=3D"top" align=3D"center" id=
+=3D"b20"><table width=3D"100%" style=3D"border:0;background-color:transpar=
+ent;border-radius:0;border-collapse:separate"><tbody><tr><td style=3D"padd=
+ing-left:16px;padding-right:16px;padding-top:12px;padding-bottom:12px" cla=
+ss=3D"mceTextBlockContainer"><div data-block-id=3D"20" class=3D"mceText" i=
+d=3D"d20" style=3D"display:inline-block;width:100%"><p style=3D"text-align=
+: center;" class=3D"last-child"><em><span style=3D"font-size: 12px">Copyri=
+ght (C) 2025 Tiffany Wood Yoga. All rights reserved.</span></em><br /><spa=
+n style=3D"font-size: 12px">
+You are receiving this email because you opted in via our website.
+</span><br /><br /><span style=3D"font-size: 12px">Our mailing address is:=
+</span><br /><span style=3D"font-size: 12px">
+<div class=3D"vcard"><span class=3D"org fn">Tiffany Wood Yoga</span><div c=
+lass=3D"adr"><div class=3D"street-address">PO Box 4315</div><span class=3D=
+"locality">Park City</span>=2C <span class=3D"region">UT</span> <span clas=
+s=3D"postal-code">84060</span></div><br><a href=3D"https://tiffanywoodyoga=
+=2Eus21.list-manage.com/vcard?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21"=
+ class=3D"hcard-download">Add us to your address book</a></div>
+</span><br /><br /><span style=3D"font-size: 12px">Want to change how you=
+ receive these emails?</span><br /><span style=3D"font-size: 12px">You can=
+ </span><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/profile?u=
+=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&e=3D50a1b5c172&c=3D34c8064e9f">=
+<span style=3D"font-size: 12px">update your preferences</span></a><span st=
+yle=3D"font-size: 12px"> or </span><a href=3D"https://tiffanywoodyoga.us21=
+=2Elist-manage.com/unsubscribe?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21=
+&t=3Db&e=3D50a1b5c172&c=3D34c8064e9f"><span style=3D"font-size: 12px">unsubs=
+cribe</span></a></p></div></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr><tr><td style=3D"border:0;border-radius:0" valign=3D"top" cl=
+ass=3D"mceLayoutContainer" align=3D"center" id=3D"b-2"><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation" data-block-id=3D"-2"><tbody><tr class=3D"mceRow"><td sty=
+le=3D"background-position:center;background-repeat:no-repeat;background-si=
+ze:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"present=
+ation"><tbody></tbody></table></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->=
+</td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+</body></html>
+--_----------=_MCPart_1981520446--

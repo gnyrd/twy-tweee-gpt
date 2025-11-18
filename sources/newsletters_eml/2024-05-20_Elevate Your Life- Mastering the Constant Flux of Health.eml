@@ -1,0 +1,1158 @@
+Return-Path: <bounce-mc.us21_182210782.12691727-6aed4a9e47@mail117.sea91.rsgsv.net>
+Authentication-Results:  gmx.net; dkim=pass header.i=tiffany@tiffanywoodyoga.com
+Received: from mail117.sea91.rsgsv.net ([148.105.15.117]) by mx-ha.gmx.net
+ (mxgmx107 [212.227.17.4]) with ESMTPS (Nemesis) id 1MSZkn-1rxtIg2bvN-00Szvx
+ for <jp.gan@gmx.com>; Tue, 21 May 2024 00:59:32 +0200
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=tiffanywoodyoga.com;
+	s=k2; t=1716245971; x=1716332371; i=tiffany@tiffanywoodyoga.com;
+	bh=noeL81MzPxZvLFDd4VI48B/AeWfa35bzujR2D95iusk=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:X-MC-User:Feedback-ID:
+	 List-ID:List-Unsubscribe:List-Unsubscribe-Post:Content-Type:
+	 MIME-Version:CC:Date:Subject:From;
+	b=A+y7+e7/hWbGLx/n7I9vE8QmULhWyymKPzGYSC/RtABVDNq5ExsVam7JW59ntU1mw
+	 jcwlYDZE5cLxSDesPmQ2pfQYy0xbnHGY8W782KoCfpL7/ZrP3hGEBjsKKEfye8CfA9
+	 mNZ1nXUhEhjzqWxbmfXDfSTt68nKS/CDU3pYlOtbacH+dC8bbpDdMO7ngwKsdhaPWs
+	 ikrfbDAq1Z9RHuP0sezkWHtgjJORC1yahF42ZWg4Ed2Tyxn3IHt1SToGSbM/SE/oxo
+	 xXwDI8Pe8B7cjeVLnwc21hn7dLop1nCBxs/ZAAfr2e43yhOiwaX5YfQsE7o2VDBgdm
+	 yb4kgEK9FjNHw==
+Received: from localhost (localhost [127.0.0.1])
+	by mail117.sea91.rsgsv.net (Mailchimp) with ESMTP id 4VjtL96fVTz8YCYNk
+	for <jp.gan@gmx.com>; Mon, 20 May 2024 22:59:29 +0000 (GMT)
+Subject: =?utf-8?Q?Elevate=20Your=20Life=3A=20Mastering=20the=20Constant=20Flux=20of=20Health?=
+From: Tiffany <tiffany@tiffanywoodyoga.com>
+Reply-To: =?utf-8?Q?Tiffany?= <tiffany@tiffanywoodyoga.com>
+To: <jp.gan@gmx.com>
+Date: Mon, 20 May 2024 22:59:28 +0000
+Message-ID: <a6369901d6f0c448fbcc61e6e.6aed4a9e47.20240520225916.03a558934b.5808aa49@mail117.sea91.rsgsv.net>
+X-Mailer: Mailchimp Mailer - **CID03a558934b6aed4a9e47**
+X-Campaign: mailchimpa6369901d6f0c448fbcc61e6e.03a558934b
+X-campaignid: mailchimpa6369901d6f0c448fbcc61e6e.03a558934b
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=a6369901d6f0c448fbcc61e6e&id=03a558934b&e=6aed4a9e47
+X-MC-User: a6369901d6f0c448fbcc61e6e
+Feedback-ID: 182210782:182210782.12691727:us21:mc
+List-ID: a6369901d6f0c448fbcc61e6emc list <a6369901d6f0c448fbcc61e6e.541.list-id.mcsv.net>
+X-Accounttype: pr
+List-Unsubscribe: <https://tiffanywoodyoga.us21.list-manage.com/unsubscribe?u=a6369901d6f0c448fbcc61e6e&id=a221e4ba21&t=h&e=6aed4a9e47&c=03a558934b>, <mailto:unsubscribe-mc.us21_a6369901d6f0c448fbcc61e6e.03a558934b-6aed4a9e47@unsubscribe.mailchimpapp.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1705061080"
+MIME-Version: 1.0
+Envelope-To: <jp.gan@gmx.com>
+X-GMX-Antispam: 0 (Mail was not recognized as spam); Detail=V3;
+X-Spam-Flag: NO
+UI-InboundReport: notjunk:1;M01:P0:N8gsF0s3hlo=;dW7hXZW23H74mHVKiidU2wDDLzp1
+ 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
+ 9
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1705061080
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Understand the power of knowing how to commit.
+
+View this email in your browser (https://mailchi.mp/61913adba870/good-medi=
+cine-12691727?e=3D6aed4a9e47)
+
+
+** Dear Seeker=E2=80=A6
+------------------------------------------------------------
+
+Welcome to Yogic Lifestyle Leads=E2=80=94
+
+
+** Embrace Mastery in Motion
+------------------------------------------------------------
+
+When you truly understand how to do something=2C you're on the path to mas=
+tering it. We've all achieved mastery in some area=E2=80=94whether it's ty=
+ing shoes=2C baking bread=2C coding software=2C or perfecting triangle pos=
+e. Mastery acknowledges that perfect equilibrium is unattainable=E2=80=94e=
+verything=2C including our health=2C is in constant flux.
+
+
+** Reconnecting Body and Mind
+------------------------------------------------------------
+
+A strong=2C healthy body is crucial for resilience. Ancient yogis used Hat=
+ha Yoga to bridge the body-mind gap=2C recognizing that losing touch with=
+ our body's signals leads to conflict and unhappiness. Today=2C more than=
+ ever=2C science is supporting that a regular yoga practice strengthens th=
+e body and removes energetic blockages=2C helping prevent disease.
+
+
+** Transform and Commit
+------------------------------------------------------------
+
+How do we navigate the continuous state of health flux? Embrace the =E2=80=
+=9CWash=2C Rinse=2C Repeat=E2=80=9D approach: show up for one practice at=
+ a time=2C
+
+do your best=2C and repeat.
+
+Knowing how to commit to your yoga practice is the critical first step tow=
+ards mastery. Even one yoga class a week can have significant impact on yo=
+ur journey to a strong=2C healthy life=E2=80=A6. I promise!
+
+With humble love=2C
+
+Tiff =F0=9F=92=95
+
+Wellness Wisdom
+
+Parighasana involves kneeling on the ground=2C extending one leg out to th=
+e side=2C and reaching your opposite arm up and over=2C creating a lateral=
+ stretch along the body. This pose focuses on stretching the sides of your=
+ torso=2C hips=2C and thighs while enhancing balance and stability. It mig=
+ht seem simple=2C but its impact on mobility can be profound.
+Watch Video (https://www.instagram.com/reel/Cwyl5rDL6vm/?igsh=3DMWE3djRxc3=
+NzODB1bQ%3D%3D)
+
+Twisted & Bound
+
+Step by step how to use a strap for the deeply twisted & bound revolved si=
+de angle pose. The bio-mechanics include stabilizing the hips to turn arou=
+nd the spine.
+
+Warm up alert! Unless you=E2=80=99re super Gumby (yes=2C I=E2=80=99m old l=
+ook up Gumby) I strongly recommend a warm up before trying this.
+Watch Video (https://fb.watch/sb9ozYgb3a/)
+
+How to Highlights
+
+Handstand Yoga Pose
+https://tiffany-wood-yoga.heymarvelous.com/product/65453/lesson/110454/pla=
+y/714708
+
+This assist teaches students to slow down and go up with great awareness a=
+nd alignment!
+
+
+** Tuesday Tune-Up
+------------------------------------------------------------
+
+Free 45-Minute Yoga Class: Foundations of Anusara Yoga
+* When: 8 AM MDT
+* Why: Build skillful practice to help with healthy knees.
+
+May 21 Session:
+* Focus: Anusara Loops: Shin=2C Thigh=2C and Pelvic
+* Benefits: Protect & heal weak or inflamed knees by learning the =E2=80=
+=9Csee-saw=E2=80=9D principle.
+
+Register Now (https://tiffany-wood-yoga.heymarvelous.com/calendar)
+
+
+** Your Feedback Matters!
+------------------------------------------------------------
+
+Your feedback plays a pivotal role in enhancing my offerings. Gaining a ri=
+cher understanding of your wellness journey matters to me!
+Start Survey (https://us21.list-manage.com/survey?u=3Da6369901d6f0c448fbcc=
+61e6e&id=3D3287f3a961)
+https://www.facebook.com/TiffanyWoodYoga https://www.instagram.com/tiffany=
+woodyoga/ https://www.tiktok.com/@tiffanywoodyoga https://www.youtube.com/=
+user/TiffanyWoodYoga
+https://tiffanywoodyoga.com
+
+Copyright (C) 2024 Tiffany Wood Yoga. All rights reserved.
+You are receiving this email because you opted in via our website.
+Our mailing address is:
+Tiffany Wood Yoga
+PO Box 4315
+Park City=2C UT 84060
+USA
+Want to change how you receive these emails?
+You can update your preferences (https://tiffanywoodyoga.us21.list-manage.=
+com/profile?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&e=3D6aed4a9e47&c=
+=3D03a558934b) or unsubscribe (https://tiffanywoodyoga.us21.list-manage.co=
+m/unsubscribe?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&t=3Db&e=3D6aed4a9e47&c=3D03a558934b)
+--_----------=_MCPart_1705061080
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn=
+:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:of=
+fice"><head>
+<!--[if gte mso 15]>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<meta charset=3D"UTF-8" />
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+<meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial-scale=
+=3D1" />
+<title>Elevate Your Life: Mastering the Constant Flux of Health</title>
+<link rel=3D"stylesheet" href=3D"https://fonts.googleapis.com/css?family=
+=3DRoboto:400=2C400i=2C700=2C700i=2C900=2C900i" /><style>          img{-ms=
+-interpolation-mode:bicubic;}
+          table=2C td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+          .mceStandardButton=2C .mceStandardButton td=2C .mceStandardButto=
+n td a{mso-hide:all !important;}
+          p=2C a=2C li=2C td=2C blockquote{mso-line-height-rule:exactly;}
+          p=2C a=2C li=2C td=2C body=2C table=2C blockquote{-ms-text-size-=
+adjust:100%; -webkit-text-size-adjust:100%;}
+          @media only screen and (max-width: 480px){
+            body=2C table=2C td=2C p=2C a=2C li=2C blockquote{-webkit-text=
+-size-adjust:none !important;}
+          }
+          .mcnPreviewText{display: none !important;}
+          .bodyCell{margin:0 auto; padding:0; width:100%;}
+          .ExternalClass=2C .ExternalClass p=2C .ExternalClass td=2C .Exte=
+rnalClass div=2C .ExternalClass span=2C .ExternalClass font{line-height:10=
+0%;}
+          .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+          a[x-apple-data-detectors]{color:inherit !important; text-decora=
+tion:none !important; font-size:inherit !important; font-family:inherit !i=
+mportant; font-weight:inherit !important; line-height:inherit !important;}
+            body{height:100%; margin:0; padding:0; width:100%; background:=
+ #ffffff;}
+            p{margin:0; padding:0;}
+            table{border-collapse:collapse;}
+            td=2C p=2C a{word-break:break-word;}
+            h1=2C h2=2C h3=2C h4=2C h5=2C h6{display:block; margin:0; padd=
+ing:0;}
+            img=2C a img{border:0; height:auto; outline:none; text-decorat=
+ion:none;}
+            a[href^=3D"tel"]=2C a[href^=3D"sms"]{color:inherit; cursor:d=
+efault; text-decoration:none;}
+            li p {margin: 0 !important;}
+            .ProseMirror a {
+                pointer-events: none;
+            }
+            @media only screen and (max-width: 640px){
+                .mceClusterLayout td{padding: 4px !important;}
+            }
+            @media only screen and (max-width: 480px){
+                body{width:100% !important; min-width:100% !important; }
+                body.mobile-native {
+                    -webkit-user-select: none; user-select: none; transiti=
+on: transform 0.2s ease-in; transform-origin: top center;
+                }
+                body.mobile-native.selection-allowed a=2C body.mobile-nati=
+ve.selection-allowed .ProseMirror {
+                    user-select: auto;
+                    -webkit-user-select: auto;
+                }
+                colgroup{display: none;}
+                img{height: auto !important;}
+                .mceWidthContainer{max-width: 660px !important;}
+                .mceColumn{display: block !important; width: 100% !importa=
+nt;}
+                .mceColumn-forceSpan{display: table-cell !important; width=
+: auto !important;}
+                .mceColumn-forceSpan .mceButton a{min-width:0 !important;}
+                .mceBlockContainer{padding-right:16px !important; padding-=
+left:16px !important;}
+                .mceTextBlockContainer{padding-right:16px !important; padd=
+ing-left:16px !important;}
+                .mceBlockContainerE2E{padding-right:0px; padding-left:0px;=
+}
+                .mceSpacing-24{padding-right:16px !important; padding-left=
+:16px !important;}
+                .mceImage=2C .mceLogo{width: 100% !important; height: auto=
+ !important;}
+                .mceFooterSection .mceText=2C .mceFooterSection .mceText p=
+{font-size: 16px !important; line-height: 140% !important;}
+            }
+            div[contenteditable=3D"true"] {outline: 0;}
+            .ProseMirror .empty-node=2C .ProseMirror:empty {position: rela=
+tive;}
+            .ProseMirror .empty-node::before=2C .ProseMirror:empty::before=
+ {
+                position: absolute;
+                left: 0;
+                right: 0;
+                color: rgba(0=2C0=2C0=2C0.2);
+                cursor: text;
+            }
+            .ProseMirror .empty-node:hover::before=2C .ProseMirror:empty:h=
+over::before {
+                color: rgba(0=2C0=2C0=2C0.3);
+            }
+            .ProseMirror h1.empty-node:only-child::before=2C
+            .ProseMirror h2.empty-node:only-child::before=2C
+            .ProseMirror h3.empty-node:only-child::before=2C
+            .ProseMirror h4.empty-node:only-child::before {
+                content: 'Heading';
+            }
+            .ProseMirror p.empty-node:only-child::before=2C .ProseMirror:e=
+mpty::before {
+                content: 'Start typing...';
+            }
+            a .ProseMirror p.empty-node::before=2C a .ProseMirror:empty::b=
+efore {
+                content: '';
+            }
+
+            .mceImageBorder {display: inline-block;}
+            .mceImageBorder img {border: 0 !important;}
+body=2C #bodyTable { background-color: rgb(244=2C 244=2C 244); }#bodyTable=
+ { background-image: url("https://mcusercontent.com/a6369901d6f0c448fbcc61=
+e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png"); background-size: co=
+ver; background-position: center center; background-repeat: no-repeat no-r=
+epeat; }
+@media screen and (max-height: 480px)=2C (max-width: 480px) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D480"); }
+@media screen and (-webkit-min-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D480&dpr=3D2"); }
+          }
+          }
+@media screen and (max-height: 860px)=2C (max-width: 860px) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D860"); }
+@media screen and (-webkit-min-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D860&dpr=3D2"); }
+          }
+          }
+@media screen and (max-height: 1200px)=2C (max-width: 1200px) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D1200"); }
+@media screen and (-webkit-min-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D1200&dpr=3D2"); }
+          }
+          }
+@media screen and (max-height: 1800px)=2C (max-width: 1800px) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D1800"); }
+@media screen and (-webkit-min-device-pixel-ratio: 2)=2C (min-resolution:=
+ 192dpi) {
+            body { background-image: url("https://dim.mcusercontent.com/cs=
+/a6369901d6f0c448fbcc61e6e/images/106ed0e0-b2d2-0911-a080-dc9a96dcd760.png=
+?w=3D1800&dpr=3D2"); }
+          }
+          }
+=2EmceText=2C .mceLabel { font-family: Roboto=2C "Helvetica Neue"=2C Helveti=
+ca=2C Arial=2C sans-serif; }.mceText=2C .mceLabel { color: rgb(0=2C 0=2C 0=
+); }.mceText h1 { margin-bottom: 0px; }.mceText h4 { margin-bottom: 0px; }=
+=2EmceText p { margin-bottom: 0px; }.mceText ul { margin-bottom: 0px; }.mceT=
+ext label { margin-bottom: 0px; }.mceText input { margin-bottom: 0px; }.mc=
+eSpacing-24 .mceInput + .mceErrorMessage { margin-top: -12px; }.mceText h1=
+ { margin-bottom: 0px; }.mceText h4 { margin-bottom: 0px; }.mceText p { ma=
+rgin-bottom: 0px; }.mceText ul { margin-bottom: 0px; }.mceText label { mar=
+gin-bottom: 0px; }.mceText input { margin-bottom: 0px; }.mceSpacing-12 .mc=
+eInput + .mceErrorMessage { margin-top: -6px; }.mceText h1 { margin-bottom=
+: 0px; }.mceText h4 { margin-bottom: 0px; }.mceText p { margin-bottom: 0px=
+; }.mceText ul { margin-bottom: 0px; }.mceText label { margin-bottom: 0px;=
+ }.mceText input { margin-bottom: 0px; }.mceSpacing-48 .mceInput + .mceErr=
+orMessage { margin-top: -24px; }.mceInput { background-color: transparent;=
+ border: 2px solid rgb(208=2C 208=2C 208); width: 60%; color: rgb(77=2C 77=
+=2C 77); display: block; }.mceInput[type=3D"radio"]=2C .mceInput[type=3D=
+"checkbox"] { float: left; margin-right: 12px; display: inline; width: aut=
+o !important; }.mceLabel > .mceInput { margin-bottom: 0px; margin-top: 2px=
+; }.mceLabel { display: block; }.mceText p { color: rgb(0=2C 0=2C 0); font=
+-family: Roboto=2C "Helvetica Neue"=2C Helvetica=2C Arial=2C sans-serif; f=
+ont-size: 18px; font-weight: normal; line-height: 1.5; text-align: left; d=
+irection: ltr; }.mceText h1 { color: rgb(0=2C 0=2C 0); font-family: Georgi=
+a=2C Times=2C "Times New Roman"=2C serif; font-size: 31px; font-weight: bo=
+ld; line-height: 1.5; text-align: left; direction: ltr; }.mceText h4 { col=
+or: rgb(0=2C 0=2C 0); font-family: Georgia=2C Times=2C "Times New Roman"=
+=2C serif; font-size: 18px; font-weight: bold; line-height: 1.5; text-alig=
+n: left; direction: ltr; }.mceText a { color: rgb(0=2C 0=2C 0); font-style=
+: normal; font-weight: normal; text-decoration: underline; direction: ltr;=
+ }
+@media only screen and (max-width: 480px) {
+            .mceText p { font-size: 16px !important; line-height: 1.5 !imp=
+ortant; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceText h1 { font-size: 31px !important; line-height: 1.5 !im=
+portant; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceText h4 { font-size: 16px !important; line-height: 1.5 !im=
+portant; }
+          }
+@media only screen and (max-width: 480px) {
+            .mceBlockContainer { padding-left: 16px !important; padding-ri=
+ght: 16px !important; }
+          }
+#dataBlockId-9 p=2C #dataBlockId-9 h1=2C #dataBlockId-9 h2=2C #dataBlockId=
+-9 h3=2C #dataBlockId-9 h4=2C #dataBlockId-9 ul { text-align: center; }#da=
+taBlockId-1 p=2C #dataBlockId-1 h1=2C #dataBlockId-1 h2=2C #dataBlockId-1=
+ h3=2C #dataBlockId-1 h4=2C #dataBlockId-1 ul { text-align: center; }#data=
+BlockId-3 p=2C #dataBlockId-3 h1=2C #dataBlockId-3 h2=2C #dataBlockId-3 h3=
+=2C #dataBlockId-3 h4=2C #dataBlockId-3 ul { text-align: center; }
+@media only screen and (max-width: 480px) {
+        .mobileClass-15 {padding-left: 12 !important;padding-top: 0 !impor=
+tant;padding-right: 12 !important;}.mobileClass-15 {padding-left: 12 !impo=
+rtant;padding-top: 0 !important;padding-right: 12 !important;}.mobileClass=
+-15 {padding-left: 12 !important;padding-top: 0 !important;padding-right:=
+ 12 !important;}.mobileClass-15 {padding-left: 12 !important;padding-top:=
+ 0 !important;padding-right: 12 !important;}
+      }</style></head>
+<body>
+<!--
+-->
+<!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=3D"displa=
+y:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opa=
+city:0; overflow:hidden; visibility:hidden; mso-hide:all;">Understand the=
+ power of knowing how to commit.</span><!--<![endif]-->
+<!--
+-->
+<center>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" wi=
+dth=3D"100%" id=3D"bodyTable" style=3D"background-color: rgb(244=2C 244=2C=
+ 244);">
+<tbody><tr>
+<td class=3D"bodyCell" align=3D"center" valign=3D"top">
+<table id=3D"root" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%"><tbody data-block-id=3D"64" class=3D"mceWrapper"><tr><td align=
+=3D"center" valign=3D"top" class=3D"mceWrapperOuter"><!--[if (gte mso 9)|=
+(IE)]><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"660" style=3D"width:660px;"><tr><td><![endif]--><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"max=
+-width:660px" role=3D"presentation"><tbody><tr><td style=3D"background-col=
+or:#ffffff;background-position:center;background-repeat:no-repeat;backgrou=
+nd-size:cover" class=3D"mceWrapperInner" valign=3D"top"><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation" data-block-id=3D"12"><tbody><tr class=3D"mceRow"><td sty=
+le=3D"background-position:center;background-repeat:no-repeat;background-si=
+ze:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"paddin=
+g-top:0;padding-bottom:0" class=3D"mceColumn" data-block-id=3D"-17" valign=
+=3D"top" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td s=
+tyle=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" val=
+ign=3D"top"><table width=3D"100%" style=3D"border:0;background-color:#d86c=
+44;border-collapse:separate"><tbody><tr><td style=3D"padding-left:8px;padd=
+ing-right:8px;padding-top:8px;padding-bottom:8px" class=3D"mceTextBlockCon=
+tainer"><div data-block-id=3D"1" class=3D"mceText" id=3D"dataBlockId-1" st=
+yle=3D"width:100%"><p class=3D"last-child"><a href=3D"https://mailchi.mp/6=
+1913adba870/good-medicine-12691727?e=3D6aed4a9e47"><span style=3D"color:#fff=
+fff;"><span style=3D"font-size: 14px">View this email in your browser</spa=
+n></span></a></p></div></td></tr></tbody></table></td></tr><tr><td style=
+=3D"background-color:#d86c44;padding-top:20px;padding-bottom:20px;padding-=
+right:60px;padding-left:60px" class=3D"mceBlockContainer" align=3D"full" v=
+align=3D"top"><span class=3D"mceImageBorder" style=3D"border:0;vertical-al=
+ign:top;margin:0"><img data-block-id=3D"22" width=3D"123" height=3D"auto"=
+ style=3D"width:123px;height:auto;max-width:123px !important;display:block=
+" alt=3D"" src=3D"https://mcusercontent.com/a6369901d6f0c448fbcc61e6e/imag=
+es/916a335f-dceb-4bf3-e3a2-52e4e9335e36.gif" role=3D"presentation" class=
+=3D"imageDropZone mceImage" /></span></td></tr><tr><td style=3D"background=
+-color:#fff7ec;padding-top:12px;padding-bottom:12px;padding-right:0;paddin=
+g-left:0" class=3D"mceBlockContainer" align=3D"center" valign=3D"top"><spa=
+n class=3D"mceImageBorder" style=3D"border:0;vertical-align:top;margin:0">=
+<img data-block-id=3D"643" width=3D"564" height=3D"auto" style=3D"width:56=
+4px;height:auto;max-width:1280px !important;display:block" alt=3D"" src=3D=
+"https://mcusercontent.com/a6369901d6f0c448fbcc61e6e/images/9ddc5f55-e73b-=
+3e42-d314-d3b308c1affb.png" role=3D"presentation" class=3D"imageDropZone m=
+ceImage" /></span></td></tr><tr><td style=3D"padding-top:0;padding-bottom:=
+0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%" sty=
+le=3D"border:0;background-color:#fff7ec;border-collapse:separate"><tbody><=
+tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:12px;padd=
+ing-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"63"=
+ class=3D"mceText" id=3D"dataBlockId-63" style=3D"width:100%"><h1 class=3D=
+"last-child"><span style=3D"color:#d86c44;"><span style=3D"font-family: 'R=
+oboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-serif">Dear Seeke=
+r=E2=80=A6</span></span></h1></div></td></tr></tbody></table></td></tr><tr=
+><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-left:=
+0" valign=3D"top"><table width=3D"100%" style=3D"border:0;background-color=
+:#fff7ec;border-collapse:separate"><tbody><tr><td style=3D"padding-left:24=
+px;padding-right:24px;padding-top:12px;padding-bottom:12px" class=3D"mceTe=
+xtBlockContainer"><div data-block-id=3D"3" class=3D"mceText" id=3D"dataBlo=
+ckId-3" style=3D"width:100%"><p><br /></p><p>Welcome to Yogic Lifestyle Le=
+ads=E2=80=94</p><p><strong> </strong></p><h4>Embrace Mastery in Motion</h4=
+><p>When you truly understand=C2=A0<strong>how</strong>=C2=A0to do somethi=
+ng=2C you're on the path to mastering it. We've all achieved mastery in so=
+me area=E2=80=94whether it's tying shoes=2C baking bread=2C coding softwar=
+e=2C or perfecting triangle pose.=C2=A0Mastery acknowledges that perfect e=
+quilibrium is unattainable=E2=80=94everything=2C including our health=2C i=
+s in constant flux.</p><p><br /></p><h4>Reconnecting Body and Mind</h4><p>=
+ A strong=2C healthy body is crucial for resilience. Ancient yogis used Ha=
+tha Yoga to bridge the body-mind gap=2C recognizing that losing touch with=
+ our body's signals leads to conflict and unhappiness. Today=2C more than=
+ ever=2C science is supporting that a regular yoga practice strengthens th=
+e body and removes energetic blockages=2C helping prevent disease. </p><p>=
+<br /></p><h4>Transform and Commit</h4><p>How do we navigate the continuou=
+s state of health flux? Embrace the =E2=80=9CWash=2C Rinse=2C Repeat=E2=80=
+=9D approach: show up for one practice at a time=2C </p><p>do your best=2C=
+ and repeat. </p><p><br /></p><p>Knowing=C2=A0how=C2=A0to commit to your y=
+oga practice is the critical first step towards mastery. Even one yoga cla=
+ss a week can have significant impact on your journey to a strong=2C healt=
+hy life=E2=80=A6. I promise!</p><p><br /></p><p style=3D"text-align: left;=
+"><span style=3D"color:#d86c44;">With humble love=2C</span></p><p style=3D=
+"text-align: left;" class=3D"last-child"><span style=3D"color:#d86c44;">Ti=
+ff =F0=9F=92=95</span></p></div></td></tr></tbody></table></td></tr><tr><t=
+d style=3D"background-color:#fff7ec;padding-top:15px;padding-bottom:15px;p=
+adding-right:24px;padding-left:24px" class=3D"mceBlockContainer" valign=3D=
+"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" style=3D"background-color:#fff7ec" role=3D"presentation" class=3D"mceDi=
+viderContainer" data-block-id=3D"6"><tbody><tr><td style=3D"min-width:100%=
+;border-top:2px dotted #d86c44" class=3D"mceDividerBlock" valign=3D"top"><=
+/td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;padding-=
+bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"10=
+0%" style=3D"border:0;background-color:#fff7ec;border-collapse:separate"><=
+tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-top:12=
+px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-block-id=
+=3D"614" class=3D"mceText" id=3D"dataBlockId-614" style=3D"width:100%"><p=
+ style=3D"text-align: center;"><strong><span style=3D"color:#d86c44;"><spa=
+n style=3D"font-size: 36px">Wellness Wisdom</span></span></strong></p><p s=
+tyle=3D"text-align: center;" class=3D"last-child"><br /></p></div></td></t=
+r></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;padd=
+ing-top:12px;padding-bottom:12px;padding-right:0;padding-left:0" class=3D"=
+mceLayoutContainer" valign=3D"top"><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" dat=
+a-block-id=3D"617" id=3D"section_d6fff5d0719c7643b496121ad69b1807" class=
+=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"background-positio=
+n:center;background-repeat:no-repeat;background-size:cover" valign=3D"top"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" ro=
+le=3D"presentation"><tbody><tr><td class=3D"mceColumn" data-block-id=3D"-1=
+9" valign=3D"top" colspan=3D"12" width=3D"100%"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody>=
+<tr><td align=3D"center" valign=3D"top"><table align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+" data-block-id=3D"-14"><tbody><tr class=3D"mceRow"><td style=3D"backgroun=
+d-position:center;background-repeat:no-repeat;background-size:cover" valig=
+n=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" role=3D"presentation"><tbody><tr><td class=3D"mceColumn" data-block=
+-id=3D"-22" valign=3D"top" colspan=3D"12" width=3D"100%"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation=
+"><tbody><tr><td valign=3D"top"><table align=3D"center" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" data-b=
+lock-id=3D"622"><tbody><tr class=3D"mceRow"><td style=3D"background-positi=
+on:center;background-repeat:no-repeat;background-size:cover;padding-top:0p=
+x;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"24" width=3D"100%" style=3D"table-layout:fixed" role=3D"pr=
+esentation"><colgroup><col span=3D"1" width=3D"8.333333333333332%" /><col=
+ span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.3333=
+33333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=
+=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333=
+333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1"=
+ width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333333332=
+%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=
+=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><=
+/colgroup><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" class=3D=
+"mceColumn" data-block-id=3D"619" valign=3D"top" colspan=3D"6" width=3D"50=
+%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ role=3D"presentation"><tbody><tr><td style=3D"padding-top:12px;padding-bo=
+ttom:12px;padding-right:0;padding-left:0" class=3D"mceBlockContainer" alig=
+n=3D"center" valign=3D"top"><span class=3D"mceImageBorder" style=3D"border=
+:0;vertical-align:top;margin:0"><img data-block-id=3D"645" width=3D"294" h=
+eight=3D"auto" style=3D"width:294px;height:auto;max-width:1080px !importan=
+t;display:block" alt=3D"" src=3D"https://mcusercontent.com/a6369901d6f0c44=
+8fbcc61e6e/images/7fba6370-4b88-169b-2f6a-7655466033d3.png" role=3D"presen=
+tation" class=3D"imageDropZone mceImage" /></span></td></tr></tbody></tabl=
+e></td><td style=3D"padding-top:0;padding-bottom:0;margin-bottom:24px" cla=
+ss=3D"mceColumn" data-block-id=3D"621" valign=3D"top" colspan=3D"6" width=
+=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-=
+bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"10=
+0%" style=3D"border:0;border-collapse:separate"><tbody><tr><td style=3D"pa=
+dding-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px" c=
+lass=3D"mceTextBlockContainer"><div data-block-id=3D"630" class=3D"mceText=
+" id=3D"dataBlockId-630" style=3D"width:100%"><p style=3D"text-align: cent=
+er;" class=3D"last-child">Parighasana involves kneeling on the ground=2C e=
+xtending one leg out to the side=2C and reaching your opposite arm up and=
+ over=2C creating a lateral stretch along the body. This pose focuses on s=
+tretching the sides of your torso=2C hips=2C and thighs while enhancing ba=
+lance and stability. It might seem simple=2C but its impact on mobility ca=
+n be profound.</p></div></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><t=
+r><td style=3D"background-color:#fff7ec;padding-top:12px;padding-bottom:12=
+px;padding-right:24px;padding-left:24px" class=3D"mceBlockContainer" align=
+=3D"center" valign=3D"top"><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" role=3D"presentation" data-block-id=3D"633" clas=
+s=3D"mceButtonContainer"><tbody><tr><!--[if !mso]><!--></tr><tr class=3D"=
+mceStandardButton"><td style=3D"background-color:#d86c44;border-radius:50p=
+x;text-align:center" class=3D"mceButton" valign=3D"top"><a href=3D"https:/=
+/tiffanywoodyoga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc=
+61e6e&id=3D4817d6551f&e=3D6aed4a9e47" target=3D"_blank" class=3D"mceButto=
+nLink" style=3D"background-color:#d86c44;border-radius:50px;border:1px sol=
+id #d86c44;color:#ffffff;display:block;font-family:'Roboto'=2C 'Helvetica=
+ Neue'=2C Helvetica=2C Arial=2C sans-serif;font-size:18px;font-weight:norm=
+al;font-style:normal;padding:16px 28px;text-decoration:none;min-width:30px=
+;text-align:center;direction:ltr;letter-spacing:0px">Watch Video</a></td><=
+/tr><tr><!--<![endif]--></tr><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://www.instagram.com/reel/Cwyl5rDL6vm/?igsh=3DMWE3djRxc3NzODB=
+1bQ%3D%3D"
+style=3D"v-text-anchor:middle; width:158.92000000000002px; height:55px;"
+arcsize=3D"31%"
+strokecolor=3D"#d86c44"
+strokeweight=3D"1px"
+fillcolor=3D"#d86c44">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Watch Video
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:12px;padding-bottom:12px;padding-right:0;padding-left:0" class=
+=3D"mceLayoutContainer" valign=3D"top"><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"=
+ data-block-id=3D"623" id=3D"section_b7b40dbc1875520fe807e4b4f640fd68" cla=
+ss=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"background-posit=
+ion:center;background-repeat:no-repeat;background-size:cover" valign=3D"to=
+p"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ role=3D"presentation"><tbody><tr><td class=3D"mceColumn" data-block-id=3D=
+"-20" valign=3D"top" colspan=3D"12" width=3D"100%"><table border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbo=
+dy><tr><td align=3D"center" valign=3D"top"><table align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion" data-block-id=3D"-16"><tbody><tr class=3D"mceRow"><td style=3D"backg=
+round-position:center;background-repeat:no-repeat;background-size:cover" v=
+align=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"><tbody><tr><td class=3D"mceColumn" data-b=
+lock-id=3D"-23" valign=3D"top" colspan=3D"12" width=3D"100%"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion"><tbody><tr><td valign=3D"top"><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presentation" da=
+ta-block-id=3D"628"><tbody><tr class=3D"mceRow"><td style=3D"background-po=
+sition:center;background-repeat:no-repeat;background-size:cover;padding-to=
+p:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"24" width=3D"100%" style=3D"table-layout:fixed" role=
+=3D"presentation"><colgroup><col span=3D"1" width=3D"8.333333333333332%" /=
+><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8=
+=2E333333333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col s=
+pan=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333=
+333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"=
+1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.3333333333333=
+32%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" widt=
+h=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333333332%" />=
+</colgroup><tbody><tr><td style=3D"padding-top:0;padding-bottom:0" class=
+=3D"mceColumn" data-block-id=3D"625" valign=3D"top" colspan=3D"6" width=3D=
+"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100=
+%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:0;padding-bot=
+tom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=3D"100%"=
+ style=3D"border:0;border-collapse:separate"><tbody><tr><td style=3D"paddi=
+ng-left:24px;padding-right:24px;padding-top:12px;padding-bottom:12px" clas=
+s=3D"mceTextBlockContainer"><div data-block-id=3D"632" class=3D"mceText" i=
+d=3D"dataBlockId-632" style=3D"width:100%"><p style=3D"text-align: center;=
+"><strong><span style=3D"color:#d86c44;"><span style=3D"font-size: 32px">T=
+wisted &amp; Bound</span></span></strong></p><p style=3D"text-align: cente=
+r;" class=3D"last-child">Step by step how to use a strap for the deeply tw=
+isted &amp; bound revolved side angle pose. The bio-mechanics include stab=
+ilizing the hips to turn around the spine. <br /><br />Warm up alert! Unle=
+ss you=E2=80=99re super Gumby (yes=2C I=E2=80=99m old look up Gumby) I str=
+ongly recommend a warm up before trying this.</p></div></td></tr></tbody><=
+/table></td></tr></tbody></table></td><td style=3D"padding-top:0;padding-b=
+ottom:0;margin-bottom:24px" class=3D"mceColumn" data-block-id=3D"627" vali=
+gn=3D"top" colspan=3D"6" width=3D"50%"><table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td s=
+tyle=3D"padding-top:12px;padding-bottom:12px;padding-right:0;padding-left:=
+0" class=3D"mceBlockContainer" align=3D"center" valign=3D"top"><span class=
+=3D"mceImageBorder" style=3D"border:0;vertical-align:top;margin:0"><img da=
+ta-block-id=3D"647" width=3D"294" height=3D"auto" style=3D"width:294px;hei=
+ght:auto;max-width:1080px !important;display:block" alt=3D"" src=3D"https:=
+//mcusercontent.com/a6369901d6f0c448fbcc61e6e/images/596fff94-f595-cea6-fe=
+16-c09d6a5ba015.png" role=3D"presentation" class=3D"imageDropZone mceImage=
+" /></span></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec=
+;padding-top:12px;padding-bottom:12px;padding-right:24px;padding-left:24px=
+" class=3D"mceBlockContainer" align=3D"center" valign=3D"top"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" data-block-id=3D"634" class=3D"mceButtonContainer"><tbody><tr><!-=
+-[if !mso]><!--></tr><tr class=3D"mceStandardButton"><td style=3D"backgro=
+und-color:#d86c44;border-radius:50px;text-align:center" class=3D"mceButton=
+" valign=3D"top"><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/t=
+rack/click?u=3Da6369901d6f0c448fbcc61e6e&id=3Da2bdda64c2&e=3D6aed4a9e47"=
+ target=3D"_blank" class=3D"mceButtonLink" style=3D"background-color:#d86c=
+44;border-radius:50px;border:1px solid #d86c44;color:#ffffff;display:block=
+;font-family:'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;font-size:18px;font-weight:normal;font-style:normal;padding:16px 28px;=
+text-decoration:none;min-width:30px;text-align:center;direction:ltr;letter=
+-spacing:0px">Watch Video</a></td></tr><tr><!--<![endif]--></tr><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://fb.watch/sb9ozYgb3a/"
+style=3D"v-text-anchor:middle; width:158.92000000000002px; height:55px;"
+arcsize=3D"31%"
+strokecolor=3D"#d86c44"
+strokeweight=3D"1px"
+fillcolor=3D"#d86c44">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Watch Video
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:15px;padding-bottom:15px;padding-right:24px;padding-left:24px"=
+ class=3D"mceBlockContainer" valign=3D"top"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:#fff7ec=
+" role=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"612=
+"><tbody><tr><td style=3D"min-width:100%;border-top:2px dotted #d86c44" cl=
+ass=3D"mceDividerBlock" valign=3D"top"></td></tr></tbody></table></td></tr=
+><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-l=
+eft:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;background-c=
+olor:#ead2ba;border-collapse:separate"><tbody><tr><td style=3D"padding-lef=
+t:24px;padding-right:24px;padding-top:12px;padding-bottom:12px" class=3D"m=
+ceTextBlockContainer"><div data-block-id=3D"640" class=3D"mceText" id=3D"d=
+ataBlockId-640" style=3D"width:100%"><p style=3D"text-align: center;"><str=
+ong><span style=3D"color:#d86c44;"><span style=3D"font-size: 36px">How to=
+ Highlights</span></span></strong></p><p style=3D"text-align: center;" cla=
+ss=3D"last-child"><strong><span style=3D"color:#d86c44;"><span style=3D"fo=
+nt-size: 22px">Handstand Yoga Pose</span></span></strong></p></div></td></=
+tr></tbody></table></td></tr><tr><td style=3D"background-color:#ead2ba;pad=
+ding-top:12px;padding-bottom:12px;padding-right:0;padding-left:0" class=3D=
+"mceBlockContainer" align=3D"center" valign=3D"top"><a href=3D"https://tif=
+fanywoodyoga.us21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6=
+e&id=3D3938448beb&e=3D6aed4a9e47" style=3D"display:block" target=3D"_blan=
+k" data-block-id=3D"648"><span class=3D"mceImageBorder" style=3D"border:0;=
+vertical-align:top;margin:0"><img width=3D"564" height=3D"auto" style=3D"w=
+idth:564px;height:auto;max-width:1920px !important;display:block" alt=3D""=
+ src=3D"https://mcusercontent.com/a6369901d6f0c448fbcc61e6e/images/1bccc67=
+8-413b-83af-429b-65a247be369e.png" role=3D"presentation" class=3D"imageDro=
+pZone mceImage" /></span></a></td></tr><tr><td style=3D"padding-top:0;padd=
+ing-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table width=
+=3D"100%" style=3D"border:0;background-color:#ead2ba;border-collapse:separ=
+ate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding-=
+top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-bl=
+ock-id=3D"642" class=3D"mceText" id=3D"dataBlockId-642" style=3D"width:100=
+%"><p style=3D"text-align: center;" class=3D"last-child">This assist teach=
+es students to slow down and go up with great awareness and alignment!</p>=
+</div></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;p=
+adding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table widt=
+h=3D"100%" style=3D"border:0;background-color:#fff7ec;border-collapse:sepa=
+rate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;padding=
+-top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-b=
+lock-id=3D"554" class=3D"mceText" id=3D"dataBlockId-554" style=3D"width:10=
+0%"><h1 style=3D"text-align: center;" class=3D"last-child"><span style=3D"=
+color:#d86c44;"><span style=3D"font-family: 'Roboto'=2C 'Helvetica Neue'=
+=2C Helvetica=2C Arial=2C sans-serif">Tuesday Tune-Up</span></span></h1></=
+div></td></tr></tbody></table></td></tr><tr><td style=3D"background-color:=
+#fff7ec;padding-top:12px;padding-bottom:12px;padding-right:0;padding-left:=
+0" class=3D"mceLayoutContainer" valign=3D"top"><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"prese=
+ntation" data-block-id=3D"555" id=3D"section_764a36572d34a9f59a8612dd645eb=
+e1f" class=3D"mceLayout"><tbody><tr class=3D"mceRow"><td style=3D"backgrou=
+nd-position:center;background-repeat:no-repeat;background-size:cover" vali=
+gn=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" role=3D"presentation"><tbody><tr><td class=3D"mceColumn" data-bl=
+ock-id=3D"-18" valign=3D"top" colspan=3D"12" width=3D"100%"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"presenta=
+tion"><tbody><tr><td align=3D"center" valign=3D"top"><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D=
+"presentation" data-block-id=3D"-12"><tbody><tr class=3D"mceRow"><td style=
+=3D"background-position:center;background-repeat:no-repeat;background-size=
+:cover" valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" role=3D"presentation"><tbody><tr><td class=3D"mceCol=
+umn" data-block-id=3D"-21" valign=3D"top" colspan=3D"12" width=3D"100%"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=
+=3D"presentation"><tbody><tr><td valign=3D"top"><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"pres=
+entation" data-block-id=3D"560"><tbody><tr class=3D"mceRow"><td style=3D"b=
+ackground-position:center;background-repeat:no-repeat;background-size:cove=
+r;padding-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"24" width=3D"100%" style=3D"table-layout:f=
+ixed" role=3D"presentation"><colgroup><col span=3D"1" width=3D"8.333333333=
+333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1"=
+ width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333333332=
+%" /><col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=
+=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><=
+col span=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.3=
+33333333333332%" /><col span=3D"1" width=3D"8.333333333333332%" /><col spa=
+n=3D"1" width=3D"8.333333333333332%" /><col span=3D"1" width=3D"8.33333333=
+3333332%" /></colgroup><tbody><tr><td style=3D"padding-top:0;padding-botto=
+m:0" class=3D"mceColumn" data-block-id=3D"557" valign=3D"top" colspan=3D"6=
+" width=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:12p=
+x;padding-bottom:12px;padding-right:0;padding-left:0" class=3D"mceBlockCon=
+tainer" align=3D"center" valign=3D"top"><span class=3D"mceImageBorder" sty=
+le=3D"border:0;vertical-align:top;margin:0"><img data-block-id=3D"561" wid=
+th=3D"294" height=3D"auto" style=3D"width:294px;height:auto;max-width:1080=
+px !important;display:block" alt=3D"" src=3D"https://mcusercontent.com/a63=
+69901d6f0c448fbcc61e6e/images/f84836b8-7f6d-89d7-6e06-68c7a63ebb8e.png" ro=
+le=3D"presentation" class=3D"imageDropZone mceImage" /></span></td></tr></=
+tbody></table></td><td style=3D"padding-top:0;padding-bottom:0;margin-bott=
+om:24px" class=3D"mceColumn" data-block-id=3D"559" valign=3D"top" colspan=
+=3D"6" width=3D"50%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"padding-to=
+p:0;padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table=
+ width=3D"100%" style=3D"border:0;border-collapse:separate"><tbody><tr><td=
+ style=3D"padding-left:24px;padding-right:24px;padding-top:12px;padding-bo=
+ttom:12px" class=3D"mceTextBlockContainer"><div data-block-id=3D"562" clas=
+s=3D"mceText" id=3D"dataBlockId-562" style=3D"width:100%"><p style=3D"text=
+-align: center;"><strong>Free 45-Minute Yoga Class: Foundations of Anusara=
+ Yoga</strong></p><ul><li><p><strong>When:</strong> 8 AM MDT</p></li><li><=
+p><strong>Why:</strong> Build skillful practice to help with <strong>healt=
+hy knees</strong>.</p></li></ul><p style=3D"text-align: center;"><strong>M=
+ay 21 Session:</strong></p><ul class=3D"last-child"><li><p><strong>Focus:<=
+/strong> Anusara Loops: Shin=2C Thigh=2C and Pelvic=C2=A0</p></li><li><p><=
+strong>Benefits:</strong> Protect &amp; heal weak or inflamed knees by lea=
+rning the =E2=80=9Csee-saw=E2=80=9D principle.</p></li></ul></div></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr><tr><td style=3D"background-color:=
+#fff7ec;padding-top:12px;padding-bottom:12px;padding-right:24px;padding-le=
+ft:24px" class=3D"mceBlockContainer" align=3D"center" valign=3D"top"><tabl=
+e align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=
+=3D"presentation" data-block-id=3D"563" class=3D"mceButtonContainer"><tbod=
+y><tr><!--[if !mso]><!--></tr><tr class=3D"mceStandardButton"><td style=
+=3D"background-color:#d86c44;border-radius:50px;text-align:center" class=
+=3D"mceButton" valign=3D"top"><a href=3D"https://tiffanywoodyoga.us21.list=
+-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3Daced6ecb7a&e=3D=
+6aed4a9e47" target=3D"_blank" class=3D"mceButtonLink" style=3D"background=
+-color:#d86c44;border-radius:50px;border:1px solid #d86c44;color:#ffffff;d=
+isplay:block;font-family:'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Aria=
+l=2C sans-serif;font-size:18px;font-weight:normal;font-style:normal;paddin=
+g:16px 28px;text-decoration:none;min-width:30px;text-align:center;directio=
+n:ltr;letter-spacing:0px">Register Now</a></td></tr><tr><!--<![endif]--><=
+/tr><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://tiffany-wood-yoga.heymarvelous.com/calendar"
+style=3D"v-text-anchor:middle; width:164.97px; height:55px;"
+arcsize=3D"30%"
+strokecolor=3D"#d86c44"
+strokeweight=3D"1px"
+fillcolor=3D"#d86c44">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #ffffff;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Register Now
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:15px;padding-bottom:15px;padding-right:24px;padding-left:24px"=
+ class=3D"mceBlockContainer" valign=3D"top"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:#fff7ec=
+" role=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"429=
+"><tbody><tr><td style=3D"min-width:100%;border-top:2px dotted #d86c44" cl=
+ass=3D"mceDividerBlock" valign=3D"top"></td></tr></tbody></table></td></tr=
+><tr><td style=3D"padding-top:0;padding-bottom:0;padding-right:0;padding-l=
+eft:0" valign=3D"top"><table width=3D"100%" style=3D"border:0;background-c=
+olor:#ead2ba;border-collapse:separate"><tbody><tr><td style=3D"padding-lef=
+t:24px;padding-right:24px;padding-top:12px;padding-bottom:12px" class=3D"m=
+ceTextBlockContainer"><div data-block-id=3D"505" class=3D"mceText" id=3D"d=
+ataBlockId-505" style=3D"width:100%"><h1 style=3D"text-align: center;" cla=
+ss=3D"last-child"><span style=3D"color:#d86c44;"><span style=3D"font-size:=
+ 36px"><span style=3D"font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helveti=
+ca=2C Arial=2C sans-serif">Your Feedback Matters!</span></span></span></h1=
+></div></td></tr></tbody></table></td></tr><tr><td style=3D"padding-top:0;=
+padding-bottom:0;padding-right:0;padding-left:0" valign=3D"top"><table wid=
+th=3D"100%" style=3D"border:0;background-color:#ead2ba;border-collapse:sep=
+arate"><tbody><tr><td style=3D"padding-left:24px;padding-right:24px;paddin=
+g-top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><div data-=
+block-id=3D"506" class=3D"mceText" id=3D"dataBlockId-506" style=3D"width:1=
+00%"><p style=3D"text-align: center;" class=3D"last-child"><span style=3D"=
+color:#d86c44;">Your feedback plays a pivotal role in enhancing my offerin=
+gs. Gaining a richer understanding of your wellness journey matters to me!=
+ </span></p></div></td></tr></tbody></table></td></tr><tr><td style=3D"bac=
+kground-color:#ead2ba;padding-top:12px;padding-bottom:12px;padding-right:2=
+4px;padding-left:24px" class=3D"mceBlockContainer" align=3D"center" valign=
+=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" role=3D"presentation" data-block-id=3D"507" class=3D"mceButtonCont=
+ainer"><tbody><tr><!--[if !mso]><!--></tr><tr class=3D"mceStandardButton"=
+><td style=3D"background-color:#a87c74;border-radius:50px;text-align:cente=
+r" class=3D"mceButton" valign=3D"top"><a href=3D"https://tiffanywoodyoga.u=
+s21.list-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3Df3fe29a=
+baf&e=3D6aed4a9e47" target=3D"_blank" class=3D"mceButtonLink" style=3D"ba=
+ckground-color:#a87c74;border-radius:50px;border:1px solid #00a2ba;color:#=
+fff7ec;display:block;font-family:'Roboto'=2C 'Helvetica Neue'=2C Helvetica=
+=2C Arial=2C sans-serif;font-size:18px;font-weight:normal;font-style:norma=
+l;padding:16px 28px;text-decoration:none;min-width:30px;text-align:center;=
+direction:ltr;letter-spacing:0px">Start Survey</a></td></tr><tr><!--<![en=
+dif]--></tr><tr>
+<!--[if mso]>
+<td align=3D"center">
+<v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+href=3D"https://us21.list-manage.com/survey?u=3Da6369901d6f0c448fbcc61e6e&=
+id=3D3287f3a961"
+style=3D"v-text-anchor:middle; width:154.61px; height:55px;"
+arcsize=3D"32%"
+strokecolor=3D"#00a2ba"
+strokeweight=3D"1px"
+fillcolor=3D"#a87c74">
+<v:stroke dashstyle=3D"solid"/>
+<w:anchorlock />
+<center style=3D"
+color: #fff7ec;
+display: block;
+font-family: 'Roboto'=2C 'Helvetica Neue'=2C Helvetica=2C Arial=2C sans-se=
+rif;
+font-size: 18;
+font-style: normal;
+font-weight: normal;
+letter-spacing: 0px;
+text-decoration: none;
+text-align: center;
+direction: ltr;"
+>
+Start Survey
+</center>
+</v:roundrect>
+</td>
+<![endif]-->
+</tr></tbody></table></td></tr><tr><td style=3D"background-color:#fff7ec;p=
+adding-top:20px;padding-bottom:20px;padding-right:24px;padding-left:24px"=
+ class=3D"mceBlockContainer" valign=3D"top"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"background-color:#fff7ec=
+" role=3D"presentation" class=3D"mceDividerContainer" data-block-id=3D"490=
+"><tbody><tr><td style=3D"min-width:100%;border-top:1px solid #d86c44" cla=
+ss=3D"mceDividerBlock" valign=3D"top"></td></tr></tbody></table></td></tr>=
+<tr><td style=3D"background-color:#fff7ec;padding-top:12px;padding-bottom:=
+12px;padding-right:0;padding-left:0" class=3D"mceBlockContainer" align=3D"=
+center" valign=3D"top"><span class=3D"mceImageBorder" style=3D"border:0;ve=
+rtical-align:top;margin:0"><img data-block-id=3D"24" width=3D"525" height=
+=3D"auto" style=3D"width:525px;height:auto;max-width:525px !important;disp=
+lay:block" alt=3D"" src=3D"https://mcusercontent.com/a6369901d6f0c448fbcc6=
+1e6e/images/c96557b5-51d0-4ab3-0578-881595fe75cc.png" role=3D"presentation=
+" class=3D"imageDropZone mceImage" /></span></td></tr><tr><td style=3D"bac=
+kground-color:#d86c44;padding-top:25px;padding-bottom:12px;padding-right:0=
+;padding-left:0" class=3D"mceLayoutContainer" valign=3D"top"><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" role=3D"presentation" data-block-id=3D"7"><tbody><tr class=3D"mceRow"><t=
+d style=3D"background-color:#d86c44;background-position:center;background-=
+repeat:no-repeat;background-size:cover;padding-top:0px;padding-bottom:0px"=
+ valign=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"24" w=
+idth=3D"100%" role=3D"presentation"><tbody><tr><td style=3D"margin-bottom:=
+24px" class=3D"mceColumn" data-block-id=3D"-10" valign=3D"top" colspan=3D"=
+12" width=3D"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" role=3D"presentation"><tbody><tr><td align=3D"center" vali=
+gn=3D"top"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"" role=3D"presentation" class=3D"mceClusterLayout" data-block-id=3D"-9=
+"><tbody><tr><td style=3D"padding-left:24px;padding-top:0;padding-right:24=
+px" data-breakpoint=3D"15" valign=3D"top" class=3D"mobileClass-15"><a href=
+=3D"https://tiffanywoodyoga.us21.list-manage.com/track/click?u=3Da6369901d=
+6f0c448fbcc61e6e&id=3D21ff5894bd&e=3D6aed4a9e47" style=3D"display:block"=
+ target=3D"_blank" data-block-id=3D"-5"><span class=3D"mceImageBorder" sty=
+le=3D"border:0;vertical-align:top;margin:0"><img width=3D"32" height=3D"au=
+to" style=3D"width:32px;height:auto;max-width:40px !important;display:bloc=
+k" alt=3D"Facebook icon" src=3D"https://cdn-images.mailchimp.com/icons/soc=
+ial-block-v3/block-icons-v3/facebook-outline-light-40.png" class=3D"mceIma=
+ge" /></span></a></td><td style=3D"padding-left:24px;padding-top:0;padding=
+-right:24px" data-breakpoint=3D"15" valign=3D"top" class=3D"mobileClass-15=
+"><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/track/click?u=3D=
+a6369901d6f0c448fbcc61e6e&id=3D897cf0a058&e=3D6aed4a9e47" style=3D"displa=
+y:block" target=3D"_blank" data-block-id=3D"-6"><span class=3D"mceImageBor=
+der" style=3D"border:0;vertical-align:top;margin:0"><img width=3D"32" heig=
+ht=3D"auto" style=3D"width:32px;height:auto;max-width:40px !important;disp=
+lay:block" alt=3D"Instagram icon" src=3D"https://cdn-images.mailchimp.com/=
+icons/social-block-v3/block-icons-v3/instagram-outline-light-40.png" class=
+=3D"mceImage" /></span></a></td><td style=3D"padding-left:24px;padding-top=
+:0;padding-right:24px" data-breakpoint=3D"15" valign=3D"top" class=3D"mobi=
+leClass-15"><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/track/=
+click?u=3Da6369901d6f0c448fbcc61e6e&id=3Db48c4c78a4&e=3D6aed4a9e47" style=
+=3D"display:block" target=3D"_blank" data-block-id=3D"-7"><span class=3D"m=
+ceImageBorder" style=3D"border:0;vertical-align:top;margin:0"><img width=
+=3D"32" height=3D"auto" style=3D"width:32px;height:auto;max-width:40px !im=
+portant;display:block" alt=3D"TikTok icon" src=3D"https://cdn-images.mailc=
+himp.com/icons/social-block-v3/block-icons-v3/tiktok-outline-light-40.png"=
+ class=3D"mceImage" /></span></a></td><td style=3D"padding-left:24px;paddi=
+ng-top:0;padding-right:24px" data-breakpoint=3D"15" valign=3D"top" class=
+=3D"mobileClass-15"><a href=3D"https://tiffanywoodyoga.us21.list-manage.co=
+m/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3Dbe5d8c065d&e=3D6aed4a9e47" style=3D"display:block" target=3D"_blank" data-block-id=3D"-8"><span cl=
+ass=3D"mceImageBorder" style=3D"border:0;vertical-align:top;margin:0"><img=
+ width=3D"32" height=3D"auto" style=3D"width:32px;height:auto;max-width:40=
+px !important;display:block" alt=3D"YouTube icon" src=3D"https://cdn-image=
+s.mailchimp.com/icons/social-block-v3/block-icons-v3/youtube-outline-light=
+-40.png" class=3D"mceImage" /></span></a></td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></t=
+d></tr><tr><td style=3D"background-color:#d86c44;padding-top:8px;padding-b=
+ottom:8px;padding-right:8px;padding-left:8px" class=3D"mceLayoutContainer"=
+ valign=3D"top"><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" role=3D"presentation" data-block-id=3D"11" i=
+d=3D"section_fed4e9a76f56f421e2bbc8e1b0166967" class=3D"mceFooterSection">=
+<tbody><tr class=3D"mceRow"><td style=3D"background-color:#d86c44;backgrou=
+nd-position:center;background-repeat:no-repeat;background-size:cover;paddi=
+ng-top:0px;padding-bottom:0px" valign=3D"top"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"12" width=3D"100%" role=3D"presentation"><tbody><=
+tr><td style=3D"padding-top:0;padding-bottom:0;margin-bottom:12px" class=
+=3D"mceColumn" data-block-id=3D"-3" valign=3D"top" colspan=3D"12" width=3D=
+"100%"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" role=3D"presentation"><tbody><tr><td style=3D"padding-top:12px;padding=
+-bottom:12px;padding-right:0;padding-left:0" class=3D"mceBlockContainer" a=
+lign=3D"center" valign=3D"top"><a href=3D"https://tiffanywoodyoga.us21.lis=
+t-manage.com/track/click?u=3Da6369901d6f0c448fbcc61e6e&id=3D88dfae667a&e=
+=3D6aed4a9e47" style=3D"display:block" target=3D"_blank" data-block-id=3D=
+"8"><span class=3D"mceImageBorder" style=3D"border:0;vertical-align:top;ma=
+rgin:0"><img width=3D"206" height=3D"auto" style=3D"width:206px;height:aut=
+o;max-width:206px !important;display:block" alt=3D"Logo" src=3D"https://mc=
+usercontent.com/a6369901d6f0c448fbcc61e6e/images/76a359ae-30f5-6329-365b-3=
+d5740d51020.png" class=3D"mceLogo" /></span></a></td></tr><tr><td style=3D=
+"padding-top:0;padding-bottom:0;padding-right:0;padding-left:0" align=3D"c=
+enter" valign=3D"top"><table width=3D"100%" style=3D"border:0;border-colla=
+pse:separate"><tbody><tr><td style=3D"padding-left:16px;padding-right:16px=
+;padding-top:12px;padding-bottom:12px" class=3D"mceTextBlockContainer"><di=
+v data-block-id=3D"9" class=3D"mceText" id=3D"dataBlockId-9" style=3D"disp=
+lay:inline-block;width:100%"><p style=3D"text-align: center;" class=3D"las=
+t-child"><em><span style=3D"font-size: 12px">Copyright (C) 2024 Tiffany Wo=
+od Yoga. All rights reserved.</span></em><br /><span style=3D"font-size: 1=
+2px">
+You are receiving this email because you opted in via our website.
+</span><br /><br /><span style=3D"font-size: 12px">Our mailing address is:=
+</span><br /><span style=3D"font-size: 12px">
+<div class=3D"vcard"><span class=3D"org fn">Tiffany Wood Yoga</span><div c=
+lass=3D"adr"><div class=3D"street-address">PO Box 4315</div><span class=3D=
+"locality">Park City</span>=2C <span class=3D"region">UT</span> <span clas=
+s=3D"postal-code">84060</span></div><br><a href=3D"https://tiffanywoodyoga=
+=2Eus21.list-manage.com/vcard?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21"=
+ class=3D"hcard-download">Add us to your address book</a></div>
+</span><br /><br /><span style=3D"font-size: 12px">Want to change how you=
+ receive these emails?</span><br /><span style=3D"font-size: 12px">You can=
+ </span><a href=3D"https://tiffanywoodyoga.us21.list-manage.com/profile?u=
+=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21&e=3D6aed4a9e47&c=3D03a558934b">=
+<span style=3D"font-size: 12px">update your preferences</span></a><span st=
+yle=3D"font-size: 12px"> or </span><a href=3D"https://tiffanywoodyoga.us21=
+=2Elist-manage.com/unsubscribe?u=3Da6369901d6f0c448fbcc61e6e&id=3Da221e4ba21=
+&t=3Db&e=3D6aed4a9e47&c=3D03a558934b"><span style=3D"font-size: 12px">unsubs=
+cribe</span></a></p></div></td></tr></tbody></table></td></tr><tr><td clas=
+s=3D"mceLayoutContainer" align=3D"center" valign=3D"top"><table align=3D"c=
+enter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" rol=
+e=3D"presentation" data-block-id=3D"-2"><tbody><tr class=3D"mceRow"><td st=
+yle=3D"background-position:center;background-repeat:no-repeat;background-s=
+ize:cover;padding-top:0px;padding-bottom:0px" valign=3D"top"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"24" width=3D"100%" role=3D"present=
+ation"><tbody></tbody></table></td></tr></tbody></table></td></tr></tbody>=
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table><!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->=
+</td></tr></tbody></table>
+</td>
+</tr>
+</tbody></table>
+</center>
+<img src=3D"https://tiffanywoodyoga.us21.list-manage.com/track/open.php?u=
+=3Da6369901d6f0c448fbcc61e6e&id=3D03a558934b&e=3D6aed4a9e47" height=3D"1"=
+ width=3D"1" alt=3D""></body></html>
+--_----------=_MCPart_1705061080--
