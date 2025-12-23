@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 # Switch between test and production Mailchimp configurations
 
 if [ "$1" == "test" ]; then

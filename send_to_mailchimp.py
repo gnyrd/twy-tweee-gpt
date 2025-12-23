@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Send TWEEE newsletter to Mailchimp
 Usage: python send_to_mailchimp.py newsletter.html

@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Suggested System Prompt for Tiffany Wood GPT
 
 ## Core Identity Prompt

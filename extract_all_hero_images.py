@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Extract hero images from all newsletter .eml files for training
 Creates a dataset linking each image to its source newsletter

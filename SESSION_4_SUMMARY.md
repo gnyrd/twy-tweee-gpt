@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Session 4 Summary: Newsletter Creation System
 
 **Date:** November 1, 2025  

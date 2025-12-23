@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Clean up metadata to only include images that still exist
 """

@@ -1,4 +1,6 @@
-# Mailchimp Integration Guide
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
+# Mailchimp Integration
 
 ## Overview
 After creating a newsletter using the TWEEE workflow, Tiff can send it directly to Mailchimp for distribution to her yoga community.

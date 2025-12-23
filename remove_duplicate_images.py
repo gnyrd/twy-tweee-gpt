@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Remove duplicate hero images, keeping only unique ones
 Updates metadata to reflect which newsletters share the same image

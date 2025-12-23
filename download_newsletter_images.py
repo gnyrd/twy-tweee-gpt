@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Download images from newsletter .eml files (including external URLs)
 """

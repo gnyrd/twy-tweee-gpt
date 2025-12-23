@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Copyright © 2025 Ninsim, Inc. All rights reserved.
 """
 Extract ALL large images from ALL newsletters
 Saves them with numbered prefixes so you can see all options

@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Newsletter Image Curation - Session Notes
 **Date:** November 4, 2025  
 **Status:** IN PROGRESS - Paused for evening

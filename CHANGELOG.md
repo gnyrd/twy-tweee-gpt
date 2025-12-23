@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Changelog
 
 All notable changes to TWEEE GPT will be documented in this file.

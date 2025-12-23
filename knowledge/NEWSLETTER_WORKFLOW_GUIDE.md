@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Newsletter Creation Workflow Guide
 ## The Complete System for Effortless Newsletter Generation
 

@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Newsletter GPT Generation Prompts
 
 ## Purpose

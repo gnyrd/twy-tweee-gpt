@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # TOP 15 NEWSLETTERS FOR CUSTOM GPT TRAINING
 
 ## Overview

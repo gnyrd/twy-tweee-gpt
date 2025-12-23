@@ -1,6 +1,8 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # WARP.md - Documentation Index
 
-**Last Updated:** 2025-11-18  
+**Last Updated:** 2025-11-18
 **Version:** v2.5
 
 ---

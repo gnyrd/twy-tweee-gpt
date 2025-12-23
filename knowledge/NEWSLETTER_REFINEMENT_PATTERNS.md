@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # Common Newsletter Refinement Patterns
 
 Based on Tiff's feedback during testing and iteration patterns.

@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # TWEEE_gpt - Strategic Roadmap
 
 **Last Updated:** 2025-11-18

@@ -1,3 +1,5 @@
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
+
 # TWEEE_gpt - Change History
 
 **Archive of completed milestones, technical decisions, and lessons learned**
