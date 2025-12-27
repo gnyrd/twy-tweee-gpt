@@ -121,5 +121,5 @@
 
 - Test audience ready: `e1cfd6e694` (2 contacts) → use for all tests
 - Production audience ready: `a221e4ba21` (880 subscribers)
-- API key generated and validated: `REDACTED_API_KEY`
-- All environment configs in place (.env.mailchimp.test and .env.mailchimp.prod)
+- API credentials stored in `.mailchimp.env` (local file, not committed)
+- Load credentials with: `source .mailchimp.env`

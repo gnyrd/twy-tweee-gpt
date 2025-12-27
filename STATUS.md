@@ -73,9 +73,10 @@ python send_to_mailchimp.py --test
 # Check current environment
 source switch_mailchimp_env.sh
 
-# Validate API credentials
+# Validate API credentials (use key from .mailchimp.env)
+source .mailchimp.env
 curl -X GET https://us21.api.mailchimp.com/3.0/lists \
-  -u "user:REDACTED_API_KEY"
+  -u "user:$MAILCHIMP_API_KEY"
 ```
 
 ---
