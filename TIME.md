@@ -4,7 +4,7 @@
 
 As of: 2025-12-27  
 Window: October 29 - December 27, 2025 (60 days)  
-Total time: ~60 hours (~10 hours/week over 6 weeks)
+Total time: ~68 hours (~11.3 hours/week over 6 weeks)
 
 ---
 
@@ -17,18 +17,23 @@ Total time: ~60 hours (~10 hours/week over 6 weeks)
 - Newsletter quality verification system
 - Dual-mode GPT instructions
 
-**Infrastructure/DevOps:** 8h
+**Infrastructure/DevOps:** 10h
 - Repository setup and organization
 - Git configuration (LFS setup, .gitignore)
 - GitHub remote setup and migrations
 - Credential management (.mailchimp.env)
+- Git history cleaning (API key removal)
+- Repository rename (TWEEE_gpt → twy-tweee-gpt)
 
-**Documentation:** 10h
+**Documentation:** 16h
 - WARP.md index and structure
-- STATUS/TASKS/FEATURES/HISTORY system
+- STATUS/TASKS/FEATURES/HISTORY system (initial)
 - Newsletter workflow guides (5 files)
 - API documentation and guides
 - Ninsim copyright headers (all files)
+- STATUS-FEATURES-HISTORY migration and reorganization
+- README.md rewrite with navigation
+- TIME.md creation and tracking
 
 **Meetings/Coordination:** 2h
 - Planning sessions
@@ -49,11 +54,11 @@ Total time: ~60 hours (~10 hours/week over 6 weeks)
 
 | Category | Hours | % |
 |----------|-------|---|
-| Feature development | 40 | 67% |
-| Documentation | 10 | 17% |
-| Infrastructure | 8 | 13% |
+| Feature development | 40 | 59% |
+| Documentation | 16 | 24% |
+| Infrastructure | 10 | 15% |
 | Meetings | 2 | 3% |
-| **Total** | **60** | **100%** |
+| **Total** | **68** | **100%** |
 
 ---
 
@@ -64,7 +69,7 @@ Total time: ~60 hours (~10 hours/week over 6 weeks)
 | Week 1 (Oct 29-Nov 4) | 18h | Analysis, training corpus, initial workflow |
 | Week 2 (Nov 5-Nov 11) | 10h | Mailchimp integration, testing |
 | Week 3-5 (Nov 12-Dec 2) | 6h | Iteration, refinement |
-| Week 6 (Dec 3-27) | 26h | Documentation system, GitHub migration, cleanup |
+| Week 6 (Dec 3-27) | 34h | Documentation system, GitHub migration, cleanup, STATUS-FEATURES migration |
 
 ---
 
