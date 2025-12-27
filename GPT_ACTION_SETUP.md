@@ -34,9 +34,9 @@ cat mailchimp_gpt_action.json | pbcopy
 
 1. In the Action settings, scroll to **Authentication**
 2. Set **Authentication Type:** `Basic Auth`
-3. Enter credentials:
+3. Enter credentials from `.mailchimp.env`:
    - **Username:** `anystring` (Mailchimp ignores this, but it's required)
-   - **Password:** `REDACTED_API_KEY`
+   - **Password:** `$MAILCHIMP_API_KEY` (from `.mailchimp.env`)
 4. Click **Save**
 
 ---
