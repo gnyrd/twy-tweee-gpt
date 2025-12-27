@@ -2,8 +2,8 @@
 
 # WARP.md - Documentation Index
 
-**Last Updated:** 2025-11-18
-**Version:** v2.5
+**Last Updated:** 2025-12-27  
+**Version:** v2.6
 
 ---
 
@@ -172,4 +172,4 @@ Full details available in `HISTORY.md`.
 ---
 
 **System Status:** 🟢 All Systems Operational  
-**Last Verified:** 2025-11-18
+**Last Verified:** 2025-12-27
