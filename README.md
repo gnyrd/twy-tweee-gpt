@@ -1,18 +1,92 @@
-# TWEEE_gpt
+<!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
 
-Version-controlled repository for the TWEEE custom GPT.
+# twy-tweee-gpt
 
-## Structure
+TWEEE: A custom GPT system for Tiffany Wood Yoga newsletter generation and class planning.
 
-- `instructions.md` - Main GPT instructions/system prompt
-- `config.json` - GPT configuration (name, description, capabilities)
-- `knowledge/` - Knowledge files for the GPT
-- `CHANGELOG.md` - Version history and milestones
+---
 
-## Workflow
+## 📚 Documentation
 
-1. Edit GPT configuration in ChatGPT UI
-2. Copy updated instructions/config back to this repo
-3. Commit with descriptive messages
-4. Update CHANGELOG.md for notable milestones
-5. Tag stable versions: `git tag v1.0.0`
+### Core Files (STATUS-FEATURES-HISTORY System)
+Start here to understand the project:
+
+- **[STATUS.md](STATUS.md)** - Current system state and health
+- **[TASKS.md](TASKS.md)** - Work in progress (1-4 weeks)
+- **[FEATURES.md](FEATURES.md)** - Future plans and roadmap
+- **[HISTORY.md](HISTORY.md)** - Completed milestones and decisions
+- **[TIME.md](TIME.md)** - Time spent and effort breakdown
+
+### Detailed Guides
+
+- **[docs/guides/TWEEE-GPT-INSTRUCTIONS.md](docs/guides/TWEEE-GPT-INSTRUCTIONS.md)** - GPT system prompt
+- **[docs/guides/GPT_SETUP_GUIDE.md](docs/guides/GPT_SETUP_GUIDE.md)** - OpenAI configuration
+- **[docs/guides/GPT_ACTION_SETUP.md](docs/guides/GPT_ACTION_SETUP.md)** - Mailchimp GPT Actions
+- **[docs/guides/MAILCHIMP_INTEGRATION.md](docs/guides/MAILCHIMP_INTEGRATION.md)** - Distribution system
+- **[WARP.md](WARP.md)** - Documentation index
+
+### Knowledge Base
+
+- `knowledge/` - GPT training materials (upload to ChatGPT)
+  - 15 curated newsletters (voice training)
+  - 7 philosophy books
+  - Training guides and glossaries
+
+### Archives
+
+- `docs/archive/` - Historical documents and superseded guides
+
+---
+
+## 🚀 Quick Start
+
+1. **Understand current state:** Read [STATUS.md](STATUS.md)
+2. **See what's planned:** Check [TASKS.md](TASKS.md) and [FEATURES.md](FEATURES.md)
+3. **Configure GPT:** Follow [docs/guides/GPT_SETUP_GUIDE.md](docs/guides/GPT_SETUP_GUIDE.md)
+4. **Setup Mailchimp:** Follow [docs/guides/MAILCHIMP_INTEGRATION.md](docs/guides/MAILCHIMP_INTEGRATION.md)
+
+---
+
+## 📁 Project Structure
+
+```
+twy-tweee-gpt/
+├── STATUS.md, TASKS.md, FEATURES.md, HISTORY.md, TIME.md  # Core docs
+├── WARP.md                                                 # Index + AI rules
+├── README.md                                               # This file
+├── config.json                                             # GPT configuration
+├── .mailchimp.env                                          # Local credentials (gitignored)
+│
+├── docs/
+│   ├── guides/                                             # Detailed setup guides
+│   │   ├── TWEEE-GPT-INSTRUCTIONS.md
+│   │   ├── GPT_SETUP_GUIDE.md
+│   │   ├── GPT_ACTION_SETUP.md
+│   │   └── MAILCHIMP_INTEGRATION.md
+│   └── archive/                                            # Superseded documentation
+│
+├── knowledge/                                              # GPT training materials
+│   ├── *.pdf                                               # Newsletters + philosophy books
+│   ├── NEWSLETTER_GPT_PROMPTS.md
+│   ├── NEWSLETTER_INPUT_TEMPLATES.md
+│   ├── NEWSLETTER_QUALITY_CHECKLIST.md
+│   └── ... (6 more training files)
+│
+├── sources/                                                # Raw materials (not uploaded)
+│   └── TWY Newsletters/
+│       ├── 2024/ (66 newsletters)
+│       └── 2025/ (48 newsletters)
+│
+└── .gitignore, .gitattributes, .mailchimp.env             # Configuration
+```
+
+---
+
+## 🔄 Maintenance
+
+- **Daily:** Update TASKS.md when starting/completing work
+- **Weekly:** Review priorities, migrate completed items to HISTORY.md
+- **Monthly:** Update STATUS.md "Last Verified" date
+- **Quarterly:** Audit documentation for staleness
+
+See [WARP.md](WARP.md) for complete maintenance schedule and AI agent rules.
