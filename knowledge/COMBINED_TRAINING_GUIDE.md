@@ -9,85 +9,102 @@ This curated collection represents the essential voice, philosophy, and communic
 
 ## Files in This Training Set
 
-### 📄 **PDF Newsletters (15 total, ~113MB)**
-1. `01_When_Everything_Falls_Away.pdf` - Vulnerability, grief, community resilience
-2. `02_Householder_Yogis_Know_Better.pdf` - "It depends" philosophy, Non-dual Tantra
-3. `03_Radical_Acceptance_Cutting_Cords.pdf` - Kali/Tara teachings, transformation
-4. `04_Kali_Jung_Shadow.pdf` - Psychology integration, shadow work
-5. `05_Ground_Is_Shifting.pdf` - Raw grief, permission to feel
-6. `06_Big_Shifts_Stay_Present.pdf` - Spanda, cosmic awareness
-7. `07_Melt_Dont_Grind.pdf` - Mystical voice, eclipse work
-8. `08_Crone_Rising_Aging.pdf` - Aging wisdom, humor, Shri
-9. `09_Empowered_Amid_Chaos.pdf` - Paradox holding, powerful universe
-10. `10_Good_Students_Dont_Get_It_Right.pdf` - Adhikara, mistakes as wisdom
-11. `11_Beyond_Opposition_Stand_Firm.pdf` - Political awareness, Open to Grace
-12. `12_Joy_Never_Temporary.pdf` - Ānanda teaching, joy as guide
-13. `13_Mat_Becomes_Lifeboat.pdf` - Fierce softness, humor
-14. `14_Krishna_Hanuman_Journey.pdf` - Householder path embodied
-15. `15_Playful_Spirit_Serious_Joy.pdf` - Playfulness paradigm
+### 📄 **Newsletter Training Corpus**
 
-### 📋 **Training Documentation (3 files)**
+**`NEWSLETTER_VOICE_TRAINING.pdf` (113MB)**
+Consolidated PDF containing 15 curated newsletters selected from 114 total (2024-2025). This single file provides:
+- Full emotional spectrum: Vulnerability, grief, community resilience
+- Philosophical depth: "It depends" philosophy, Non-dual Tantra
+- Goddess teachings: Kali/Tara transformations, shadow work
+- Practical wisdom: Spanda, cosmic awareness, eclipse work
+- Life stages: Aging wisdom, householder path embodied
+- Voice patterns: Raw grief, fierce softness, playful spirit
+- Political awareness: Standing firm, Open to Grace
+- Core concepts: Ānanda, Adhikara, mat as lifeboat
 
-#### `ANALYSIS_SUMMARY.md`
-**Purpose:** Comprehensive analysis of Tiff's communication DNA
-**Contents:**
+**Source Material: `../sources/TWY Newsletters/`**
+- `2024/` - 66 newsletters (PDF + TXT format)
+- `2025/` - 48 newsletters (PDF + TXT format)
+- Individual titles preserved (not numbered)
+- Used for analysis; consolidated selection uploaded to GPT
+
+### 📋 **Training Documentation**
+
+**`COMBINED_TRAINING_GUIDE.md` (This File)**
+Consolidates all training documentation in one place:
 - Voice & tone characteristics
 - Core philosophical paradigms (Tantra, UPAs, goddess archetypes)
-- Communication strategies
-- Why each newsletter was selected
-- Training recommendations
-- Key vocabulary & phrases
-
-**Best for:** Understanding the WHY behind selections and overall voice architecture
-
----
-
-#### `GPT_TRAINING_PATTERNS.md`
-**Purpose:** Practical replication guide for voice & structure
-**Contents:**
+- Communication strategies and patterns
 - Opening/closing patterns by emotional tone
 - Sentence structure templates
 - Teaching frameworks (goddess, UPA, seasonal)
 - Response patterns by context
-- Vocabulary preferences (instead of X, use Y)
-- What to avoid (toxic positivity, guru language, etc.)
-- Sample GPT responses in Tiff's voice
-- Newsletter skeletons/templates
-- Integration checklist
-
-**Best for:** Actually generating content that sounds like Tiff
-
----
-
-#### `GLOSSARY_AND_CONCEPTS.md`
-**Purpose:** Deep-dive reference for philosophical terms & concepts
-**Contents:**
+- Vocabulary preferences and what to avoid
+- Newsletter templates and integration checklist
 - Core Tantric terms (Spanda, Shri, Ānanda, etc.)
 - Anusara UPAs breakdown
 - Goddess archetypes (Kali, Tara, Krishna, Hanuman, Buddha)
-- Ayurvedic concepts (doshas, koshas)
-- Yogic practices (cord cutting, smudging, shadow work)
-- Seasonal/cosmic awareness
-- Book recommendations with context
-- Vocabulary nuances (fierce vs. aggressive, power vs. force)
-- Common phrases & meanings
+- Ayurvedic concepts, yogic practices, seasonal awareness
+- Vocabulary nuances and common phrases
 
-**Best for:** Accurate use of specialized terminology and philosophical framing
+**Note:** Earlier versions split this content across `ANALYSIS_SUMMARY.md`, `GPT_TRAINING_PATTERNS.md`, and `GLOSSARY_AND_CONCEPTS.md`. Those files were consolidated into this single comprehensive guide.
+
+**`TIFFS_EVOLUTION.md`** - CRITICAL for voice authenticity
+Documents Tiff's voice transformation over 19 months (Mar 2024 → Oct 2025):
+- Identity shift: "Your teacher Tiff" → "My beloved YLS Kula"
+- Language evolution: Polished instructional → Raw, intimate
+- Vulnerability arc: Teaching shadow work → Living it publicly
+- Philosophical shift: Anusara UPAs → Non-dual Tantra, "melt don't grind"
+- Crisis context: Both parents' decline, mother's death, re-emergence
+- **Current voice (June 2025+):** Post-grief integration, softer authority, permission-granting
+
+**Essential for:** Understanding why 2025 newsletters differ from 2024, when to use "teacher voice" vs. "wounded healer voice", recognizing that current authority comes from lived vulnerability.
+
+### 📖 **Philosophy Books (7 PDFs)**
+1. `Anusara Yoga Immersion Manual Revisions June 1 2023.pdf` (606KB)
+2. `Tantra Illuminated - Wallis.pdf` (3.5MB)
+3. `The Doctrine of Vibration - Dyczkowski.pdf` (7.8MB)
+4. `Pratyabhijnahrdayam - Singh.pdf` (1.2MB)
+5. `Narada Bhakti Sutra - Mahoney.pdf` (1.7MB)
+6. `Our True Nature - Dorigan.pdf` (379KB)
+7. *(Note: Aphorisms of Siva - Dyczkowski referenced but not present)*
+
+**Purpose:** Accurate philosophical grounding and teachings
+
+### 📝 **Newsletter System Documentation (5 files)**
+1. `NEWSLETTER_GPT_PROMPTS.md` - Generation instructions by template type
+2. `NEWSLETTER_INPUT_TEMPLATES.md` - Quick capture forms (5 templates)
+3. `NEWSLETTER_QUALITY_CHECKLIST.md` - 10-point voice verification
+4. `NEWSLETTER_WORKFLOW_GUIDE.md` - Complete workflow documentation
+5. `NEWSLETTER_REFINEMENT_PATTERNS.md` - Common iteration patterns
+
+**Purpose:** Systematic newsletter generation workflow
+
+### 📚 **Additional Teaching Materials**
+1. `Expanded Anusara Level 1 Syllabus Answer Key.rtf` (70KB)
+2. `Mexico 2023 Shakta Tantra Handout.rtf` (17KB)
+3. `Principles of Anusara Yoga NUTSHELL - Tiffany Wood.rtf` (16KB)
+
+**Purpose:** Detailed teaching references and frameworks
 
 ---
 
 ## How to Use This Training Set
 
 ### For GPT Knowledge Upload:
-1. **Upload all 15 PDFs** - Primary source material
-2. **Upload all 3 .md files** - Training documentation
-3. **Reference in system prompt** - Point GPT to these files for voice calibration
+1. **Upload `NEWSLETTER_VOICE_TRAINING.pdf`** (113MB) - Consolidated newsletter corpus
+2. **Upload all 6 philosophy PDFs** - Core philosophical texts
+3. **Upload `COMBINED_TRAINING_GUIDE.md`** (this file) - Complete training documentation
+4. **Upload 5 newsletter system .md files** - Workflow and generation guides
+5. **Optional: Upload 3 .rtf teaching materials** - Additional reference
+6. **Reference in system prompt** - Point GPT to these files for voice calibration
 
 ### Training Priority:
-1. **Start with:** `GPT_TRAINING_PATTERNS.md` for immediate voice replication
-2. **Reference:** `GLOSSARY_AND_CONCEPTS.md` when using philosophical terms
-3. **Deep dive:** `ANALYSIS_SUMMARY.md` for understanding the full communication framework
-4. **Examples:** The 15 PDFs provide real-world voice samples across emotional registers
+1. **Start with:** `COMBINED_TRAINING_GUIDE.md` (sections on voice patterns and templates)
+2. **Absorb:** `NEWSLETTER_VOICE_TRAINING.pdf` for authentic voice examples across emotional registers
+3. **Reference:** Glossary sections in this guide when using philosophical terms
+4. **Apply:** Newsletter system docs (`NEWSLETTER_GPT_PROMPTS.md`, etc.) for generation workflow
+5. **Ground:** Philosophy PDFs for accurate teachings and concepts
 
 ---
 
@@ -220,7 +237,7 @@ For content to sound authentically like Tiff, ensure:
 **Goddess Archetypes:**
 - Kali (transformation), Tara (compassion), Krishna (play), Hanuman (devotion), Buddha (equanimity)
 
-*(See GLOSSARY_AND_CONCEPTS.md for full definitions)*
+*(See glossary sections below for full definitions and usage)*
 
 ---
 

@@ -19,7 +19,8 @@ Start here to understand the project:
 
 ### Detailed Guides
 
-- **[docs/guides/TWEEE-GPT-INSTRUCTIONS.md](docs/guides/TWEEE-GPT-INSTRUCTIONS.md)** - GPT system prompt
+- **[docs/guides/TWEEE-GPT-INSTRUCTIONS-CONDENSED.md](docs/guides/TWEEE-GPT-INSTRUCTIONS-CONDENSED.md)** - GPT system prompt (use this for OpenAI)
+- **[docs/guides/TWEEE-GPT-INSTRUCTIONS.md](docs/guides/TWEEE-GPT-INSTRUCTIONS.md)** - Full GPT instructions (reference)
 - **[docs/guides/GPT_SETUP_GUIDE.md](docs/guides/GPT_SETUP_GUIDE.md)** - OpenAI configuration
 - **[docs/guides/GPT_ACTION_SETUP.md](docs/guides/GPT_ACTION_SETUP.md)** - Mailchimp GPT Actions
 - **[docs/guides/MAILCHIMP_INTEGRATION.md](docs/guides/MAILCHIMP_INTEGRATION.md)** - Distribution system
@@ -28,9 +29,12 @@ Start here to understand the project:
 ### Knowledge Base
 
 - `knowledge/` - GPT training materials (upload to ChatGPT)
-  - 15 curated newsletters (voice training)
-  - 7 philosophy books
-  - Training guides and glossaries
+  - NEWSLETTER_VOICE_TRAINING.pdf - 15 curated newsletters (113MB)
+  - TIFFS_EVOLUTION.md - Voice timeline (2024 → 2025)
+  - COMBINED_TRAINING_GUIDE.md - Complete voice/philosophy guide
+  - 6 philosophy books (960 pages)
+  - 5 newsletter system guides
+  - 3 Anusara teaching materials (RTF)
 
 ### Archives
 
