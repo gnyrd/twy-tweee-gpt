@@ -1,6 +1,6 @@
 <!-- Copyright © 2025 Ninsim, Inc. All rights reserved. -->
 
-# WARP.md - Documentation Index
+# AGENTS.md - Documentation Index
 
 **Last Updated:** 2026-02-13  
 **Version:** v2.7
@@ -31,11 +31,11 @@ This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: news
 - **Total time:** 15-25 minutes (vs. 60-90 min previously)
 
 **Key resources:**
-- `NEWSLETTER_INPUT_TEMPLATES.md` — 5 template types for quick capture
-- `NEWSLETTER_GPT_PROMPTS.md` — Generation instructions
-- `NEWSLETTER_QUALITY_CHECKLIST.md` — 10-point voice verification
-- `NEWSLETTER_WORKFLOW_GUIDE.md` — Complete workflow documentation
-- `NEWSLETTER_REFINEMENT_PATTERNS.md` — Common iteration patterns
+- `knowledge/NEWSLETTER_INPUT_TEMPLATES.md` — 5 template types for quick capture
+- `knowledge/NEWSLETTER_GPT_PROMPTS.md` — Generation instructions
+- `knowledge/NEWSLETTER_QUALITY_CHECKLIST.md` — 10-point voice verification
+- `knowledge/NEWSLETTER_WORKFLOW_GUIDE.md` — Complete workflow documentation
+- `knowledge/NEWSLETTER_REFINEMENT_PATTERNS.md` — Common iteration patterns
 
 ### Newsletter Distribution System
 - **Mailchimp API integration** with GPT Actions
@@ -73,39 +73,36 @@ This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: news
 ## 📁 Repository Structure
 
 ```
-TWEEE_gpt/
+twy-tweee-gpt/
+├── AGENTS.md                          # This file - documentation index
 ├── STATUS.md                          # Current state & health
 ├── TASKS.md                           # Work in progress (1-4 weeks)
 ├── FEATURES.md                        # Strategic roadmap
 ├── HISTORY.md                         # Completed milestones
-├── WARP.md                            # This file
+├── README.md                          # Project readme
 │
-├── INSTRUCTIONS.md                    # GPT system prompt
-├── NEWSLETTER_*.md                    # Newsletter system docs (5 files)
-├── mailchimp_gpt_action.json          # GPT Actions schema
+├── INSTRUCTIONS.md                    # GPT system prompt (copy to OpenAI)
+├── gpt.yaml                           # GPT Action OpenAPI schema
+├── mailchimp_gpt_action.json          # Mailchimp GPT Actions schema
 ├── send_to_mailchimp.py               # Mailchimp CLI tool
 ├── switch_mailchimp_env.sh            # Environment switcher
-├── .env.mailchimp.test                # Test configuration
-├── .env.mailchimp.prod                # Production configuration
 │
 ├── knowledge/                         # GPT training materials (upload these)
-│   ├── 01_When_Everything_Falls_Away.pdf
-│   ├── 02_Householder_Yogis_Know_Better.pdf
-│   ├── ... (13 more curated newsletters)
-│   ├── ANALYSIS_SUMMARY.md
-│   ├── GLOSSARY_AND_CONCEPTS.md
-│   ├── GPT_TRAINING_PATTERNS.md
-│   ├── README.md
-│   └── ... (7 philosophy books)
+│   ├── NEWSLETTER_*.md                # Newsletter system docs (5 files)
+│   ├── COMBINED_TRAINING_GUIDE.md     # Unified training guide
+│   ├── class_plan_schema.json         # Class plan validation schema
+│   └── ... (philosophy books, newsletters)
+│
+├── scripts/                           # Utility scripts (image processing)
+├── tests/                             # Test files
+├── docs/                              # Guides and archives
+│   ├── guides/                        # Setup guides
+│   └── archive/                       # Session notes, old changelogs
 │
 ├── sources/                           # Raw materials (not uploaded)
 │   └── TWY Newsletters/
-│       ├── 2024/ (66 newsletters)
-│       └── 2025/ (48 newsletters)
 │
-├── config.json                        # Project configuration
-├── CHANGELOG.md                       # Detailed changelog
-└── .gitignore
+└── config.json                        # Project configuration
 ```
 
 ---
@@ -142,7 +139,7 @@ TWEEE_gpt/
 - "What should I work on?" → Check `TASKS.md` (see "Next Up" section)
 - "What's planned?" → Check `FEATURES.md`
 - "What's been done?" → Check `HISTORY.md`
-- "How does the workflow work?" → Check `NEWSLETTER_WORKFLOW_GUIDE.md`
+- "How does the workflow work?" → Check `knowledge/NEWSLETTER_WORKFLOW_GUIDE.md`
 - "Is feature X working?" → Check `STATUS.md` (Active Components)
 - "What's blocking progress?" → Check `TASKS.md` (Blocked section)
 
