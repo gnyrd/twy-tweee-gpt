@@ -2,14 +2,14 @@
 
 # WARP.md - Documentation Index
 
-**Last Updated:** 2025-12-27  
-**Version:** v2.6
+**Last Updated:** 2026-02-13  
+**Version:** v2.7
 
 ---
 
 ## 🚀 Start Here
 
-This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: newsletter generation and distribution.
+This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: newsletter generation, distribution, and class plan management.
 
 **Choose your starting point:**
 
@@ -49,16 +49,24 @@ This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: news
 - `.env.mailchimp.test` & `.env.mailchimp.prod` — Configuration files
 - `mailchimp_gpt_action.json` — GPT Actions schema
 
+### Class Plan Management System
+- **Google Apps Script API** for reading/writing class plans
+- **Google Sheets storage** organized by month (YYYY/MM folders)
+- **GPT Action integration** via OpenAPI schema
+
+**Key resources:**
+- `CLASS_PLANNING_PROMPTS.md` — Validated prompts for class planning
+- `twy-class-plans` repo — Apps Script code + `classplan_gpt_action.yaml`
+
 ### GPT Configuration
 - **Dual-mode system:** Collaborate FOR Tiff or speak AS Tiff
 - **Voice training corpus:** 15 newsletters + 7 philosophy books + analysis docs
 - **Philosophy:** Non-dual Tantra, Anusara Yoga, goddess archetypes, householder path
 
 **Key resources:**
-- `INSTRUCTIONS.md` — System prompt for GPT configuration
 - `knowledge/` — All training materials (upload to GPT)
-- `GLOSSARY_AND_CONCEPTS.md` — Philosophical reference
-- `GPT_TRAINING_PATTERNS.md` — Voice patterns and templates
+- `PHILOSOPHY_TEXTS_USAGE.md` — Philosophical reference
+- `VOICE_IMPROVEMENTS.md` — Voice patterns and refinements
 
 ---
 
@@ -172,4 +180,4 @@ Full details available in `HISTORY.md`.
 ---
 
 **System Status:** 🟢 All Systems Operational  
-**Last Verified:** 2025-12-27
+**Last Verified:** 2026-02-13
