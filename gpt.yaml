@@ -1,0 +1,19 @@
+openapi: 3.1.0
+info:
+  title: TWY Class Plans
+  version: "1.0"
+servers:
+  - url: https://script.google.com/macros/s/AKfycbznmFGSw4x7UhWOIOpmaOnkKyu4tjnlMTLx-saoFUVvX8P_V5jqHcLo0bH4UM7mjpmFHw
+paths:
+  /exec:
+    get:
+      operationId: twyExec
+      parameters:
+        - name: req
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK

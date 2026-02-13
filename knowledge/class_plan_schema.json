@@ -1,0 +1,68 @@
+{
+  "version": "2026-02-13",
+  "required_items_exact": "mat, 2 blocks, 1 strap, 1-2 blankets",
+  "value_sources": {
+    "class_types": { "sheet_tab": "Class Types", "range": "A1:A" },
+    "categories": { "sheet_tab": "Categories", "range": "A1:A" }
+  },
+  "fields_order": [
+    "Date",
+    "Class Type",
+    "Description",
+    "Affirmation",
+    "Energetic Pulse",
+    "Apex Pose",
+    "UPA's/Key Actions",
+    "Categories",
+    "Required Items",
+    "Original Class Date",
+    "Opening Story",
+    "Notes"
+  ],
+  "date_formats": {
+    "Date": "YYYY-MM-DD",
+    "Original Class Date": "Mon D, YYYY"
+  },
+  "constraints": {
+    "Description_max_sentences": 3
+  }
+}
+
+
+{
+  "version": "2026-02-13",
+  "required_items_exact": "mat, 2 blocks, 1 strap, 1-2 blankets",
+  "categories_enum": [
+    "Heart Openers & Backbend Strategies",
+    "Upper Body Strength & Arm Balances",
+    "Hip Openers",
+    "Forward Folds & Twists",
+    "Core Strength",
+    "Slow Flow",
+    "Flow",
+    "Meditation",
+    "Therapy"
+  ],
+  "class_types_source": "Google Sheet tab: Class Types (column A, excluding header)",
+  "fields_order": [
+    "Date",
+    "Class Type",
+    "Description",
+    "Affirmation",
+    "Energetic Pulse",
+    "Apex Pose",
+    "UPA's/Key Actions",
+    "Categories",
+    "Required Items",
+    "Original Class Date",
+    "Opening Story",
+    "Notes"
+  ],
+  "date_formats": {
+    "Date": "YYYY-MM-DD",
+    "Original Class Date": "Mon D, YYYY"
+  },
+  "constraints": {
+    "Description_max_sentences": 3
+  }
+}
