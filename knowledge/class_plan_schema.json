@@ -1,37 +1,12 @@
 {
-  "version": "2026-02-13",
+  "version": "2026-02-17",
+  "primary_key": "Date",
+  "primary_key_note": "Date only - one class plan per date. Class Type is no longer part of the composite key.",
   "required_items_exact": "mat, 2 blocks, 1 strap, 1-2 blankets",
   "value_sources": {
     "class_types": { "sheet_tab": "Class Types", "range": "A1:A" },
     "categories": { "sheet_tab": "Categories", "range": "A1:A" }
   },
-  "fields_order": [
-    "Date",
-    "Class Type",
-    "Description",
-    "Affirmation",
-    "Energetic Pulse",
-    "Apex Pose",
-    "UPA's/Key Actions",
-    "Categories",
-    "Required Items",
-    "Original Class Date",
-    "Opening Story",
-    "Notes"
-  ],
-  "date_formats": {
-    "Date": "YYYY-MM-DD",
-    "Original Class Date": "Mon D, YYYY"
-  },
-  "constraints": {
-    "Description_max_sentences": 3
-  }
-}
-
-
-{
-  "version": "2026-02-13",
-  "required_items_exact": "mat, 2 blocks, 1 strap, 1-2 blankets",
   "categories_enum": [
     "Heart Openers & Backbend Strategies",
     "Upper Body Strength & Arm Balances",
@@ -43,7 +18,6 @@
     "Meditation",
     "Therapy"
   ],
-  "class_types_source": "Google Sheet tab: Class Types (column A, excluding header)",
   "fields_order": [
     "Date",
     "Class Type",
@@ -51,16 +25,41 @@
     "Affirmation",
     "Energetic Pulse",
     "Apex Pose",
+    "Physical Arc",
     "UPA's/Key Actions",
+    "Level",
     "Categories",
     "Required Items",
     "Original Class Date",
-    "Opening Story",
-    "Notes"
+    "Notes",
+    "Opening Story"
   ],
+  "required_fields": [
+    "Date",
+    "Class Type",
+    "Description",
+    "Affirmation",
+    "Energetic Pulse",
+    "Apex Pose",
+    "Physical Arc",
+    "UPA's/Key Actions",
+    "Level",
+    "Categories",
+    "Required Items",
+    "Original Class Date"
+  ],
+  "optional_fields": [
+    "Notes",
+    "Opening Story"
+  ],
+  "field_descriptions": {
+    "Physical Arc": "Describes the class flow/progression. Example: 'Warm-up → Core activation → Shoulder prep → Arm balance progressions → Peak pose → Cool-down'",
+    "Level": "Comma-separated class difficulty levels. Valid values: 1, 2, 3, 1,2, 1,2,3, 2,3",
+    "Categories": "Comma-separated focus areas. Multiple allowed from categories_enum list."
+  },
   "date_formats": {
-    "Date": "YYYY-MM-DD",
-    "Original Class Date": "Mon D, YYYY"
+    "Date": "YYYY-MM-DD or M/D/YYYY",
+    "Original Class Date": "YYYY-MM-DD or M/D/YYYY"
   },
   "constraints": {
     "Description_max_sentences": 3
