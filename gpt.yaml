@@ -3,7 +3,7 @@ info:
   title: TWY Class Plans
   version: "1.0"
 servers:
-  - url: https://script.google.com/macros/s/AKfycbznmFGSw4x7UhWOIOpmaOnkKyu4tjnlMTLx-saoFUVvX8P_V5jqHcLo0bH4UM7mjpmFHw
+  - url: https://script.google.com/macros/s/AKfycbxH6rgPs1_WaG3cyQTxQkFgYyssL9dDcldhXL6Q4QDMhXqCysya206cJVaLxTbWquDFCQ
 paths:
   /exec:
     get:

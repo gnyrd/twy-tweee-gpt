@@ -53,10 +53,13 @@ This repository contains a custom GPT system (TWEEE) for Tiffany Wood Yoga: news
 - **Google Apps Script API** for reading/writing class plans
 - **Google Sheets storage** organized by month (YYYY/MM folders)
 - **GPT Action integration** via OpenAPI schema
+- **AppSheet app** for visual class plan editing
 
 **Key resources:**
 - `CLASS_PLANNING_PROMPTS.md` — Validated prompts for class planning
-- `twy-class-plans` repo — Apps Script code + `classplan_gpt_action.yaml`
+- `twy-class-plans` repo — Apps Script code
+- `gpt.yaml` — GPT Action OpenAPI schema (uses direct Apps Script URL)
+- AppSheet Editor: https://www.appsheet.com/Template/AppDef?appName=ClassPlan_2026-02-978847186
 
 ### GPT Configuration
 - **Dual-mode system:** Collaborate FOR Tiff or speak AS Tiff
@@ -172,10 +175,11 @@ This project evolved through 5 sessions:
 5. **Session 5 (2025-11-03):** Built Mailchimp integration (end-to-end distribution)
 6. **Session 6 (2025-11-18):** Implemented STATUS/FEATURES/HISTORY documentation system
 7. **Session 7 (2026-02-13):** Added setOpeningStory and setNotes actions to class plans API with verify-after-write
+8. **Session 8 (2026-02-18):** Fixed GPT action URL pointing to old deployment (@15) that lacked multi-category support; updated to @22
 
 Full details available in `HISTORY.md`.
 
 ---
 
 **System Status:** 🟢 All Systems Operational  
-**Last Verified:** 2026-02-13
+**Last Verified:** 2026-02-18
