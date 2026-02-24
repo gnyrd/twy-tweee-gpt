@@ -1,12 +1,21 @@
 {
-  "version": "2026-02-17",
-  "primary_key": "Date",
-  "primary_key_note": "Date only - one class plan per date. Class Type is no longer part of the composite key.",
-  "required_items_exact": "mat, 2 blocks, 1 strap, 1-2 blankets",
-  "value_sources": {
-    "class_types": { "sheet_tab": "Class Types", "range": "A1:A" },
-    "categories": { "sheet_tab": "Categories", "range": "A1:A" }
-  },
+  "version": "2026-02-24",
+  "backend": "Flask + JSON files at classes.tiffanywood.yoga",
+  "primary_key": "date",
+  "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
+  "field_names": "snake_case throughout",
+
+  "class_types_enum": [
+    "Strengthen",
+    "Stretch",
+    "Principles of Anusara®",
+    "Dynamic Flow",
+    "Slow Flow",
+    "Expansion",
+    "Meditation",
+    "Final Integration"
+  ],
+
   "categories_enum": [
     "Heart Openers & Backbend Strategies",
     "Upper Body Strength & Arm Balances",
@@ -16,52 +25,47 @@
     "Slow Flow",
     "Flow",
     "Meditation",
-    "Therapy"
+    "Therapy",
+    "Integration: Deepening Basics Anusara®"
   ],
-  "fields_order": [
-    "Date",
-    "Class Type",
-    "Description",
-    "Affirmation",
-    "Energetic Pulse",
-    "Apex Pose",
-    "Physical Arc",
-    "UPA's/Key Actions",
-    "Level",
-    "Categories",
-    "Required Items",
-    "Original Class Date",
-    "Notes",
-    "Opening Story"
-  ],
-  "required_fields": [
-    "Date",
-    "Class Type",
-    "Description",
-    "Affirmation",
-    "Energetic Pulse",
-    "Apex Pose",
-    "Physical Arc",
-    "UPA's/Key Actions",
-    "Level",
-    "Categories",
-    "Required Items",
-    "Original Class Date"
-  ],
-  "optional_fields": [
-    "Notes",
-    "Opening Story"
-  ],
-  "field_descriptions": {
-    "Physical Arc": "Describes the class flow/progression. Example: 'Warm-up → Core activation → Shoulder prep → Arm balance progressions → Peak pose → Cool-down'",
-    "Level": "Comma-separated class difficulty levels. Valid values: 1, 2, 3, 1,2, 1,2,3, 2,3",
-    "Categories": "Comma-separated focus areas. Multiple allowed from categories_enum list."
+
+  "level_enum": ["Fundamentals", "1", "2"],
+  "level_note": "Comma-separated string. 'Fundamentals' = beginner/foundation. Example: \"1,2\" or \"Fundamentals\" or \"2\"",
+
+  "fields": {
+    "id":               { "type": "string",  "set_by": "server", "description": "UUID4. Never include in upsert requests." },
+    "date":             { "type": "string",  "required": true,  "format": "YYYY-MM-DD" },
+    "time":             { "type": "string",  "required": false, "format": "HH:MM (24h)", "examples": ["08:00", "17:30", "09:00"] },
+    "duration":         { "type": "integer", "required": false, "description": "Minutes. Common: 60, 75, 90" },
+    "class_type":       { "type": "string",  "required": true,  "enum": "see class_types_enum" },
+    "title":            { "type": "string",  "required": true,  "description": "Short evocative class name, 2-5 words" },
+    "subtitle":         { "type": "string",  "required": false, "description": "Optional thematic expansion, often uses ~ as separator" },
+    "description":      { "type": "string",  "required": true,  "max_sentences": 3 },
+    "affirmation":      { "type": "string",  "required": true,  "description": "First-person present-tense statement" },
+    "energetic_pulse":  { "type": "string",  "required": true,  "description": "The animating quality or action of the class" },
+    "apex_pose":        { "type": "string",  "required": true,  "description": "Peak pose or pose family the class builds toward" },
+    "physical_arc":     { "type": "string",  "required": true,  "description": "Single paragraph: how the class opens, builds, and closes" },
+    "upas_key_actions": { "type": "string",  "required": true,  "description": "UPAs and key physical actions. Semicolon or comma separated." },
+    "level":            { "type": "string",  "required": true,  "enum": "see level_enum", "format": "comma-separated" },
+    "categories":       { "type": "array",   "required": true,  "items": "see categories_enum" },
+    "props":   { "type": "string",  "required": false, "default": "mat, 2 blocks, 1 strap, 1-2 blankets" },
+    "opening_story":    { "type": "string",  "required": false, "description": "1-3 paragraphs Tiffany reads at class start. Connects title, affirmation, and energetic pulse." },
+    "notes":            { "type": "string",  "required": false, "description": "Internal notes only, not displayed publicly." }
   },
-  "date_formats": {
-    "Date": "YYYY-MM-DD or M/D/YYYY",
-    "Original Class Date": "YYYY-MM-DD or M/D/YYYY"
+
+  "removed_fields": {
+    "original_class_date": "Removed. No longer used."
   },
+
+  "day_of_week_defaults": {
+    "Monday":   { "time": "17:30", "duration": 60 },
+    "Tuesday":  { "time": "08:00", "duration": 60 },
+    "Thursday": { "time": "08:00", "duration": 60 },
+    "Saturday": { "time": "09:00", "duration": 90 }
+  },
+
   "constraints": {
-    "Description_max_sentences": 3
+    "description_max_sentences": 3,
+    "date_format": "YYYY-MM-DD only"
   }
 }

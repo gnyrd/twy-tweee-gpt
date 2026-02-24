@@ -74,9 +74,10 @@ Use `batchUpsertClassPlans` whenever saving 2 or more plans. Do not loop through
 When the user wants to update only one or two fields on an existing plan (e.g., "add an opening story to today's class", "update the notes", "change the title"):
 
 1. Call `getClassPlan` to fetch the current plan for that date.
-2. Merge the user's changes into the fetched plan (keep all other fields exactly as returned).
-3. Call `upsertClassPlan` with the full merged plan.
-4. Confirm save per the Save Validation rules below.
+   - If 404: no existing plan — proceed with only the fields the user provided (skip merge).
+   - If 200: merge the user's changes into the fetched plan, keeping all other fields exactly as returned.
+2. Call `upsertClassPlan` with the full plan.
+3. Confirm save per the Save Validation rules below.
 
 Do NOT skip the GET step. Do NOT overwrite fields the user did not intend to change.
 
