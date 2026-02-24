@@ -1,19 +1,164 @@
 openapi: 3.1.0
 info:
   title: TWY Class Plans
-  version: "1.0"
+  description: Create and retrieve yoga class plans for Tiffany Wood Yoga.
+  version: "1.0.0"
 servers:
-  - url: https://script.google.com/macros/s/AKfycbxH6rgPs1_WaG3cyQTxQkFgYyssL9dDcldhXL6Q4QDMhXqCysya206cJVaLxTbWquDFCQ
+  - url: https://classes.tiffanywood.yoga
 paths:
-  /exec:
+  /api/ping:
     get:
-      operationId: twyExec
-      parameters:
-        - name: req
-          in: query
-          required: true
-          schema:
-            type: string
+      operationId: ping
+      summary: Health check
       responses:
         "200":
           description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+
+  /api/plans:
+    get:
+      operationId: listClassPlans
+      summary: List class plans, optionally filtered by date range
+      parameters:
+        - name: from
+          in: query
+          description: Start date inclusive (YYYY-MM-DD)
+          schema: { type: string }
+        - name: to
+          in: query
+          description: End date inclusive (YYYY-MM-DD)
+          schema: { type: string }
+      responses:
+        "200":
+          description: Array of class plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/ClassPlan" }
+
+  /api/plans/{date}:
+    get:
+      operationId: getClassPlan
+      summary: Get a single class plan by date
+      parameters:
+        - name: date
+          in: path
+          required: true
+          description: Date in YYYY-MM-DD format
+          schema: { type: string }
+      responses:
+        "200":
+          description: Class plan
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ClassPlan" }
+        "404":
+          description: No plan for that date
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error: { type: string }
+    post:
+      operationId: upsertClassPlan
+      summary: Create or update a class plan for the given date
+      parameters:
+        - name: date
+          in: path
+          required: true
+          description: Date in YYYY-MM-DD format
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/ClassPlanInput" }
+      responses:
+        "200":
+          description: Saved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok:   { type: boolean }
+                  date: { type: string, description: "Final saved date" }
+
+components:
+  schemas:
+    ClassPlan:
+      type: object
+      properties:
+        id:               { type: string, description: "UUID4, assigned at creation" }
+        date:             { type: string, description: "YYYY-MM-DD" }
+        time:             { type: string, description: "HH:MM 24h, e.g. 17:30" }
+        duration:         { type: integer, description: "Minutes. Common: 60, 75, 90" }
+        class_type:       { $ref: "#/components/schemas/ClassType" }
+        title:            { type: string, description: "Short evocative class name" }
+        subtitle:         { type: string, description: "Optional thematic subtitle" }
+        description:      { type: string, description: "Max 3 sentences" }
+        affirmation:      { type: string }
+        energetic_pulse:  { type: string }
+        apex_pose:        { type: string }
+        physical_arc:     { type: string }
+        upas_key_actions: { type: string }
+        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:            { type: string, description: "Default: mat, 2 blocks, 1 strap, 1-2 blankets" }
+        opening_story:    { type: string }
+        notes:            { type: string }
+
+    ClassPlanInput:
+      type: object
+      description: "All fields optional on update; date + class_type + title required on create"
+      properties:
+        date:             { type: string, description: "YYYY-MM-DD" }
+        time:             { type: string, description: "HH:MM 24h" }
+        duration:         { type: integer }
+        class_type:       { $ref: "#/components/schemas/ClassType" }
+        title:            { type: string }
+        subtitle:         { type: string }
+        description:      { type: string, description: "Max 3 sentences" }
+        affirmation:      { type: string }
+        energetic_pulse:  { type: string }
+        apex_pose:        { type: string }
+        physical_arc:     { type: string }
+        upas_key_actions: { type: string }
+        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:            { type: string }
+        opening_story:    { type: string }
+        notes:            { type: string }
+
+    ClassType:
+      type: string
+      enum:
+        - Strengthen
+        - Stretch
+        - "Principles of Anusara®"
+        - Dynamic Flow
+        - Slow Flow
+        - Expansion
+        - Meditation
+        - Final Integration
+
+    Category:
+      type: string
+      enum:
+        - "Heart Openers & Backbend Strategies"
+        - "Upper Body Strength & Arm Balances"
+        - Hip Openers
+        - "Forward Folds & Twists"
+        - Core Strength
+        - Slow Flow
+        - Flow
+        - Meditation
+        - Therapy
+        - "Integration: Deepening Basics Anusara®"
