@@ -91,6 +91,38 @@ paths:
                   ok:   { type: boolean }
                   date: { type: string, description: "Final saved date" }
 
+  /api/plans/batch:
+    post:
+      operationId: batchUpsertClassPlans
+      summary: Save multiple class plans in a single call (up to ~20)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items: { $ref: "#/components/schemas/ClassPlanInput" }
+      responses:
+        "200":
+          description: Results for each plan
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  saved:
+                    type: array
+                    items: { type: string }
+                    description: Dates successfully saved
+                  failed:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        date:  { type: string }
+                        error: { type: string }
+                    description: Plans that failed to save
+
 components:
   schemas:
     ClassPlan:
