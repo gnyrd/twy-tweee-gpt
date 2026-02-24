@@ -43,15 +43,15 @@ paths:
                 items: { $ref: "#/components/schemas/ClassPlan" }
 
   /api/plans/{date}:
-    parameters:
-      - name: date
-        in: path
-        required: true
-        description: Date in YYYY-MM-DD format
-        schema: { type: string }
     get:
       operationId: getClassPlan
       summary: Get a single class plan by date
+      parameters:
+        - name: date
+          in: path
+          required: true
+          description: Date in YYYY-MM-DD format
+          schema: { type: string }
       responses:
         "200":
           description: Class plan
@@ -69,6 +69,12 @@ paths:
     post:
       operationId: upsertClassPlan
       summary: Create or update a class plan for the given date
+      parameters:
+        - name: date
+          in: path
+          required: true
+          description: Date in YYYY-MM-DD format
+          schema: { type: string }
       requestBody:
         required: true
         content:
