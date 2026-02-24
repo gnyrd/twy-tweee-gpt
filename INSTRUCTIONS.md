@@ -20,7 +20,8 @@ Available endpoints (defined in the GPT Actions schema):
 - `ping` — health check
 - `listClassPlans` — GET /api/plans — list plans, optional `from` and `to` date filters (YYYY-MM-DD)
 - `getClassPlan` — GET /api/plans/{date} — fetch a single plan by date
-- `upsertClassPlan` — POST /api/plans/{date} — create or update a plan for a given date
+- `upsertClassPlan` — POST /api/plans/{date} — create or update one plan; date is the URL, not in the body
+- `batchUpsertClassPlans` — POST /api/plans/batch — save multiple plans at once; each plan must include its own `date` field
 
 No API key or rootFolderId required.
 

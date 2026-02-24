@@ -105,7 +105,7 @@ paths:
               properties:
                 plans:
                   type: array
-                  items: { $ref: "#/components/schemas/ClassPlanInput" }
+                  items: { $ref: "#/components/schemas/BatchClassPlanInput" }
       responses:
         "200":
           description: Results for each plan
@@ -153,8 +153,31 @@ components:
 
     ClassPlanInput:
       type: object
-      description: "date is set by the URL path, not the body"
+      description: "date is set by the URL path, not the body. Use BatchClassPlanInput for batch saves."
       properties:
+        time:             { type: string, description: "HH:MM 24h" }
+        duration:         { type: integer }
+        class_type:       { $ref: "#/components/schemas/ClassType" }
+        title:            { type: string }
+        subtitle:         { type: string }
+        description:      { type: string, description: "Max 3 sentences" }
+        affirmation:      { type: string }
+        energetic_pulse:  { type: string }
+        apex_pose:        { type: string }
+        physical_arc:     { type: string }
+        upas_key_actions: { type: string }
+        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:            { type: string }
+        opening_story:    { type: string }
+        notes:            { type: string }
+
+    BatchClassPlanInput:
+      type: object
+      description: "Used in batch saves. date is required here since there is no URL path per item."
+      required: [date, class_type, title]
+      properties:
+        date:             { type: string, description: "YYYY-MM-DD" }
         time:             { type: string, description: "HH:MM 24h" }
         duration:         { type: integer }
         class_type:       { $ref: "#/components/schemas/ClassType" }
