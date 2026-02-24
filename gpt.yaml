@@ -153,9 +153,8 @@ components:
 
     ClassPlanInput:
       type: object
-      description: "All fields optional on update; date + class_type + title required on create"
+      description: "date is set by the URL path, not the body"
       properties:
-        date:             { type: string, description: "YYYY-MM-DD" }
         time:             { type: string, description: "HH:MM 24h" }
         duration:         { type: integer }
         class_type:       { $ref: "#/components/schemas/ClassType" }
