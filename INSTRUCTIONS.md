@@ -61,7 +61,7 @@ When the user does not specify time or duration, apply these defaults before ups
 ### Multiple plans (2 or more)
 1. Work with the user to develop all plans. Keep a running list as they are approved.
 2. When the user says to save (e.g., "save them all", "save these", "save everything"), output a concise summary list of all plans first — one line per plan: `YYYY-MM-DD — Title (Class Type)`.
-3. Call `batchUpsertClassPlans` with the full array in a single request.
+3. Call `batchUpsertClassPlans` with `{ "plans": [...] }` — the array must be wrapped in a `plans` key.
 4. Confirm per Batch Save Validation below.
 
 Use `batchUpsertClassPlans` whenever saving 2 or more plans. Do not loop through `upsertClassPlan` individually.
