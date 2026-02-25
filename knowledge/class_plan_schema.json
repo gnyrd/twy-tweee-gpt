@@ -1,18 +1,20 @@
 {
-  "version": "2026-02-24",
+  "version": "2026-02-25",
   "backend": "Flask + JSON files at classes.tiffanywood.yoga",
   "primary_key": "date",
   "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
   "field_names": "snake_case throughout",
 
   "class_types_enum": [
-    "Strengthen",
+    "Strength",
     "Stretch",
+    "Flow",
     "Principles of Anusara®",
     "Dynamic Flow",
     "Slow Flow",
     "Expansion",
     "Meditation",
+    "Integration",
     "Final Integration"
   ],
 
@@ -49,8 +51,9 @@
     "level":            { "type": "string",  "required": true,  "enum": "see level_enum", "format": "comma-separated" },
     "categories":       { "type": "array",   "required": true,  "items": "see categories_enum" },
     "props":   { "type": "string",  "required": false, "default": "mat, 2 blocks, 1 strap, 1-2 blankets" },
-    "opening_story":    { "type": "string",  "required": false, "description": "1-3 paragraphs Tiffany reads at class start. Connects title, affirmation, and energetic pulse." },
-    "notes":            { "type": "string",  "required": false, "description": "Internal notes only, not displayed publicly." }
+    "opening_story":       { "type": "string",  "required": false, "description": "1-3 paragraphs Tiffany reads at class start. Connects title, affirmation, and energetic pulse." },
+    "closing_reflection":  { "type": "string",  "required": false, "description": "Closing words or reflection Tiffany offers at the end of class." },
+    "notes":               { "type": "string",  "required": false, "description": "Internal notes only, not displayed publicly." }
   },
 
   "removed_fields": {

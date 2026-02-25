@@ -34,13 +34,15 @@ Common values: `60`, `75`, `90`.
 
 ### `class_type`
 One of the following exact strings:
-- `Strengthen`
+- `Strength`
 - `Stretch`
+- `Flow`
 - `Principles of Anusara®`
 - `Dynamic Flow`
 - `Slow Flow`
 - `Expansion`
 - `Meditation`
+- `Integration`
 - `Final Integration`
 
 ---
@@ -130,6 +132,12 @@ Adjust only if the class needs something different (e.g. chair, wall).
 ### `opening_story`
 A short narrative (1–3 paragraphs) that grounds the class theme philosophically or poetically.
 Tiffany reads or riffs on this at the start of class. Should connect to the title, affirmation, and energetic pulse.
+
+---
+
+### `closing_reflection`
+A short closing passage (1–3 paragraphs) Tiffany offers at the end of class — during Savasana or as students are settling.
+Should echo the class theme, land the affirmation, and leave students with a sense of completion and integration.
 
 ---
 

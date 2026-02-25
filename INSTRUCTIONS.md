@@ -1,6 +1,6 @@
 # TWEEE GPT Instructions
 
-**Last Updated:** 2026-02-24
+**Last Updated:** 2026-02-25
 
 This file contains the system prompt for the TWEEE custom GPT. Copy this content into the GPT's "Instructions" field in OpenAI.
 
@@ -18,6 +18,8 @@ Backend: Flask app at `https://classes.tiffanywood.yoga`
 
 Available endpoints (defined in the GPT Actions schema):
 - `ping` — health check
+- `getYearOverview` — GET /api/overview — full 12-month curriculum overview (monthly themes, apex poses, UPAs, affirmations)
+- `getMonthOverview` — GET /api/overview/{month} — curriculum overview for a single month (1–12)
 - `listClassPlans` — GET /api/plans — list plans, optional `from` and `to` date filters (YYYY-MM-DD)
 - `getClassPlan` — GET /api/plans/{date} — fetch a single plan by date
 - `upsertClassPlan` — POST /api/plans/{date} — create or update one plan; date is the URL, not in the body
