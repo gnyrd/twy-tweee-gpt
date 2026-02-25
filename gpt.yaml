@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: TWY Class Plans
   description: Create and retrieve yoga class plans for Tiffany Wood Yoga.
-  version: "1.0.0"
+  version: "1.1.0"
 servers:
   - url: https://classes.tiffanywood.yoga
 paths:
@@ -19,6 +19,39 @@ paths:
                 type: object
                 properties:
                   ok: { type: boolean }
+
+  /api/overview:
+    get:
+      operationId: getYearOverview
+      summary: Get the full yearly curriculum overview (all 12 months)
+      responses:
+        "200":
+          description: Object keyed by month number string ("1"–"12")
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+                additionalProperties: { $ref: "#/components/schemas/MonthlyOverview" }
+
+  /api/overview/{month}:
+    get:
+      operationId: getMonthOverview
+      summary: Get the curriculum overview for a single month
+      parameters:
+        - name: month
+          in: path
+          required: true
+          description: Month number (1–12)
+          schema: { type: integer, minimum: 1, maximum: 12 }
+      responses:
+        "200":
+          description: Monthly overview
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/MonthlyOverview" }
+        "404":
+          description: No overview for that month
 
   /api/plans:
     get:
@@ -129,82 +162,101 @@ paths:
 
 components:
   schemas:
+    MonthlyOverview:
+      type: object
+      properties:
+        month:             { type: integer, description: "1–12" }
+        name:              { type: string, description: "Month name, e.g. March" }
+        title:             { type: string, description: "Series title for the month" }
+        energetic_pulse:   { type: string }
+        upa:               { type: string, description: "Universal Principle(s) of Alignment" }
+        apex_pose:         { type: string }
+        physical_arc:      { type: string }
+        evolutional_focus: { type: string }
+        affirmation:       { type: string }
+        teaching_notes:    { type: string }
+
     ClassPlan:
       type: object
       properties:
-        id:               { type: string, description: "UUID4, assigned at creation" }
-        date:             { type: string, description: "YYYY-MM-DD" }
-        time:             { type: string, description: "HH:MM 24h, e.g. 17:30" }
-        duration:         { type: integer, description: "Minutes. Common: 60, 75, 90" }
-        class_type:       { $ref: "#/components/schemas/ClassType" }
-        title:            { type: string, description: "Short evocative class name" }
-        subtitle:         { type: string, description: "Optional thematic subtitle" }
-        description:      { type: string, description: "Max 3 sentences" }
-        affirmation:      { type: string }
-        energetic_pulse:  { type: string }
-        apex_pose:        { type: string }
-        physical_arc:     { type: string }
-        upas_key_actions: { type: string }
-        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
-        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
-        props:            { type: string, description: "Default: mat, 2 blocks, 1 strap, 1-2 blankets" }
-        opening_story:    { type: string }
-        notes:            { type: string }
+        id:                 { type: string, description: "UUID4, assigned at creation" }
+        date:               { type: string, description: "YYYY-MM-DD" }
+        time:               { type: string, description: "HH:MM 24h, e.g. 17:30" }
+        duration:           { type: integer, description: "Minutes. Common: 60, 75, 90" }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
+        title:              { type: string, description: "Short evocative class name" }
+        subtitle:           { type: string, description: "Optional thematic subtitle" }
+        description:        { type: string, description: "Max 3 sentences" }
+        affirmation:        { type: string }
+        energetic_pulse:    { type: string }
+        apex_pose:          { type: string }
+        physical_arc:       { type: string }
+        upas_key_actions:   { type: string }
+        level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:              { type: string, description: "Default: mat, 2 blocks, 1 strap, 1-2 blankets" }
+        opening_story:      { type: string }
+        closing_reflection: { type: string }
+        notes:              { type: string }
 
     ClassPlanInput:
       type: object
       description: "date is set by the URL path, not the body. Use BatchClassPlanInput for batch saves."
       properties:
-        time:             { type: string, description: "HH:MM 24h" }
-        duration:         { type: integer }
-        class_type:       { $ref: "#/components/schemas/ClassType" }
-        title:            { type: string }
-        subtitle:         { type: string }
-        description:      { type: string, description: "Max 3 sentences" }
-        affirmation:      { type: string }
-        energetic_pulse:  { type: string }
-        apex_pose:        { type: string }
-        physical_arc:     { type: string }
-        upas_key_actions: { type: string }
-        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
-        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
-        props:            { type: string }
-        opening_story:    { type: string }
-        notes:            { type: string }
+        time:               { type: string, description: "HH:MM 24h" }
+        duration:           { type: integer }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
+        title:              { type: string }
+        subtitle:           { type: string }
+        description:        { type: string, description: "Max 3 sentences" }
+        affirmation:        { type: string }
+        energetic_pulse:    { type: string }
+        apex_pose:          { type: string }
+        physical_arc:       { type: string }
+        upas_key_actions:   { type: string }
+        level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:              { type: string }
+        opening_story:      { type: string }
+        closing_reflection: { type: string }
+        notes:              { type: string }
 
     BatchClassPlanInput:
       type: object
       description: "Used in batch saves. date is required here since there is no URL path per item."
       required: [date, class_type, title]
       properties:
-        date:             { type: string, description: "YYYY-MM-DD" }
-        time:             { type: string, description: "HH:MM 24h" }
-        duration:         { type: integer }
-        class_type:       { $ref: "#/components/schemas/ClassType" }
-        title:            { type: string }
-        subtitle:         { type: string }
-        description:      { type: string, description: "Max 3 sentences" }
-        affirmation:      { type: string }
-        energetic_pulse:  { type: string }
-        apex_pose:        { type: string }
-        physical_arc:     { type: string }
-        upas_key_actions: { type: string }
-        level:            { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
-        categories:       { type: array, items: { $ref: "#/components/schemas/Category" } }
-        props:            { type: string }
-        opening_story:    { type: string }
-        notes:            { type: string }
+        date:               { type: string, description: "YYYY-MM-DD" }
+        time:               { type: string, description: "HH:MM 24h" }
+        duration:           { type: integer }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
+        title:              { type: string }
+        subtitle:           { type: string }
+        description:        { type: string, description: "Max 3 sentences" }
+        affirmation:        { type: string }
+        energetic_pulse:    { type: string }
+        apex_pose:          { type: string }
+        physical_arc:       { type: string }
+        upas_key_actions:   { type: string }
+        level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
+        categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
+        props:              { type: string }
+        opening_story:      { type: string }
+        closing_reflection: { type: string }
+        notes:              { type: string }
 
     ClassType:
       type: string
       enum:
-        - Strengthen
+        - Strength
         - Stretch
+        - Flow
         - "Principles of Anusara®"
         - Dynamic Flow
         - Slow Flow
         - Expansion
         - Meditation
+        - Integration
         - Final Integration
 
     Category:
