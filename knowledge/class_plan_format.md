@@ -53,9 +53,9 @@ Short, evocative class name. 2–5 words. Poetic or thematic.
 
 ---
 
-### `subtitle`
-Optional thematic expansion of the title. Often uses `~` as a separator.
-**Example:** `"Rooted Rhythm ~ Sacred Vessel of Strength"`
+### `series`
+The name of the monthly series this class belongs to.
+**Example:** `"Clarify"`, `"Rooted Rhythm"`
 
 ---
 
@@ -78,6 +78,18 @@ A first-person present-tense statement aligned with the class theme.
 ### `energetic_pulse`
 The energetic action or quality that animates the class. Usually a short phrase.
 **Example:** `"Hug to Center then Expand with Integrity"`
+
+---
+
+### `teaching_lens`
+A short phrase capturing the thematic teaching intention for the class. Frames how tapas, UPAs, or yogic principles are applied.
+**Example:** `"Tapas as radiance, not rigidity"`, `"Boundaries create brilliance"`
+
+---
+
+### `physical_focus`
+A short descriptor of the physical focus area of the class.
+**Example:** `"Twists & Hamstrings"`, `"Standing Balance Twists & Outer Hip Stability"`
 
 ---
 

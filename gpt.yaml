@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: TWY Class Plans
   description: Create and retrieve yoga class plans for Tiffany Wood Yoga.
-  version: "1.1.0"
+  version: "1.2.0"
 servers:
   - url: https://classes.tiffanywood.yoga
 paths:
@@ -183,15 +183,17 @@ components:
         date:               { type: string, description: "YYYY-MM-DD" }
         time:               { type: string, description: "HH:MM 24h, e.g. 17:30" }
         duration:           { type: integer, description: "Minutes. Common: 60, 75, 90" }
-        class_type:         { $ref: "#/components/schemas/ClassType" }
         title:              { type: string, description: "Short evocative class name" }
-        subtitle:           { type: string, description: "Optional thematic subtitle" }
+        series:             { type: string, description: "Series name, e.g. Clarify" }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
         description:        { type: string, description: "Max 3 sentences" }
-        affirmation:        { type: string }
-        energetic_pulse:    { type: string }
         apex_pose:          { type: string }
+        energetic_pulse:    { type: string }
+        teaching_lens:      { type: string, description: "Short thematic teaching intention" }
+        physical_focus:     { type: string, description: "Physical focus area, e.g. Twists & Hamstrings" }
         physical_arc:       { type: string }
         upas_key_actions:   { type: string }
+        affirmation:        { type: string }
         level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
         categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
         props:              { type: string, description: "Default: mat, 2 blocks, 1 strap, 1-2 blankets" }
@@ -205,15 +207,17 @@ components:
       properties:
         time:               { type: string, description: "HH:MM 24h" }
         duration:           { type: integer }
-        class_type:         { $ref: "#/components/schemas/ClassType" }
         title:              { type: string }
-        subtitle:           { type: string }
+        series:             { type: string }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
         description:        { type: string, description: "Max 3 sentences" }
-        affirmation:        { type: string }
-        energetic_pulse:    { type: string }
         apex_pose:          { type: string }
+        energetic_pulse:    { type: string }
+        teaching_lens:      { type: string }
+        physical_focus:     { type: string }
         physical_arc:       { type: string }
         upas_key_actions:   { type: string }
+        affirmation:        { type: string }
         level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
         categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
         props:              { type: string }
@@ -229,15 +233,17 @@ components:
         date:               { type: string, description: "YYYY-MM-DD" }
         time:               { type: string, description: "HH:MM 24h" }
         duration:           { type: integer }
-        class_type:         { $ref: "#/components/schemas/ClassType" }
         title:              { type: string }
-        subtitle:           { type: string }
+        series:             { type: string }
+        class_type:         { $ref: "#/components/schemas/ClassType" }
         description:        { type: string, description: "Max 3 sentences" }
-        affirmation:        { type: string }
-        energetic_pulse:    { type: string }
         apex_pose:          { type: string }
+        energetic_pulse:    { type: string }
+        teaching_lens:      { type: string }
+        physical_focus:     { type: string }
         physical_arc:       { type: string }
         upas_key_actions:   { type: string }
+        affirmation:        { type: string }
         level:              { type: string, description: "Comma-separated subset of: Fundamentals, 1, 2" }
         categories:         { type: array, items: { $ref: "#/components/schemas/Category" } }
         props:              { type: string }
