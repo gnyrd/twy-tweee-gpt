@@ -1,10 +1,9 @@
 {
-  "version": "2026-02-27",
+  "version": "2026-03-27",
   "backend": "Flask + JSON files at classes.tiffanywood.yoga",
   "primary_key": "date",
   "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
   "field_names": "snake_case throughout",
-
   "class_types_enum": [
     "Strength",
     "Stretch",
@@ -15,11 +14,15 @@
     "Expansion",
     "Meditation",
     "Integration",
-    "Final Integration"
+    "Final Integration",
+    "Habit"
   ],
-
   "categories_enum": [
-    "Heart Openers & Backbend Strategies",
+    "Foundations of Anusara® Yoga",
+    "Integration: Deepening Basics Anusara®",
+    "Dynamic Flow: Hips, Heart, & Core - Anusara®",
+    "Mastery Flow: Expanding Capacity Anusara®",
+    "Heart Openers & Back Bend Strategies",
     "Upper Body Strength & Arm Balances",
     "Hip Openers",
     "Forward Folds & Twists",
@@ -27,50 +30,184 @@
     "Slow Flow",
     "Flow",
     "Meditation",
-    "Therapy",
-    "Integration: Deepening Basics Anusara®"
+    "Therapy"
   ],
-
-  "level_enum": ["Fundamentals", "1", "2"],
+  "level_enum": [
+    "Fundamentals",
+    "1",
+    "2"
+  ],
   "level_note": "Comma-separated string. 'Fundamentals' = beginner/foundation. Example: \"1,2\" or \"Fundamentals\" or \"2\"",
-
   "fields": {
-    "id":               { "type": "string",  "set_by": "server", "description": "UUID4. Never include in upsert requests." },
-    "date":             { "type": "string",  "required": true,  "format": "YYYY-MM-DD" },
-    "time":             { "type": "string",  "required": false, "format": "HH:MM (24h)", "examples": ["08:00", "17:30", "09:00"] },
-    "duration":         { "type": "integer", "required": false, "description": "Minutes. Common: 60, 75, 90" },
-    "class_type":       { "type": "string",  "required": true,  "enum": "see class_types_enum" },
-    "title":            { "type": "string",  "required": true,  "description": "Short evocative class name, 2-5 words" },
-    "series":           { "type": "string",  "required": false, "description": "Monthly series name, e.g. Clarify" },
-    "description":      { "type": "string",  "required": true,  "max_sentences": 3 },
-    "apex_pose":        { "type": "string",  "required": true,  "description": "Peak pose or pose family the class builds toward" },
-    "energetic_pulse":  { "type": "string",  "required": true,  "description": "The animating quality or action of the class" },
-    "teaching_lens":    { "type": "string",  "required": false, "description": "Short thematic teaching intention, e.g. Tapas as radiance, not rigidity" },
-    "physical_focus":   { "type": "string",  "required": false, "description": "Physical focus area, e.g. Twists & Hamstrings" },
-    "physical_arc":     { "type": "string",  "required": true,  "description": "Single paragraph: how the class opens, builds, and closes" },
-    "affirmation":      { "type": "string",  "required": true,  "description": "First-person present-tense statement" },
-    "upas_key_actions": { "type": "string",  "required": true,  "description": "UPAs and key physical actions. Semicolon or comma separated." },
-    "level":            { "type": "string",  "required": true,  "enum": "see level_enum", "format": "comma-separated" },
-    "categories":       { "type": "array",   "required": true,  "items": "see categories_enum" },
-    "props":   { "type": "string",  "required": false, "default": "mat, 2 blocks, 1 strap, 1-2 blankets" },
-    "opening_story":       { "type": "string",  "required": false, "description": "1-3 paragraphs Tiffany reads at class start. Connects title, affirmation, and energetic pulse." },
-    "closing_reflection":  { "type": "string",  "required": false, "description": "Closing words or reflection Tiffany offers at the end of class." },
-    "notes":               { "type": "string",  "required": false, "description": "Internal notes only, not displayed publicly." }
+    "id": {
+      "type": "string",
+      "set_by": "server",
+      "description": "UUID4. Never include in upsert requests."
+    },
+    "date": {
+      "type": "string",
+      "required": true,
+      "format": "YYYY-MM-DD"
+    },
+    "time": {
+      "type": "string",
+      "required": false,
+      "format": "HH:MM (24h)",
+      "examples": [
+        "08:00",
+        "17:30",
+        "09:00"
+      ]
+    },
+    "duration": {
+      "type": "integer",
+      "required": false,
+      "description": "Minutes. Common: 60, 75, 90"
+    },
+    "class_type": {
+      "type": "string",
+      "required": true,
+      "enum": "see class_types_enum"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "description": "Short evocative class name, 2-5 words"
+    },
+    "series": {
+      "type": "string",
+      "required": false,
+      "description": "Monthly series name, e.g. Clarify"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "max_sentences": 3
+    },
+    "apex_pose": {
+      "type": "string",
+      "required": true,
+      "description": "Peak pose or pose family the class builds toward"
+    },
+    "energetic_pulse": {
+      "type": "string",
+      "required": true,
+      "description": "The animating quality or action of the class"
+    },
+    "teaching_lens": {
+      "type": "string",
+      "required": false,
+      "description": "Short thematic teaching intention, e.g. Tapas as radiance, not rigidity"
+    },
+    "physical_focus": {
+      "type": "string",
+      "required": false,
+      "description": "Physical focus area, e.g. Twists & Hamstrings"
+    },
+    "physical_arc": {
+      "type": "string",
+      "required": true,
+      "description": "Single paragraph: how the class opens, builds, and closes"
+    },
+    "affirmation": {
+      "type": "string",
+      "required": true,
+      "description": "First-person present-tense statement"
+    },
+    "upas_key_actions": {
+      "type": "string",
+      "required": true,
+      "description": "UPAs and key physical actions. Semicolon or comma separated."
+    },
+    "level": {
+      "type": "string",
+      "required": true,
+      "enum": "see level_enum",
+      "format": "comma-separated"
+    },
+    "categories": {
+      "type": "array",
+      "required": true,
+      "items": "see categories_enum"
+    },
+    "props": {
+      "type": "string",
+      "required": false,
+      "default": "mat, 2 blocks, 1 strap, 1-2 blankets"
+    },
+    "opening_story": {
+      "type": "string",
+      "required": false,
+      "description": "1-3 paragraphs Tiffany reads at class start. Connects title, affirmation, and energetic pulse."
+    },
+    "closing_reflection": {
+      "type": "string",
+      "required": false,
+      "description": "Closing words or reflection Tiffany offers at the end of class."
+    },
+    "notes": {
+      "type": "string",
+      "required": false,
+      "description": "Internal notes only, not displayed publicly."
+    }
   },
-
   "removed_fields": {
     "original_class_date": "Removed. No longer used."
   },
-
   "day_of_week_defaults": {
-    "Monday":   { "time": "17:30", "duration": 60 },
-    "Tuesday":  { "time": "08:00", "duration": 60 },
-    "Thursday": { "time": "08:00", "duration": 60 },
-    "Saturday": { "time": "09:00", "duration": 90 }
+    "Monday": {
+      "time": "17:30",
+      "duration": 60
+    },
+    "Tuesday": {
+      "time": "08:00",
+      "duration": 60
+    },
+    "Thursday": {
+      "time": "08:00",
+      "duration": 60
+    },
+    "Saturday": {
+      "time": "09:00",
+      "duration": 90
+    }
   },
-
   "constraints": {
     "description_max_sentences": 3,
     "date_format": "YYYY-MM-DD only"
+  },
+  "category_defaults_by_class_type": {
+    "Flow": [
+      "Flow"
+    ],
+    "Dynamic Flow": [
+      "Flow"
+    ],
+    "Slow Flow": [
+      "Slow Flow"
+    ],
+    "Strength": [
+      "Upper Body Strength & Arm Balances",
+      "Core Strength"
+    ],
+    "Stretch": [
+      "Hip Openers",
+      "Forward Folds & Twists"
+    ],
+    "Expansion": [
+      "Heart Openers & Back Bend Strategies"
+    ],
+    "Meditation": [
+      "Meditation"
+    ],
+    "Principles of Anusara®": [
+      "Foundations of Anusara® Yoga"
+    ],
+    "Final Integration": [
+      "Integration: Deepening Basics Anusara®"
+    ],
+    "Habit": [
+      "Foundations of Anusara® Yoga"
+    ]
   }
 }
