@@ -160,6 +160,81 @@ paths:
                         error: { type: string }
                     description: Plans that failed to save
 
+  /api/newsletter-prompt/members/{month}:
+    get:
+      operationId: getMembersPrompt
+      summary: Get the members newsletter prompt for a given month
+      parameters:
+        - name: month
+          in: path
+          required: true
+          schema: { type: integer, minimum: 1, maximum: 12 }
+      responses:
+        "200":
+          description: Prompt text
+          content:
+            text/plain:
+              schema: { type: string }
+        "404":
+          description: Prompt not yet generated
+
+  /api/newsletter-prompt/nonmembers/{month}:
+    get:
+      operationId: getNonmembersPrompt
+      summary: Get the non-members newsletter prompt for a given month
+      parameters:
+        - name: month
+          in: path
+          required: true
+          schema: { type: integer, minimum: 1, maximum: 12 }
+      responses:
+        "200":
+          description: Prompt text
+          content:
+            text/plain:
+              schema: { type: string }
+        "404":
+          description: Prompt not yet generated
+
+  /api/newsletters/{month}:
+    post:
+      operationId: submitNewsletters
+      summary: Submit both authored newsletters
+      parameters:
+        - name: month
+          in: path
+          required: true
+          schema: { type: integer, minimum: 1, maximum: 12 }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [members, nonmembers]
+              properties:
+                members:
+                  type: object
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
+                nonmembers:
+                  type: object
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
+      responses:
+        "200":
+          description: Saved and posted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  ok: { type: boolean }
+
 components:
   schemas:
     MonthlyOverview:
@@ -264,6 +339,7 @@ components:
         - Meditation
         - Integration
         - Final Integration
+        - Habit
 
     Category:
       type: string
