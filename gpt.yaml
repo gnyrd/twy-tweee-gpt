@@ -162,7 +162,7 @@ paths:
 
   /api/newsletter-prompt/members/{month}:
     get:
-      operationId: getMembersPrompt
+      operationId: getTYLMonthlyNewsletterPrompt
       summary: Get the members newsletter prompt for a given month
       parameters:
         - name: month
@@ -180,7 +180,7 @@ paths:
 
   /api/newsletter-prompt/nonmembers/{month}:
     get:
-      operationId: getNonmembersPrompt
+      operationId: getNonTYLMonthlyNewsletterPrompt
       summary: Get the non-members newsletter prompt for a given month
       parameters:
         - name: month
