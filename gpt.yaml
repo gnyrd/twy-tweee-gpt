@@ -4,7 +4,7 @@ info:
   description: Create and retrieve yoga class plans for Tiffany Wood Yoga.
   version: "1.2.0"
 servers:
-  - url: https://classes.tiffanywood.yoga
+  - url: https://classes.tiffanywoodyoga.com
 paths:
   /api/ping:
     get:
@@ -160,11 +160,18 @@ paths:
                         error: { type: string }
                     description: Plans that failed to save
 
-  /api/newsletter-prompt/members/{month}:
+  /api/newsletter-prompt/{audience}/{month}:
     get:
-      operationId: getTYLMonthlyNewsletterPrompt
-      summary: Get the members newsletter prompt for a given month
+      operationId: getNewsletterPrompt
+      summary: Get a newsletter or follow-up prompt for a given audience and month
       parameters:
+        - name: audience
+          in: path
+          required: true
+          description: "One of: lifestyle, non-lifestyle, ph1, ph2"
+          schema:
+            type: string
+            enum: [lifestyle, non-lifestyle, ph1, ph2]
         - name: month
           in: path
           required: true
@@ -175,31 +182,15 @@ paths:
           content:
             text/plain:
               schema: { type: string }
-        "404":
-          description: Prompt not yet generated
-
-  /api/newsletter-prompt/nonmembers/{month}:
-    get:
-      operationId: getNonTYLMonthlyNewsletterPrompt
-      summary: Get the non-members newsletter prompt for a given month
-      parameters:
-        - name: month
-          in: path
-          required: true
-          schema: { type: integer, minimum: 1, maximum: 12 }
-      responses:
-        "200":
-          description: Prompt text
-          content:
-            text/plain:
-              schema: { type: string }
+        "400":
+          description: Invalid audience
         "404":
           description: Prompt not yet generated
 
   /api/newsletters/{month}:
     post:
       operationId: submitNewsletters
-      summary: Submit both authored newsletters
+      summary: Submit authored newsletters for the month. lifestyle + non_lifestyle are required; ph1 and ph2 are optional post-Habit-class follow-up emails.
       parameters:
         - name: month
           in: path
@@ -211,16 +202,30 @@ paths:
           application/json:
             schema:
               type: object
-              required: [members, nonmembers]
+              required: [lifestyle, non_lifestyle]
               properties:
-                members:
+                lifestyle:
                   type: object
                   required: [subject, body]
                   properties:
                     subject: { type: string }
                     body: { type: string }
-                nonmembers:
+                non_lifestyle:
                   type: object
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
+                ph1:
+                  type: object
+                  description: Post-Habit-class follow-up 1 (sent +24hrs). Optional.
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
+                ph2:
+                  type: object
+                  description: Post-Habit-class follow-up 2 (sent +7 days). Optional.
                   required: [subject, body]
                   properties:
                     subject: { type: string }
