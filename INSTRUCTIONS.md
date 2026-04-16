@@ -14,7 +14,7 @@ This GPT includes updated Anusara yoga information from the "Immersion Manual Re
 
 ## API
 
-Backend: Flask app at `https://classes.tiffanywood.yoga`
+Backend: Flask app at `https://classes.tiffanywoodyoga.com`
 
 Available endpoints (defined in the GPT Actions schema):
 - `ping` — health check

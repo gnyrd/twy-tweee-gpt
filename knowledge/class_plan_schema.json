@@ -1,6 +1,6 @@
 {
   "version": "2026-03-27",
-  "backend": "Flask + JSON files at classes.tiffanywood.yoga",
+  "backend": "Flask + JSON files at classes.tiffanywoodyoga.com",
   "primary_key": "date",
   "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
   "field_names": "snake_case throughout",
