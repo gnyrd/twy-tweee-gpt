@@ -1,8 +1,8 @@
 openapi: 3.1.0
 info:
-  title: TWY Class Plans
-  description: Create and retrieve yoga class plans for Tiffany Wood Yoga.
-  version: "1.2.0"
+  title: TWY Class Plans and Newsletters
+  description: Class plan authoring (per-date) and monthly Yoga Habit newsletter authoring for Tiffany Wood Yoga. Class-plan endpoints and newsletter endpoints are distinct - see operation descriptions for routing.
+  version: "1.3.0"
 servers:
   - url: https://classes.tiffanywoodyoga.com
 paths:
@@ -101,7 +101,9 @@ paths:
                   error: { type: string }
     post:
       operationId: upsertClassPlan
-      summary: Create or update a class plan for the given date
+      summary: Save one yoga class plan for one specific calendar date (NOT for newsletters)
+      description: |
+        Save one yoga class plan tied to a single date (YYYY-MM-DD). NOT for newsletters. The monthly Yoga Habit newsletter routes to submitMonthlyHabitNewsletters even though Habit is also a class_type enum value.
       parameters:
         - name: date
           in: path
@@ -127,7 +129,11 @@ paths:
   /api/plans/batch:
     post:
       operationId: batchUpsertClassPlans
-      summary: Save multiple class plans in a single call (up to ~20)
+      summary: Save multiple yoga class plans at once, each tied to its own specific date (NOT for newsletters)
+      description: |
+        Use ONLY for class plans tied to specific calendar dates. Do NOT use for newsletter content
+        even when the user asks for "all of [Month]" - monthly newsletter content goes through
+        submitMonthlyHabitNewsletters, not this endpoint.
       requestBody:
         required: true
         content:
@@ -163,7 +169,9 @@ paths:
   /api/newsletter-prompt/{audience}/{month}:
     get:
       operationId: getNewsletterPrompt
-      summary: Get a newsletter or follow-up prompt for a given audience and month
+      summary: Get the monthly Yoga Habit newsletter authoring prompt for an audience and month
+      description: |
+        Call FIRST when creating/drafting/writing monthly newsletter content. Returns the prompt with month context, key dates, Habit class details. Audiences: lifestyle, non-lifestyle, ph1 (+24h post-Habit), ph2 (+7d post-Habit). Submit via submitMonthlyHabitNewsletters.
       parameters:
         - name: audience
           in: path
@@ -189,8 +197,10 @@ paths:
 
   /api/newsletters/{month}:
     post:
-      operationId: submitNewsletters
-      summary: Submit authored newsletters for the month. lifestyle + non_lifestyle are required; ph1 and ph2 are optional post-Habit-class follow-up emails.
+      operationId: submitMonthlyHabitNewsletters
+      summary: Submit the monthly Yoga Habit newsletter package (lifestyle + non-lifestyle required; ph1 and ph2 optional post-Habit follow-ups)
+      description: |
+        Use to create/draft/write the monthly Yoga Habit newsletter (e.g. "Create the [Month] [Year] Yoga Habit content", "Draft [Month] newsletters"). Call getNewsletterPrompt FIRST per audience (lifestyle, non-lifestyle; optional ph1/ph2). lifestyle + non_lifestyle required. NOT for class plans.
       parameters:
         - name: month
           in: path
