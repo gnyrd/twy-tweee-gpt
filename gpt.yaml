@@ -171,15 +171,15 @@ paths:
       operationId: getNewsletterPrompt
       summary: Get the monthly Yoga Habit newsletter authoring prompt for an audience and month
       description: |
-        Call FIRST when creating/drafting/writing monthly newsletter content. Returns the prompt with month context, key dates, Habit class details. Audiences: lifestyle, non-lifestyle, reminder, ph1 (+24h post-Habit), ph2 (+7d post-Habit). Submit via submitMonthlyHabitNewsletters.
+        Call FIRST when drafting monthly Yoga Habit newsletter content. Returns the prompt with month context, key dates, class details. Audiences: lifestyle, non-lifestyle, non-opener, reminder, gentle-nudge, ph1, ph2. Submit via submitMonthlyHabitNewsletters.
       parameters:
         - name: audience
           in: path
           required: true
-          description: "One of: lifestyle, non-lifestyle, reminder, ph1, ph2"
+          description: "One of: lifestyle, non-lifestyle, non-opener, reminder, gentle-nudge, ph1, ph2"
           schema:
             type: string
-            enum: [lifestyle, non-lifestyle, reminder, ph1, ph2]
+            enum: [lifestyle, non-lifestyle, non-opener, reminder, gentle-nudge, ph1, ph2]
         - name: month
           in: path
           required: true
@@ -198,9 +198,9 @@ paths:
   /api/newsletters/{month}:
     post:
       operationId: submitMonthlyHabitNewsletters
-      summary: Submit the monthly Yoga Habit newsletter package (lifestyle + non-lifestyle required; reminder, ph1, ph2 optional)
+      summary: Submit the monthly Yoga Habit newsletter package (lifestyle + non-lifestyle required; non-opener, reminder, gentle-nudge, ph1, ph2 optional)
       description: |
-        Use to create/draft/write the monthly Yoga Habit newsletter (e.g. "Create the [Month] [Year] Yoga Habit content", "Draft [Month] newsletters"). Call getNewsletterPrompt FIRST per audience (required: lifestyle, non-lifestyle; optional: reminder, ph1, ph2). NOT for class plans.
+        Use to create/draft/write the monthly Yoga Habit newsletter content (e.g. "Create the [Month] [Year] Yoga Habit content"). Call getNewsletterPrompt FIRST per audience. Required: lifestyle, non-lifestyle. Optional: non-opener, reminder, gentle-nudge, ph1, ph2. NOT for class plans.
       parameters:
         - name: month
           in: path
@@ -240,9 +240,23 @@ paths:
                   properties:
                     subject: { type: string }
                     body: { type: string }
+                non_opener:
+                  type: object
+                  description: Second-send outreach to non-openers of the first non-member newsletter (sent ~5 days before class). Optional.
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
                 reminder:
                   type: object
-                  description: Pre-class reminder for non-openers (sent 3-5 days before Habit class). Optional.
+                  description: Day-before reminder to registered attendees with practical info (no register link). Optional.
+                  required: [subject, body]
+                  properties:
+                    subject: { type: string }
+                    body: { type: string }
+                gentle_nudge:
+                  type: object
+                  description: Soft day-before nudge to openers of the first newsletter who did not register. Optional.
                   required: [subject, body]
                   properties:
                     subject: { type: string }

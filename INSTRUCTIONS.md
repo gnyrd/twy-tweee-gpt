@@ -19,8 +19,8 @@ Backend: Flask app at `https://classes.tiffanywoodyoga.com`
 - `getClassPlan` — GET /api/plans/{date} — fetch one plan by date
 - `upsertClassPlan` — POST /api/plans/{date} — save one plan; date is the URL, not the body
 - `batchUpsertClassPlans` — POST /api/plans/batch — save multiple plans at once
-- `getNewsletterPrompt` — GET /api/newsletter-prompt/{audience}/{month} — fetch the monthly Yoga Habit newsletter prompt for an audience (lifestyle, non-lifestyle, reminder, ph1, ph2) and month (1-12)
-- `submitMonthlyHabitNewsletters` — POST /api/newsletters/{month} — submit the newsletter package (lifestyle + non-lifestyle required; reminder, ph1, ph2 optional)
+- `getNewsletterPrompt` — GET /api/newsletter-prompt/{audience}/{month} — fetch the monthly Yoga Habit newsletter prompt for an audience (lifestyle, non-lifestyle, non-opener, reminder, gentle-nudge, ph1, ph2) and month (1-12)
+- `submitMonthlyHabitNewsletters` — POST /api/newsletters/{month} — submit the newsletter package (lifestyle + non-lifestyle required; non-opener, reminder, gentle-nudge, ph1, ph2 optional)
 
 No API key or rootFolderId required.
 
@@ -160,10 +160,10 @@ Never assume success from calling the action alone.
 
 Use when the request matches a Newsletter trigger (see Routing).
 
-1. Call `getNewsletterPrompt` for each required audience (`lifestyle`, `non-lifestyle`) and any requested optional emails (`reminder`, `ph1`, `ph2`) at the given month. If a prompt 404s, report and stop — do not invent content.
-2. Author each email per its prompt. Each needs `subject` + `body`. `lifestyle` and `non_lifestyle` required; `reminder`/`ph1`/`ph2` optional unless asked.
+1. Call `getNewsletterPrompt` for ALL SEVEN audiences as the standard monthly cycle: `lifestyle`, `non-lifestyle`, `non-opener`, `reminder`, `gentle-nudge`, `ph1`, `ph2`. If any prompt 404s, report which one and stop — do not invent content. Triggers like "Create the [Month] Yoga Habit content" or "Draft [Month] newsletters" mean ALL SEVEN.
+2. Author each email per its prompt. Each needs `subject` + `body`. All seven are part of the standard cycle. (If the user asks for a single specific audience, fetch and draft only that one.)
 3. Output a clean human-readable preview FIRST. No JSON, no URLs, no debug.
-4. On user approval, call `submitMonthlyHabitNewsletters` with month + payload `{ lifestyle: {subject, body}, non_lifestyle: {subject, body}[, reminder: {...}][, ph1: {...}][, ph2: {...}] }`.
+4. On user approval, call `submitMonthlyHabitNewsletters` with month + payload `{ lifestyle: {subject, body}, non_lifestyle: {subject, body}[, non_opener: {...}][, reminder: {...}][, gentle_nudge: {...}][, ph1: {...}][, ph2: {...}] }`. Note the underscore form (`non_opener`, `gentle_nudge`, `non_lifestyle`) in the body, vs hyphen form in the URL path.
 5. Confirm per Newsletter Save Validation.
 
 Do NOT use `upsertClassPlan` or `batchUpsertClassPlans` here.
@@ -178,7 +178,7 @@ Do NOT use `upsertClassPlan` or `batchUpsertClassPlans` here.
   ```
   Newsletters saved.
   Month: [Month name] [Year]
-  Audiences: lifestyle, non-lifestyle[, reminder, ph1, ph2]
+  Audiences: lifestyle, non-lifestyle[, non-opener, reminder, gentle-nudge, ph1, ph2]
   ```
 - Failure (ok: false, HTTP error, or exception):
   ```
