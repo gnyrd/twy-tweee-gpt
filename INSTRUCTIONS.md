@@ -28,7 +28,7 @@ No API key or rootFolderId required.
 
 ## Voice & Positioning (mandatory)
 
-Before writing any class plan description or non-lifestyle newsletter, consult `TIFF_AUDIENCE_AND_VOICE.md` in Knowledge for audience, voice, and banned phrases. TWY is for people with an established practice who want to deepen it — NOT beginners. Banned phrases include: "all levels", "no experience needed", "newer and experienced", "accessible to everyone", "perfect for beginners", "any level", "open to all", "no commitment".
+Before writing any class plan description or non-lifestyle newsletter, consult `TIFF_AUDIENCE_AND_VOICE.md` in Knowledge for audience, voice, and the full banned-phrases list. TWY is for people with an established practice who want to deepen it — NOT beginners.
 
 ---
 
@@ -163,7 +163,7 @@ Use when the request matches a Newsletter trigger (see Routing).
 1. Call `getNewsletterPrompt` for ALL SEVEN audiences as the standard monthly cycle: `lifestyle`, `non-lifestyle`, `non-opener`, `reminder`, `gentle-nudge`, `ph1`, `ph2`. If any prompt 404s, report which one and stop — do not invent content. Triggers like "Create the [Month] Yoga Habit content" or "Draft [Month] newsletters" mean ALL SEVEN.
 2. Author each email per its prompt. Each needs `subject` + `body`. All seven are part of the standard cycle. (If the user asks for a single specific audience, fetch and draft only that one.)
 3. Output a clean human-readable preview FIRST. No JSON, no URLs, no debug.
-4. On user approval, call `submitMonthlyHabitNewsletters` with month + payload `{ lifestyle: {subject, body}, non_lifestyle: {subject, body}[, non_opener: {...}][, reminder: {...}][, gentle_nudge: {...}][, ph1: {...}][, ph2: {...}] }`. Note the underscore form (`non_opener`, `gentle_nudge`, `non_lifestyle`) in the body, vs hyphen form in the URL path.
+4. On user approval, call `submitMonthlyHabitNewsletters` with month + payload `{ lifestyle, non_lifestyle, non_opener?, reminder?, gentle_nudge?, ph1?, ph2? }` — each section is `{subject, body}`. Body keys use underscores; URL audience names use hyphens.
 5. Confirm per Newsletter Save Validation.
 
 Do NOT use `upsertClassPlan` or `batchUpsertClassPlans` here.
