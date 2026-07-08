@@ -62,7 +62,21 @@ def main():
             for dup in duplicates:
                 dup_path = images_dir / dup['image_filename']
                 if dup_path.exists():
+                    import twy_deletions as deletions
+                    approval = deletions.gate(
+                        job="tweee_gpt_image_dedupe",
+                        resource=str(dup_path),
+                        kind="duplicate newsletter image",
+                        reason=f"Byte-duplicate of {keeper['image_filename']} (kept)",
+                        size_bytes=dup_path.stat().st_size,
+                        backup_location=f"identical content kept at {keeper['image_filename']}",
+                        backup_verified="content-hash match",
+                    )
+                    if approval is None:
+                        print(f"AWAITING JP APPROVAL: {dup['image_filename']}")
+                        continue
                     dup_path.unlink()
+                    deletions.mark_executed(approval)
                     duplicate_count += 1
                     print(f"🗑️  Removed: {dup['image_filename']}")
                     print(f"   (same as {keeper['image_filename']})")

@@ -152,8 +152,22 @@ def remove_duplicate_newsletters(eml_dir):
             seen[key] = eml_file
     
     # Remove duplicates
+    import twy_deletions as deletions
     for dup in duplicates:
+        approval = deletions.gate(
+            job="tweee_gpt_image_dedupe",
+            resource=str(dup),
+            kind="duplicate hero-image source (.eml)",
+            reason="Duplicate of an already-seen newsletter (same subject+date key)",
+            size_bytes=dup.stat().st_size,
+            backup_location="identical newsletter kept under the same key",
+            backup_verified="subject+date key match",
+        )
+        if approval is None:
+            print(f"AWAITING JP APPROVAL: {dup.name}")
+            continue
         dup.unlink()
+        deletions.mark_executed(approval)
         print(f"🗑️  Removed duplicate: {dup.name}")
     
     return len(duplicates)

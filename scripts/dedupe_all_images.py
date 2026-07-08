@@ -35,6 +35,19 @@ for file_hash, files in hash_to_files.items():
         # Keep the first one (usually earliest date)
         keeper = sorted(files)[0]
         for dup in files[1:]:
+            import twy_deletions as deletions
+            approval = deletions.gate(
+                job="tweee_gpt_image_dedupe",
+                resource=str(dup),
+                kind="duplicate image (hash match)",
+                reason=f"Byte-identical to {keeper.name} (kept)",
+                size_bytes=dup.stat().st_size,
+                backup_location=f"identical content kept at {keeper.name}",
+                backup_verified="content-hash match",
+            )
+            if approval is None:
+                print(f"AWAITING JP APPROVAL: {dup.name}")
+                continue
             dup.unlink()
             removed += 1
             print(f"🗑️  Removed: {dup.name} (duplicate of {keeper.name})")
