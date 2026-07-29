@@ -200,7 +200,7 @@ paths:
       operationId: submitMonthlyHabitNewsletters
       summary: Submit the monthly Yoga Habit newsletter package (lifestyle + non-lifestyle required; non-opener, reminder, gentle-nudge, ph1, ph2 optional)
       description: |
-        Use to create/draft/write the monthly Yoga Habit newsletter content (e.g. "Create the [Month] [Year] Yoga Habit content"). Call getNewsletterPrompt FIRST per audience. Required: lifestyle, non-lifestyle. Optional: non-opener, reminder, gentle-nudge, ph1, ph2. NOT for class plans.
+        Draft or save the monthly Yoga Habit newsletter package. Call getNewsletterPrompt first for each audience. Lifestyle and non-lifestyle are required; others are optional. Every included audience must provide subject, preheader, and body. Not for class plans.
       parameters:
         - name: month
           in: path
@@ -216,50 +216,57 @@ paths:
               properties:
                 lifestyle:
                   type: object
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 non_lifestyle:
                   type: object
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 ph1:
                   type: object
                   description: Post-Habit-class follow-up 1 (sent +24hrs). Optional.
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 ph2:
                   type: object
                   description: Post-Habit-class follow-up 2 (sent +7 days). Optional.
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 non_opener:
                   type: object
                   description: Second-send outreach to non-openers of the first non-member newsletter (sent ~5 days before class). Optional.
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 reminder:
                   type: object
                   description: Day-before reminder to registered attendees with practical info (no register link). Optional.
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
                 gentle_nudge:
                   type: object
                   description: Soft day-before nudge to openers of the first newsletter who did not register. Optional.
-                  required: [subject, body]
+                  required: [subject, preheader, body]
                   properties:
                     subject: { type: string }
+                    preheader: { type: string, description: "Required inbox preview text for SendGrid. 40-90 characters, compelling, specific, and not a repeat of the subject." }
                     body: { type: string }
       responses:
         "200":
