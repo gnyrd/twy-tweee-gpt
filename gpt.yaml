@@ -380,20 +380,23 @@ components:
         - Slow Flow
         - Expansion
         - Meditation
+        - Breath
         - Integration
-        - Final Integration
         - Habit
 
     Category:
       type: string
       enum:
-        - "Heart Openers & Backbend Strategies"
-        - "Upper Body Strength & Arm Balances"
-        - Hip Openers
-        - "Forward Folds & Twists"
-        - Core Strength
-        - Slow Flow
-        - Flow
-        - Meditation
-        - Therapy
+        - "Foundations of Anusara® Yoga"
         - "Integration: Deepening Basics Anusara®"
+        - "Dynamic Flow: Hips, Heart, & Core - Anusara®"
+        - "Mastery Flow: Expanding Capacity Anusara®"
+        - "Heart Openers & Back Bend Strategies"
+        - "Upper Body Strength & Arm Balances"
+        - "Hip Openers"
+        - "Forward Folds & Twists"
+        - "Core Strength"
+        - "Slow Flow"
+        - "Flow"
+        - "Meditation"
+        - "Therapy"
