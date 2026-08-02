@@ -1,5 +1,5 @@
 {
-  "version": "2026-03-27",
+  "version": "2026-08-02",
   "backend": "Flask + JSON files at classes.tiffanywoodyoga.com",
   "primary_key": "date",
   "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
@@ -13,9 +13,8 @@
     "Slow Flow",
     "Expansion",
     "Meditation",
-    "Integration",
     "Breath",
-    "Pranayama",
+    "Integration",
     "Habit"
   ],
   "categories_enum": [
@@ -162,7 +161,11 @@
     },
     "Tuesday": {
       "time": "08:00",
-      "duration": 60
+      "duration": 45
+    },
+    "Wednesday": {
+      "time": "08:00",
+      "duration": 30
     },
     "Thursday": {
       "time": "08:00",
@@ -170,7 +173,7 @@
     },
     "Saturday": {
       "time": "09:00",
-      "duration": 90
+      "duration": 60
     }
   },
   "constraints": {
@@ -210,5 +213,7 @@
     "Habit": [
       "Foundations of Anusara® Yoga"
     ]
-  }
+  },
+  "day_of_week_defaults_note": "Times are Mountain. Saturday is 60 minutes except the last Saturday of the month, which is 90. Days absent here have no scheduled class.",
+  "generated_from": "classes/dashboard/config.py (CLASS_TYPES, CATEGORIES, CATEGORY_DEFAULTS, schedule_defaults). Regenerate rather than hand-edit: a hand-kept copy drifted and told Tweee that Breath did not exist, so it typed the August Breath classes as Meditation."
 }
