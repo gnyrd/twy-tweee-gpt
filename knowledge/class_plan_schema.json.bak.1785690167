@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-02",
+  "version": "2026-03-27",
   "backend": "Flask + JSON files at classes.tiffanywoodyoga.com",
   "primary_key": "date",
   "primary_key_note": "One JSON file per class date: YYYY-MM-DD.json. Field 'id' is a UUID4 assigned by the server at creation — do not set it.",
@@ -8,20 +8,21 @@
     "Strength",
     "Stretch",
     "Flow",
-    "Principles of Anusara",
+    "Principles of Anusara®",
     "Dynamic Flow",
     "Slow Flow",
     "Expansion",
     "Meditation",
-    "Breath",
     "Integration",
+    "Breath",
+    "Pranayama",
     "Habit"
   ],
   "categories_enum": [
-    "Foundations of Anusara Yoga",
-    "Integration: Deepening Basics Anusara",
-    "Dynamic Flow: Hips, Heart, & Core - Anusara",
-    "Mastery Flow: Expanding Capacity Anusara",
+    "Foundations of Anusara® Yoga",
+    "Integration: Deepening Basics Anusara®",
+    "Dynamic Flow: Hips, Heart, & Core - Anusara®",
+    "Mastery Flow: Expanding Capacity Anusara®",
     "Heart Openers & Back Bend Strategies",
     "Upper Body Strength & Arm Balances",
     "Hip Openers",
@@ -30,8 +31,7 @@
     "Slow Flow",
     "Flow",
     "Meditation",
-    "Therapy",
-    "Breath"
+    "Therapy"
   ],
   "level_enum": [
     "Fundamentals",
@@ -162,11 +162,7 @@
     },
     "Tuesday": {
       "time": "08:00",
-      "duration": 45
-    },
-    "Wednesday": {
-      "time": "08:00",
-      "duration": 30
+      "duration": 60
     },
     "Thursday": {
       "time": "08:00",
@@ -174,7 +170,7 @@
     },
     "Saturday": {
       "time": "09:00",
-      "duration": 60
+      "duration": 90
     }
   },
   "constraints": {
@@ -205,20 +201,14 @@
     "Meditation": [
       "Meditation"
     ],
-    "Principles of Anusara": [
-      "Foundations of Anusara Yoga"
+    "Principles of Anusara®": [
+      "Foundations of Anusara® Yoga"
     ],
     "Integration": [
-      "Integration: Deepening Basics Anusara"
+      "Integration: Deepening Basics Anusara®"
     ],
     "Habit": [
-      "Foundations of Anusara Yoga"
-    ],
-    "Breath": [
-      "Breath",
-      "Meditation"
+      "Foundations of Anusara® Yoga"
     ]
-  },
-  "day_of_week_defaults_note": "Times are Mountain. Saturday is 60 minutes except the last Saturday of the month, which is 90. Days absent here have no scheduled class.",
-  "generated_from": "classes/dashboard/config.py (CLASS_TYPES, CATEGORIES, CATEGORY_DEFAULTS, schedule_defaults). Regenerate rather than hand-edit: a hand-kept copy drifted and told Tweee that Breath did not exist, so it typed the August Breath classes as Meditation."
+  }
 }
